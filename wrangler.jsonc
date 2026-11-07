@@ -1,0 +1,15 @@
+{
+  // Statický web iucetni.com – Cloudflare Workers (static assets)
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "iucetni-web",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "iucetni.com", "custom_domain": true },
+    { "pattern": "www.iucetni.com", "custom_domain": true }
+  ]
+}
