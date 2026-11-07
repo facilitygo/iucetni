@@ -1,0 +1,53 @@
+<svg class="ill" viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg">
+        <circle class="s-orange-soft" cx="170" cy="210" r="160"/>
+        <!-- telefon -->
+        <rect class="s-card" x="70" y="30" width="200" height="350" rx="34" style="stroke-width:2"/>
+        <rect x="82" y="42" width="176" height="326" rx="26" fill="#1d1422"/>
+        <rect x="146" y="52" width="48" height="12" rx="6" fill="#000"/>
+        <!-- účtenka v hledáčku -->
+        <g transform="rotate(-4 170 200)">
+          <path d="M118 96h104v196l-8-6-9 6-9-6-9 6-9-6-9 6-9-6-9 6-9-6-9 6-8-6z" fill="#fffdf8"/>
+          <rect x="136" y="110" width="68" height="7" rx="3.5" fill="#1d1422"/>
+          <rect x="130" y="126" width="80" height="4" rx="2" fill="#b8aebb"/>
+          <rect x="130" y="136" width="60" height="4" rx="2" fill="#b8aebb"/>
+          <path d="M130 150h80" stroke="#d9d0db" stroke-dasharray="3 3"/>
+          <rect x="130" y="160" width="50" height="4" rx="2" fill="#8a7f8d"/><rect x="190" y="160" width="20" height="4" rx="2" fill="#8a7f8d"/>
+          <rect x="130" y="172" width="40" height="4" rx="2" fill="#8a7f8d"/><rect x="194" y="172" width="16" height="4" rx="2" fill="#8a7f8d"/>
+          <rect x="130" y="184" width="56" height="4" rx="2" fill="#8a7f8d"/><rect x="188" y="184" width="22" height="4" rx="2" fill="#8a7f8d"/>
+          <path d="M130 198h80" stroke="#d9d0db" stroke-dasharray="3 3"/>
+          <rect x="130" y="208" width="34" height="7" rx="3" fill="#1d1422"/><rect x="176" y="208" width="34" height="7" rx="3" fill="#1d1422"/>
+          <rect x="140" y="232" width="60" height="22" rx="2" fill="#efe9ef"/>
+          <rect x="144" y="236" width="2" height="14" fill="#1d1422"/><rect x="149" y="236" width="1" height="14" fill="#1d1422"/><rect x="152" y="236" width="3" height="14" fill="#1d1422"/><rect x="158" y="236" width="1" height="14" fill="#1d1422"/><rect x="161" y="236" width="2" height="14" fill="#1d1422"/><rect x="166" y="236" width="1" height="14" fill="#1d1422"/><rect x="169" y="236" width="3" height="14" fill="#1d1422"/><rect x="175" y="236" width="1" height="14" fill="#1d1422"/><rect x="178" y="236" width="2" height="14" fill="#1d1422"/><rect x="183" y="236" width="1" height="14" fill="#1d1422"/><rect x="186" y="236" width="3" height="14" fill="#1d1422"/><rect x="192" y="236" width="2" height="14" fill="#1d1422"/>
+        </g>
+        <!-- rohy hledáčku -->
+        <g fill="none" stroke-width="4" stroke-linecap="round" class="k-orange">
+          <path d="M104 100v-16h16M236 100v-16h-16M104 290v16h16M236 290v16h-16"/>
+        </g>
+        <rect class="scanline s-orange" x="104" y="110" width="132" height="3" rx="1.5" opacity=".85"/>
+        <!-- spoušť -->
+        <circle cx="170" cy="340" r="17" fill="none" stroke="#fff" stroke-width="3"/>
+        <circle cx="170" cy="340" r="12" fill="#fff"/>
+        <!-- šipka -->
+        <path d="M282 200c22 0 34-8 46-20" fill="none" stroke-width="2.5" stroke-dasharray="5 6" class="k-plum"/>
+        <path class="s-plum" d="m326 172 12 2-4 12z"/>
+        <!-- karta výdaje -->
+        <rect class="s-card" x="300" y="112" width="210" height="236" rx="18" style="filter:drop-shadow(0 10px 20px rgba(60,10,60,.12))"/>
+        <text x="320" y="144" class="s-text" style="font:700 14px -apple-system,BlinkMacSystemFont,sans-serif">[[Nový výdaj|New expense]]</text>
+        <g style="font:500 10.5px -apple-system,BlinkMacSystemFont,sans-serif">
+          <text x="320" y="172" class="s-muted" style="opacity:1">[[Dodavatel|Supplier]]</text><rect class="s-text" x="390" y="164" width="80" height="7" rx="3.5"/>
+          <text x="320" y="200" class="s-muted" style="opacity:1">[[IČO|Company ID]]</text><rect class="s-text" x="390" y="192" width="56" height="7" rx="3.5"/>
+          <text x="320" y="228" class="s-muted" style="opacity:1">[[Datum|Date]]</text><rect class="s-text" x="390" y="220" width="50" height="7" rx="3.5"/>
+          <text x="320" y="256" class="s-muted" style="opacity:1">[[DPH|VAT]]</text><rect class="s-text" x="390" y="248" width="40" height="7" rx="3.5"/>
+          <text x="320" y="284" class="s-muted" style="opacity:1">[[Celkem|Total]]</text>
+        </g>
+        <text x="390" y="290" class="s-text" style="font:800 17px -apple-system,BlinkMacSystemFont,sans-serif">[[1 249 Kč|CZK 1,249]]</text>
+        <g class="s-ok">
+          <circle cx="488" cy="168" r="7"/><circle cx="488" cy="196" r="7"/><circle cx="488" cy="224" r="7"/><circle cx="488" cy="252" r="7"/><circle cx="488" cy="281" r="7"/>
+        </g>
+        <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m485 168 2 2 4-4M485 196l2 2 4-4M485 224l2 2 4-4M485 252l2 2 4-4M485 281l2 2 4-4"/>
+        </g>
+        <rect class="s-plum-soft" x="320" y="306" width="170" height="28" rx="8"/>
+        <path class="k-plum" d="M332 314v12h9l3-3v-9z" fill="none" stroke-width="1.6"/>
+        <text x="352" y="324" class="s-plum" style="font:600 10.5px -apple-system,BlinkMacSystemFont,sans-serif">[[uctenka.pdf · příloha|receipt.pdf · attached]]</text>
+      </svg>

@@ -5,11 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ochrana soukromí – iÚčetní</title>
 <meta name="description" content="Zásady ochrany osobních údajů aplikace iÚčetní a webu iucetni.com.">
+<meta name="theme-color" content="#6e0a63" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#140d18" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://iucetni.com/soukromi/">
+<link rel="alternate" hreflang="cs" href="https://iucetni.com/soukromi/">
+<link rel="alternate" hreflang="en" href="https://iucetni.com/en/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://iucetni.com/soukromi/">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="iÚčetní">
+<meta property="og:title" content="Ochrana soukromí – iÚčetní">
+<meta property="og:description" content="Zásady ochrany osobních údajů aplikace iÚčetní a webu iucetni.com.">
+<meta property="og:url" content="https://iucetni.com/soukromi/">
+<meta property="og:image" content="https://iucetni.com/img/icon-512.png">
 <script>try{var t=localStorage.getItem('theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=d489e81b">
 </head>
 <body>
 <header>
@@ -17,15 +30,17 @@
     <a class="brand" href="/" aria-label="iÚčetní – úvod"><img src="/img/logo.png" alt="" width="32" height="32">iÚčetní</a>
     <ul id="menu">
       <li><a href="/#funkce">Funkce</a></li>
+      <li><a href="/#pribehy">Příběhy</a></li>
       <li><a href="/#cenik">Ceník</a></li>
+      <li><a href="/mcp/">MCP server</a></li>
       <li><a href="/podpora/">Podpora</a></li>
-      <li><a href="/podminky/">Podmínky</a></li>
-      <li><a href="/soukromi/">Soukromí</a></li>
     </ul>
+    <a class="lang-btn" href="/en/privacy/" hreflang="en" lang="en" aria-label="English version">EN</a>
     <a class="btn btn-primary btn-sm" href="/#stahnout">Brzy v App Store</a>
     <button class="menu-btn" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
+
 <main class="wrap"><article class="doc">
 <span class="eyebrow">Právní informace</span>
 <h1>Ochrana soukromí</h1>
@@ -34,6 +49,8 @@
 <div class="box">
 <p><strong>Stručně:</strong> Data ukládáme na serverech v Evropské unii a neprodáváme je. Aplikace nemá reklamy a nesleduje vás napříč aplikacemi ani weby. Údaje, které do iÚčetní zadáte, používáme jen k tomu, aby aplikace fungovala. Kdykoli si je můžete vyexportovat nebo smazat.</p>
 </div>
+
+<p><em>English version: <a href="/en/privacy/">Privacy Policy</a>.</em></p>
 
 <nav class="toc" aria-label="Obsah">
 <a href="#spravce">Správce</a><a href="#udaje">Jaké údaje</a><a href="#odberatele">Údaje vašich zákazníků</a><a href="#uloziste">Kde jsou data</a><a href="#ai">AI funkce</a><a href="#prijemci">Příjemci</a><a href="#doba">Doba uložení</a><a href="#prava">Vaše práva</a><a href="#web">Web a cookies</a>
@@ -47,7 +64,7 @@
 <table>
 <thead><tr><th>Údaje</th><th>Účel</th><th>Právní základ</th></tr></thead>
 <tbody>
-<tr><td><strong>Účet:</strong> e-mail, identifikátor Přihlášení přes Apple, název zařízení, přístupové klíče</td><td>přihlášení, správa účtu a zařízení</td><td>plnění smlouvy (čl. 6 odst. 1 písm. b GDPR)</td></tr>
+<tr><td><strong>Účet:</strong> e-mail, identifikátor Přihlášení přes Apple, název zařízení, přístupové klíče a autorizace OAuth</td><td>přihlášení, správa účtu a zařízení</td><td>plnění smlouvy (čl. 6 odst. 1 písm. b GDPR)</td></tr>
 <tr><td><strong>Obsah, který zadáte:</strong> údaje vaší firmy, odběratelé, ceník, doklady, výdaje a jejich přílohy (fotky, PDF)</td><td>poskytování služby, synchronizace mezi zařízeními, tvorba PDF dokladů</td><td>plnění smlouvy</td></tr>
 <tr><td><strong>Technické údaje:</strong> IP adresa, čas a druh požadavku, chybové záznamy serveru</td><td>bezpečnost, ochrana před zneužitím, řešení chyb</td><td>oprávněný zájem (čl. 6 odst. 1 písm. f GDPR)</td></tr>
 <tr><td><strong>Předplatné:</strong> informace o stavu předplatného z App Store</td><td>zpřístupnění placených funkcí</td><td>plnění smlouvy</td></tr>
@@ -111,7 +128,7 @@
 <h2>12. Změny zásad</h2>
 <p>Zásady můžeme aktualizovat, například při přidání nové funkce. O podstatných změnách vás předem informujeme v aplikaci nebo e-mailem. Aktuální znění najdete vždy na této stránce.</p>
 </article></main>
-<!--FOOTER-->
+
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -121,7 +138,7 @@
       </div>
       <div>
         <h4>Aplikace</h4>
-        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#apple">Pro Apple</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/#faq">Časté otázky</a></li></ul>
+        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Informace</h4>
@@ -130,11 +147,10 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky společnosti Apple Inc.</span>
-      <button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button>
+      <span class="foot-tools"><a class="lang-link" href="/en/privacy/" hreflang="en" lang="en">English</a><button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button></span>
     </div>
   </div>
 </footer>
-<!--/FOOTER-->
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=d489e81b" defer></script>
 </body>
 </html>

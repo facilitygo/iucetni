@@ -8,6 +8,9 @@
 <meta name="theme-color" content="#6e0a63" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#140d18" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://iucetni.com/">
+<link rel="alternate" hreflang="cs" href="https://iucetni.com/">
+<link rel="alternate" hreflang="en" href="https://iucetni.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://iucetni.com/">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
@@ -15,34 +18,34 @@
 <meta property="og:locale" content="cs_CZ">
 <meta property="og:site_name" content="iÚčetní">
 <meta property="og:title" content="iÚčetní – fakturace a daňová evidence pro iPhone, iPad a Mac">
-<meta property="og:description" content="Faktury s QR Platbou a ISDOC, účtenky z fotek, export pro účetní a AI asistent. Nativně pro Apple, zdarma s daty v cloudu.">
+<meta property="og:description" content="Nativní aplikace pro iPhone, iPad a Mac: faktury s QR Platbou a ISDOC, čtení účtenek z fotek, export do Pohody a Money, daňová evidence, MCP pro Claude a ChatGPT. Zdarma s daty v cloudu na serverech v EU.">
 <meta property="og:url" content="https://iucetni.com/">
 <meta property="og:image" content="https://iucetni.com/img/icon-512.png">
 <script>try{var t=localStorage.getItem('theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iÚčetní","applicationCategory":"FinanceApplication","operatingSystem":"iOS 26, iPadOS 26, macOS 26","inLanguage":"cs","url":"https://iucetni.com/","description":"Fakturace a daňová evidence podle české legislativy pro iPhone, iPad a Mac.","publisher":{"@type":"Organization","name":"NEMOSERVIS Praha s.r.o.","email":"support@iucetni.com"},"offers":{"@type":"Offer","name":"Zdarma","price":"0","priceCurrency":"CZK"}}
-</script>
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=d489e81b">
 </head>
 <body>
-
-<header id="top">
+<header>
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="iÚčetní – úvod"><img src="/img/logo.png" alt="" width="32" height="32">iÚčetní</a>
     <ul id="menu">
       <li><a href="#funkce">Funkce</a></li>
       <li><a href="#apple">Pro Apple</a></li>
-      <li><a href="#doklady">Účtenky z fotek</a></li>
+      <li><a href="#pribehy">Příběhy</a></li>
       <li><a href="#ai">AI asistent</a></li>
       <li><a href="#cenik">Ceník</a></li>
-      <li><a href="/podpora/">Podpora</a></li>
+      <li><a href="/mcp/">MCP</a></li>
     </ul>
+    <a class="lang-btn" href="/en/" hreflang="en" lang="en" aria-label="English version">EN</a>
     <a class="btn btn-primary btn-sm" href="#stahnout">Brzy v App Store</a>
     <button class="menu-btn" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
 <main>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iÚčetní","applicationCategory":"FinanceApplication","operatingSystem":"iOS 26, iPadOS 26, macOS 26","inLanguage":"cs","url":"https://iucetni.com/","description":"Fakturace a daňová evidence podle české legislativy pro iPhone, iPad a Mac.","publisher":{"@type":"Organization","name":"NEMOSERVIS Praha s.r.o.","email":"support@iucetni.com"},"offers":{"@type":"Offer","name":"Zdarma","price":"0","priceCurrency":"CZK"}}
+</script>
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="wrap hero-grid">
@@ -198,6 +201,136 @@
         <p>Kolik jste vyfakturovali, kolik vám zaplatili, co je po splatnosti. K tomu graf tržeb po měsících, statistika podle odběratelů a sestavy do PDF i CSV.</p>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- ============ PŘÍBĚHY ============ -->
+<section id="pribehy" class="cases">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Příběhy z praxe</span>
+      <h2>Faktura tam, kde zrovna jste</h2>
+      <p class="lead">Na stavbě, za pultem kavárny, na dvoře nebo přes AI agenta, který za vás vyřizuje poštu. Čtyři ukázky, jak iÚčetní zapadne do běžného dne.</p>
+    </div>
+    <div class="case-tabs reveal" role="tablist" aria-label="Příběhy">
+      <button class="case-tab" role="tab" id="tab-remeslnik" aria-controls="case-remeslnik" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>Řemeslník</button>
+      <button class="case-tab" role="tab" id="tab-kavarna" aria-controls="case-kavarna" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg>Kavárna</button>
+      <button class="case-tab" role="tab" id="tab-farma" aria-controls="case-farma" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3.5 0 6 5 6 9.5A6 6 0 0 1 6 12.5C6 8 8.5 3 12 3z"/></svg>Malý farmář</button>
+      <button class="case-tab" role="tab" id="tab-umelec" aria-controls="case-umelec" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Kreativec s AI agentem</button>
+    </div>
+
+    <article class="case" id="case-remeslnik" role="tabpanel" aria-labelledby="tab-remeslnik">
+      <div class="case-text">
+        <div class="case-tags"><span>Instalatér</span><span>iPhone</span><span class="pro">AI asistent · Pro</span></div>
+        <h3>Zakázka vyúčtovaná ještě na místě</h3>
+        <p>Petr dokončil koupelnu u Novákových. Materiál nakoupil ve stavebninách na jednu fakturu, ale část z ní je na sklad. Než si sundá montérky, má zákazník fakturu v e-mailu.</p>
+        <ol class="steps">
+          <li>Vyfotí fakturu od dodavatele a AI z ní přečte všechny položky.</li>
+          <li>S asistentem projde, co patří k zakázce. Silikon a rukavice na sklad vynechají.</li>
+          <li>Přidá hodiny práce a dopravu z ceníku a nechá fakturu vystavit.</li>
+          <li>Fakturu pošle e-mailem přímo z terénu, nebo zákazníkovi ukáže QR kód a ten zaplatí hned.</li>
+        </ol>
+      </div>
+      <div class="case-mock" aria-hidden="true">
+        <div class="mock-card">
+          <div class="mock-msg me">Přeúčtuj Novákovým jen materiál na koupelnu, přidej 3,5 h práce a dopravu.</div>
+          <div class="mock-msg bot">Silikon a rukavice jsou podle mě na sklad, vynechávám je. Souhlasí?</div>
+          <div class="mock-sub">Faktura od dodavatele · Stavebniny Kovář</div>
+          <ul class="mock-items">
+            <li class="on"><span>Měděná trubka 15 mm · 6 m</span><b>1 140 Kč</b></li>
+            <li class="on"><span>Pájecí koleno 15 mm · 8 ks</span><b>296 Kč</b></li>
+            <li class="on"><span>Kulový ventil ½″ · 2 ks</span><b>418 Kč</b></li>
+            <li class="off"><span>Silikon sanitární · 4 ks</span><b>356 Kč</b></li>
+            <li class="off"><span>Pracovní rukavice · 10 párů</span><b>290 Kč</b></li>
+            <li class="add"><span>Práce · 3,5 h × 650 Kč</span><b>2 275 Kč</b></li>
+            <li class="add"><span>Doprava · 38 km × 12 Kč</span><b>456 Kč</b></li>
+          </ul>
+          <div class="mock-total"><span class="mock-qr"></span><div><small>Faktura 20260143 · Novákovi</small><b>4 585 Kč</b></div><span class="mock-pill ok">Odesláno</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case" id="case-kavarna" role="tabpanel" aria-labelledby="tab-kavarna" hidden>
+      <div class="case-text">
+        <div class="case-tags"><span>Kavárna</span><span>iPhone a Mac</span><span>Zdarma</span></div>
+        <h3>Účtenky ráno, catering odpoledne, přehled večer</h3>
+        <p>Jana vede Kavárnu U Mostu. Ráno přijde zboží z pražírny a z velkoobchodu, odpoledne chystá catering na poradu pro firmu ze sousedství. Papíry večer neřeší.</p>
+        <ol class="steps">
+          <li>Účtenky od dodavatelů vyfotí. Výdaje se vyplní samy a snímek zůstane u výdaje.</li>
+          <li>Catering vyfakturuje za minutu z položek v ceníku.</li>
+          <li>Faktura s QR Platbou a ISDOC odejde e-mailem a účetní odběratele si ji rovnou načte.</li>
+          <li>Večer na Macu vidí příjmy a výdaje za měsíc a kdo je po splatnosti.</li>
+        </ol>
+      </div>
+      <div class="case-mock" aria-hidden="true">
+        <div class="mock-card">
+          <div class="mock-sub">Výdaje · dnes</div>
+          <ul class="mock-items rows">
+            <li><span><i class="att"></i>Pražírna Zrnko · káva 6 kg</span><b>3 480 Kč</b></li>
+            <li><span><i class="att"></i>Velkoobchod · mléko, cukr</span><b>2 116 Kč</b></li>
+          </ul>
+          <div class="mock-sub">Vydané · dnes</div>
+          <ul class="mock-items rows">
+            <li><span>Catering – porada 12 osob · Novák Design s.r.o.</span><b>3 960 Kč</b></li>
+          </ul>
+          <div class="mock-tiles">
+            <div><small>Listopad · příjmy</small><b>84 300 Kč</b></div>
+            <div><small>Výdaje</small><b>31 900 Kč</b></div>
+            <div class="warn"><small>Po splatnosti</small><b>1 doklad</b></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case" id="case-farma" role="tabpanel" aria-labelledby="tab-farma" hidden>
+      <div class="case-text">
+        <div class="case-tags"><span>Prodej ze dvora</span><span>iPhone</span><span>Zdarma</span></div>
+        <h3>30 vajec a 3 okurky. Zaplaceno přes QR.</h3>
+        <p>Karel prodává ze dvora vajíčka a zeleninu z vlastní zahrady. Je neplátce DPH a hotovost moc nemusí. Zákazník u branky zaplatí telefonem a Karel má doklad i evidenci.</p>
+        <ol class="steps">
+          <li>Vejce a okurky má uložené v ceníku. Stačí vybrat položku a zadat počet.</li>
+          <li>Na displeji ukáže velký QR kód. Vzniká přímo v telefonu, takže funguje i bez signálu.</li>
+          <li>Zákazník zaplatí v bankovní aplikaci a Karel úhradu označí potažením prstu.</li>
+          <li>Na konci roku má knihu příjmů a výdajů a porovnání s paušálem.</li>
+        </ol>
+      </div>
+      <div class="case-mock" aria-hidden="true">
+        <div class="mock-phone">
+          <div class="mock-island"></div>
+          <div class="mock-sub">Farma Pod Lesem · neplátce DPH</div>
+          <ul class="mock-items rows">
+            <li><span>Vejce · 30 ks × 5 Kč</span><b>150 Kč</b></li>
+            <li><span>Okurky · 3 ks × 20 Kč</span><b>60 Kč</b></li>
+          </ul>
+          <span class="mock-qr big"></span>
+          <div class="mock-sum">210 Kč</div>
+          <span class="mock-pill ok">Uhrazeno</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="case" id="case-umelec" role="tabpanel" aria-labelledby="tab-umelec" hidden>
+      <div class="case-text">
+        <div class="case-tags"><span>Copywriterka</span><span>Claude + MCP</span><span>Zdarma</span></div>
+        <h3>Klient schválí text, AI agent pošle fakturu</h3>
+        <p>Eva napsala pro Kavárnu U Mostu reklamní text. Poštu za ni vyřizuje AI agent v Claude se schránkou <b>umelec-agent@namailu.cz</b>. Agent je přes MCP připojený k iÚčetní i k <a href="https://namailu.cz" rel="noopener">namailu.cz</a>.</p>
+        <ol class="steps">
+          <li>Klient odpoví do agentní schránky: text schvaluje a chce fakturu.</li>
+          <li>Agent e-mail přečte, přes MCP iÚčetní najde odběratele a připraví koncept faktury.</li>
+          <li>Eva koncept jedním slovem schválí a agent fakturu vystaví.</li>
+          <li>Agent fakturu odešle z umelec-agent@namailu.cz přes MCP server namailu.cz a pohlídá úhradu.</li>
+        </ol>
+      </div>
+      <div class="case-mock" aria-hidden="true">
+        <div class="mock-flow">
+          <div class="mock-card sm"><div class="mock-sub"><i class="mail"></i>Příchozí · umelec-agent@namailu.cz</div><p><b>Jana, Kavárna U Mostu</b><br>Text schvalujeme, je skvělý. Pošlete prosím fakturu na 8 500 Kč, splatnost 14 dní.</p></div>
+          <div class="mock-arrow">MCP iÚčetní</div>
+          <div class="mock-card sm"><div class="mock-sub"><i class="file"></i>Koncept → vystaveno</div><p><b>Faktura 20260057</b> · Kavárna U Mostu<br>Reklamní text – jarní kampaň · <b>8 500 Kč</b></p><span class="mock-pill ai">Schváleno Evou</span></div>
+          <div class="mock-arrow">MCP namailu.cz</div>
+          <div class="mock-card sm"><div class="mock-sub"><i class="mail"></i>Odesláno · umelec-agent@namailu.cz</div><p>Dobrý den, v příloze posílám fakturu č. 20260057. <span class="att-chip">20260057.pdf</span></p></div>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -395,7 +528,7 @@
       <ul class="checks">
         <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Koncepty, ne hotové doklady</b><span>AI připraví koncept bez čísla. Fakturu z něj vystavíte vy jedním klepnutím.</span></div></li>
         <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Každý zápis potvrzujete</b><span>Bez vašeho souhlasu asistent nic neuloží a do dokladu, který máte otevřený, nezapisuje.</span></div></li>
-        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Claude, OpenAI nebo vlastní klíč</b><span>Asistent v aplikaci je součástí verze Pro. MCP server je zdarma pro všechny: iÚčetní si připojíte přímo do své aplikace Claude nebo ChatGPT.</span></div></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Claude, OpenAI nebo vlastní klíč</b><span>Asistent v aplikaci je součástí verze Pro. MCP server je zdarma pro všechny: iÚčetní si připojíte přímo do své aplikace Claude nebo ChatGPT. <a href="/mcp/">Jak na to</a></span></div></li>
       </ul>
     </div>
     <div class="chat reveal" aria-hidden="true">
@@ -533,7 +666,6 @@
 </section>
 </main>
 
-<!--FOOTER-->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -543,7 +675,7 @@
       </div>
       <div>
         <h4>Aplikace</h4>
-        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#apple">Pro Apple</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/#faq">Časté otázky</a></li></ul>
+        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Informace</h4>
@@ -552,12 +684,10 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky společnosti Apple Inc.</span>
-      <button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button>
+      <span class="foot-tools"><a class="lang-link" href="/en/" hreflang="en" lang="en">English</a><button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button></span>
     </div>
   </div>
 </footer>
-<!--/FOOTER-->
-
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=d489e81b" defer></script>
 </body>
 </html>

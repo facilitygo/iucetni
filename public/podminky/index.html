@@ -5,11 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Podmínky použití – iÚčetní</title>
 <meta name="description" content="Podmínky používání aplikace iÚčetní, včetně předplatného iÚčetní Pro a AI funkcí.">
+<meta name="theme-color" content="#6e0a63" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#140d18" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://iucetni.com/podminky/">
+<link rel="alternate" hreflang="cs" href="https://iucetni.com/podminky/">
+<link rel="alternate" hreflang="en" href="https://iucetni.com/en/terms/">
+<link rel="alternate" hreflang="x-default" href="https://iucetni.com/podminky/">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="iÚčetní">
+<meta property="og:title" content="Podmínky použití – iÚčetní">
+<meta property="og:description" content="Podmínky používání aplikace iÚčetní, včetně předplatného iÚčetní Pro a AI funkcí.">
+<meta property="og:url" content="https://iucetni.com/podminky/">
+<meta property="og:image" content="https://iucetni.com/img/icon-512.png">
 <script>try{var t=localStorage.getItem('theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=d489e81b">
 </head>
 <body>
 <header>
@@ -17,15 +30,17 @@
     <a class="brand" href="/" aria-label="iÚčetní – úvod"><img src="/img/logo.png" alt="" width="32" height="32">iÚčetní</a>
     <ul id="menu">
       <li><a href="/#funkce">Funkce</a></li>
+      <li><a href="/#pribehy">Příběhy</a></li>
       <li><a href="/#cenik">Ceník</a></li>
+      <li><a href="/mcp/">MCP server</a></li>
       <li><a href="/podpora/">Podpora</a></li>
-      <li><a href="/podminky/">Podmínky</a></li>
-      <li><a href="/soukromi/">Soukromí</a></li>
     </ul>
+    <a class="lang-btn" href="/en/terms/" hreflang="en" lang="en" aria-label="English version">EN</a>
     <a class="btn btn-primary btn-sm" href="/#stahnout">Brzy v App Store</a>
     <button class="menu-btn" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
+
 <main class="wrap"><article class="doc">
 <span class="eyebrow">Právní informace</span>
 <h1>Podmínky použití</h1>
@@ -36,14 +51,15 @@
 </nav>
 
 <h2 id="uvod">1. Úvodní ustanovení</h2>
-<p>Tyto podmínky upravují používání aplikace iÚčetní pro iPhone, iPad a Mac a souvisejících služeb (server api.iucetni.com, připojení pro AI přes MCP, web iucetni.com). Poskytovatelem je <strong>NEMOSERVIS Praha s.r.o.</strong>, IČO 26122375, se sídlem Tenisová 956/13, Hostivař, 102 00 Praha 10, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 72067. Kontaktní adresa je Belgická 23, 120 00 Praha 2, e-mail <a href="mailto:support@iucetni.com">support@iucetni.com</a> (dále „my“).</p>
+<p>Tyto podmínky upravují používání aplikace iÚčetní pro iPhone, iPad a Mac a souvisejících služeb (server api.iucetni.com, MCP server pro AI klienty, web iucetni.com). Poskytovatelem je <strong>NEMOSERVIS Praha s.r.o.</strong>, IČO 26122375, se sídlem Tenisová 956/13, Hostivař, 102 00 Praha 10, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 72067. Kontaktní adresa je Belgická 23, 120 00 Praha 2, e-mail <a href="mailto:support@iucetni.com">support@iucetni.com</a> (dále „my“).</p>
+<p><em>English version: <a href="/en/terms/">Terms of Use</a>.</em></p>
 <p>Aplikace se distribuuje přes App Store. Kromě těchto podmínek platí i <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">standardní licenční smlouva Apple pro koncové uživatele (EULA)</a>, kterou tyto podmínky doplňují. Instalací nebo používáním aplikace s oběma dokumenty souhlasíte.</p>
 <p>Aplikace je určena především podnikatelům. Pokud ji používáte jako spotřebitel, zůstávají vám zachována všechna práva, která vám dává zákon.</p>
 
 <h2 id="ucet">2. Účet a přístup</h2>
 <ul>
 <li>K práci s daty v cloudu potřebujete účet. Přihlásíte se přes Apple, e-mailem nebo přístupovým klíčem.</li>
-<li>Přístupové údaje chraňte a nesdílejte. Za činnost provedenou pod vaším účtem odpovídáte vy, včetně klíčů, které vydáte pro AI.</li>
+<li>Přístupové údaje chraňte a nesdílejte. Za činnost provedenou pod vaším účtem odpovídáte vy, včetně klíčů pro AI a autorizací OAuth, které udělíte.</li>
 <li>Klíč ztraceného nebo cizího zařízení můžete kdykoli zrušit. Při podezření na zneužití nám napište.</li>
 </ul>
 
@@ -65,11 +81,12 @@
 </ul>
 <p>Cenu nebo rozsah verzí můžeme změnit. Změna ceny předplatného se řídí pravidly App Store a Apple vás na ni předem upozorní.</p>
 
-<h2 id="ai">4. AI funkce</h2>
+<h2 id="ai">4. AI funkce a MCP</h2>
 <ul>
 <li>Výstupy AI (koncepty dokladů, přečtené údaje z účtenek, odpovědi) mohou obsahovat chyby. Před vystavením dokladu nebo uložením výdaje je vždy zkontrolujte.</li>
-<li>AI připravuje jen koncepty. Každý zápis do dat potvrzujete vy a za výsledek odpovídáte vy.</li>
-<li>Při použití vlastního klíče nebo připojení přes MCP se vztah s poskytovatelem AI řídí jeho podmínkami.</li>
+<li>V aplikaci AI připravuje koncepty, které potvrzujete vy. Pokud AI klientovi připojenému přes MCP dovolíte vystavovat doklady nebo provádět jiné změny, odpovídáte za ně stejně, jako byste je provedli sami.</li>
+<li>Vztah s poskytovatelem AI (Anthropic, OpenAI a další) a s dalšími službami připojenými k vašemu agentovi, například e-mailovými, se řídí jejich podmínkami.</li>
+<li>MCP server nepoužívejte způsobem, který obchází limity nebo přetěžuje službu.</li>
 </ul>
 
 <h2 id="data">5. Vaše data</h2>
@@ -98,7 +115,7 @@
 <p>Tyto podmínky se řídí právem České republiky. Spory rozhodují české soudy. Spotřebitel může spor řešit i mimosoudně u České obchodní inspekce (<a href="https://adr.coi.gov.cz" rel="noopener">adr.coi.gov.cz</a>).</p>
 <p>Dotazy a stížnosti posílejte na <a href="mailto:support@iucetni.com">support@iucetni.com</a>.</p>
 </article></main>
-<!--FOOTER-->
+
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -108,7 +125,7 @@
       </div>
       <div>
         <h4>Aplikace</h4>
-        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#apple">Pro Apple</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/#faq">Časté otázky</a></li></ul>
+        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Informace</h4>
@@ -117,11 +134,10 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky společnosti Apple Inc.</span>
-      <button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button>
+      <span class="foot-tools"><a class="lang-link" href="/en/terms/" hreflang="en" lang="en">English</a><button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button></span>
     </div>
   </div>
 </footer>
-<!--/FOOTER-->
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=d489e81b" defer></script>
 </body>
 </html>

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://iucetni.com/</loc></url>
-  <url><loc>https://iucetni.com/podpora/</loc></url>
-  <url><loc>https://iucetni.com/podminky/</loc></url>
+  <url><loc>https://iucetni.com/en/</loc></url>
   <url><loc>https://iucetni.com/soukromi/</loc></url>
+  <url><loc>https://iucetni.com/en/privacy/</loc></url>
+  <url><loc>https://iucetni.com/podminky/</loc></url>
+  <url><loc>https://iucetni.com/en/terms/</loc></url>
+  <url><loc>https://iucetni.com/podpora/</loc></url>
+  <url><loc>https://iucetni.com/en/support/</loc></url>
+  <url><loc>https://iucetni.com/mcp/</loc></url>
+  <url><loc>https://iucetni.com/en/mcp/</loc></url>
 </urlset>

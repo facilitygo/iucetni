@@ -1,0 +1,77 @@
+<svg class="ill" viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
+        <!-- Mac -->
+        <rect class="s-card" x="10" y="20" width="440" height="282" rx="16"/>
+        <rect class="s-bg2" x="22" y="32" width="416" height="258" rx="8"/>
+        <rect class="s-card" x="22" y="32" width="104" height="258" rx="8" style="stroke:none;opacity:.7"/>
+        <circle cx="36" cy="46" r="4" fill="#ff5f57"/><circle cx="50" cy="46" r="4" fill="#febc2e"/><circle cx="64" cy="46" r="4" fill="#28c840"/>
+        <rect class="s-plum-soft" x="32" y="66" width="84" height="16" rx="5"/>
+        <rect class="s-plum" x="40" y="72" width="44" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="94" width="56" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="112" width="40" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="130" width="60" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="148" width="48" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="166" width="36" height="4" rx="2"/>
+        <!-- dlaždice -->
+        <rect class="s-card" x="138" y="46" width="90" height="44" rx="8"/>
+        <rect class="s-muted" x="148" y="56" width="40" height="4" rx="2"/>
+        <rect class="s-text" x="148" y="70" width="58" height="8" rx="3"/>
+        <rect class="s-card" x="236" y="46" width="90" height="44" rx="8"/>
+        <rect class="s-muted" x="246" y="56" width="44" height="4" rx="2"/>
+        <rect class="s-orange" x="246" y="70" width="48" height="8" rx="3"/>
+        <rect class="s-card" x="334" y="46" width="92" height="44" rx="8"/>
+        <rect class="s-muted" x="344" y="56" width="36" height="4" rx="2"/>
+        <rect class="s-ok" x="344" y="70" width="54" height="8" rx="3"/>
+        <!-- řádky dokladů -->
+        <g>
+          <rect class="s-card" x="138" y="102" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="114" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="114" width="80" height="5" rx="2.5"/>
+          <rect class="s-ok" x="352" y="111" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ok" x="362" y="115" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="138" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="150" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="150" width="64" height="5" rx="2.5"/>
+          <rect class="s-orange" x="352" y="147" width="62" height="12" rx="6" opacity=".2"/><rect class="s-orange" x="362" y="151" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="174" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="186" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="186" width="90" height="5" rx="2.5"/>
+          <rect class="s-ai" x="352" y="183" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ai" x="362" y="187" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="210" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="222" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="222" width="70" height="5" rx="2.5"/>
+          <rect class="s-ok" x="352" y="219" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ok" x="362" y="223" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="246" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="258" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="258" width="56" height="5" rx="2.5"/>
+          <rect class="s-ok" x="352" y="255" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ok" x="362" y="259" width="42" height="4" rx="2"/>
+        </g>
+        <path class="s-card" d="M-4 302h468l-14 16H10z"/>
+        <rect class="s-faint" x="190" y="303" width="80" height="5" rx="2.5"/>
+
+        <!-- iPad -->
+        <rect class="s-card" x="24" y="250" width="196" height="160" rx="16"/>
+        <rect class="s-bg2" x="34" y="260" width="176" height="140" rx="8"/>
+        <rect class="s-card" x="42" y="268" width="76" height="124" rx="6"/>
+        <rect class="s-muted" x="50" y="278" width="50" height="4" rx="2"/>
+        <rect class="s-faint" x="50" y="290" width="60" height="10" rx="3"/>
+        <rect class="s-faint" x="50" y="306" width="60" height="10" rx="3"/>
+        <rect class="s-faint" x="50" y="322" width="60" height="10" rx="3"/>
+        <rect class="s-plum" x="50" y="370" width="60" height="14" rx="7"/>
+        <rect class="s-card" x="126" y="268" width="76" height="124" rx="4"/>
+        <rect class="s-plum" x="134" y="276" width="20" height="20" rx="4"/>
+        <rect class="s-text" x="134" y="304" width="44" height="4" rx="2"/>
+        <rect class="s-muted" x="134" y="314" width="58" height="3" rx="1.5"/>
+        <rect class="s-muted" x="134" y="322" width="52" height="3" rx="1.5"/>
+        <rect class="s-muted" x="134" y="330" width="58" height="3" rx="1.5"/>
+        <rect class="s-text" x="160" y="372" width="34" height="6" rx="3"/>
+
+        <!-- iPhone -->
+        <rect class="s-card" x="386" y="132" width="160" height="300" rx="30" style="stroke-width:2"/>
+        <rect class="s-bg2" x="396" y="142" width="140" height="280" rx="22"/>
+        <rect class="s-text" x="444" y="150" width="44" height="12" rx="6"/>
+        <rect class="s-text" x="410" y="178" width="78" height="7" rx="3.5"/>
+        <rect class="s-muted" x="410" y="191" width="54" height="5" rx="2.5"/>
+        <rect x="421" y="210" width="90" height="90" rx="10" fill="#fff" stroke="#e7dde7"/>
+        <g transform="translate(428 217) scale(3.04)" shape-rendering="crispEdges">
+          <path fill="#1d1422" d="M0 0h7v7H0zM18 0h7v7h-7zM0 18h7v7H0z"/><path fill="#fff" d="M1 1h5v5H1zM19 1h5v5h-5zM1 19h5v5H1z"/><path fill="#1d1422" d="M2 2h3v3H2zM20 2h3v3h-3zM2 20h3v3H2zM9 1h1v1H9zM11 0h2v2h-2zM14 2h2v1h-2zM9 4h3v1H9zM13 4h1v2h-1zM15 5h2v1h-2zM8 6h1v2H8zM10 7h2v1h-2zM0 9h2v1H0zM3 8h2v2H3zM6 9h3v1H6zM10 9h1v3h-1zM12 9h3v1h-3zM16 8h2v2h-2zM19 9h1v1h-1zM21 8h3v1h-3zM1 11h2v2H1zM4 12h3v1H4zM8 11h1v1H8zM12 11h2v2h-2zM15 11h1v3h-1zM17 12h3v1h-3zM22 11h2v2h-2zM0 14h1v2H0zM2 15h3v1H2zM6 14h2v2H6zM9 14h2v1H9zM11 16h3v1h-3zM17 14h1v2h-1zM19 15h2v1h-2zM23 15h2v1h-2zM8 18h2v1H8zM11 19h1v2h-1zM13 18h3v1h-3zM9 21h1v3H9zM12 22h2v1h-2zM15 20h1v2h-1zM17 18h3v3h-3zM18 19h1v1h-1zM21 18h1v2h-1zM23 18h1v1h-1zM22 21h2v1h-2zM17 22h1v3h-1zM19 23h2v1h-2zM14 23h1v2h-1zM23 23h2v2h-2z"/>
+        </g>
+        <text x="466" y="330" text-anchor="middle" class="s-text" style="font:700 19px -apple-system,BlinkMacSystemFont,sans-serif">[[21 175 Kč|CZK 21,175]]</text>
+        <text x="466" y="348" text-anchor="middle" class="s-muted" style="font:500 10px -apple-system,BlinkMacSystemFont,sans-serif;opacity:1">[[splatnost 21. 11. 2026|due 21 Nov 2026]]</text>
+        <rect class="s-plum" x="410" y="370" width="112" height="30" rx="15"/>
+        <rect x="438" y="383" width="56" height="5" rx="2.5" fill="#fff"/>
+        <rect class="s-text" x="440" y="410" width="52" height="4" rx="2"/>
+      </svg>

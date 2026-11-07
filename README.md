@@ -5,10 +5,11 @@ Statický web aplikace **iÚčetní** (iPhone, iPad, Mac). Hostuje se přes Clou
 ## Struktura
 | Cesta | Obsah |
 |---|---|
-| `public/index.html` | úvodní stránka (ilustrace jsou inline SVG) |
+| `src/pages/cs/`, `src/pages/en/` | **zdroj všech stránek** (úvod, MCP, podpora, podmínky, soukromí) |
+| `src/ill/` | ilustrace a ikony (SVG), vkládají se značkou `{{ill:název}}`; text `[[česky|english]]` |
+| `src/build.py` | sestaví `public/` – po každé úpravě spustit `python3 src/build.py` |
+| `public/` | hotový web (generovaný, needitovat ručně kromě `assets/`, `img/`, `404.html`, `_headers`) |
 | `public/assets/` | sdílené CSS a JS, bez externích závislostí |
-| `public/podpora/`, `podminky/`, `soukromi/` | podpora, podmínky použití, ochrana soukromí (URL pro App Store) |
-| `src/*.body.html`, `src/build.py` | zdroj podstránek – po úpravě spustit `python3 src/build.py` (převezme patičku z index.html) |
 | `public/404.html` | stránka „nenalezeno“ |
 | `public/_headers` | bezpečnostní hlavičky a cache |
 | `public/img/` | logo a ikony (malé PNG) |
@@ -25,8 +26,11 @@ Domény z `routes` se napojí automaticky, pokud je zóna iucetni.com ve stejné
 
 Ručně: `npx wrangler deploy`.
 
-## Adresy pro App Store Connect
-- Support URL: https://iucetni.com/podpora/
-- Privacy Policy URL: https://iucetni.com/soukromi/
-- Terms of Use (EULA): https://iucetni.com/podminky/ (doplňuje standardní EULA Apple)
-- Marketing URL: https://iucetni.com/
+## Adresy pro App Store Connect a adresáře MCP konektorů
+| | česky | anglicky |
+|---|---|---|
+| Marketing | https://iucetni.com/ | https://iucetni.com/en/ |
+| Support | https://iucetni.com/podpora/ | https://iucetni.com/en/support/ |
+| Privacy Policy | https://iucetni.com/soukromi/ | https://iucetni.com/en/privacy/ |
+| Terms of Use | https://iucetni.com/podminky/ | https://iucetni.com/en/terms/ |
+| MCP dokumentace | https://iucetni.com/mcp/ | https://iucetni.com/en/mcp/ |

@@ -17,9 +17,24 @@
   }else{els.forEach(function(el){el.classList.add('in')})}
 
   var root=document.documentElement,btn=document.getElementById('theme');
-  var modes=['auto','light','dark'],names={auto:'auto',light:'světlý',dark:'tmavý'};
+  var en=root.lang==='en',modes=['auto','light','dark'],names=en?{auto:'auto',light:'light',dark:'dark'}:{auto:'auto',light:'světlý',dark:'tmavý'},label=en?'Theme: ':'Motiv: ';
   var cur='auto';try{cur=localStorage.getItem('theme')||'auto'}catch(e){}
-  var apply=function(m){if(m==='auto')root.removeAttribute('data-theme');else root.setAttribute('data-theme',m);if(btn)btn.textContent='Motiv: '+names[m]};
+  var apply=function(m){if(m==='auto')root.removeAttribute('data-theme');else root.setAttribute('data-theme',m);if(btn)btn.textContent=label+names[m]};
   apply(cur);
   if(btn)btn.addEventListener('click',function(){cur=modes[(modes.indexOf(cur)+1)%3];try{localStorage.setItem('theme',cur)}catch(e){}apply(cur)});
+
+  // příběhy – záložky
+  var tabs=document.querySelectorAll('.case-tab');
+  var show=function(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on})};
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t)});
+    t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){var n=tabs[(i+d+tabs.length)%tabs.length];show(n);n.focus();e.preventDefault()}});
+  });
+
+  // kopírování adresy
+  document.querySelectorAll('.copy-btn').forEach(function(b){
+    b.addEventListener('click',function(){var t=b.getAttribute('data-copy'),o=b.textContent;
+      var done=function(){b.textContent=b.getAttribute('data-done')||'OK';setTimeout(function(){b.textContent=o},1500)};
+      if(navigator.clipboard)navigator.clipboard.writeText(t).then(done,function(){});});
+  });
 })();

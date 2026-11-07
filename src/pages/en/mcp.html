@@ -1,0 +1,72 @@
+title: MCP server – iÚčetní in Claude and ChatGPT
+description: Connect iÚčetní to Claude, ChatGPT or your own AI agent via MCP. Free in every plan, with OAuth 2.1 sign-in and EU data hosting.
+kind: doc
+key: mcp
+---
+<span class="eyebrow">MCP server · free</span>
+<h1>iÚčetní inside your Claude or ChatGPT</h1>
+<p class="meta">The Model Context Protocol (MCP) connects your invoices, customers and expenses with the AI you already use. The connection is free in every iÚčetní plan.</p>
+
+<div class="box">
+<p><strong>MCP server URL</strong></p>
+<div class="code" style="margin:8px 0 0"><code>https://api.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="https://api.iucetni.com/mcp" data-done="Copied">Copy</button></div>
+</div>
+
+<nav class="toc" aria-label="Contents">
+<a href="#claude">Claude</a><a href="#chatgpt">ChatGPT</a><a href="#agents">Other clients and agents</a><a href="#oauth">Authorization (OAuth)</a><a href="#tools">What the AI can do</a><a href="#security">Security</a><a href="#policies">Policies</a>
+</nav>
+
+<h2 id="claude">Connect in Claude</h2>
+<ol>
+<li>In Claude (web, desktop or mobile) open <strong>Settings → Connectors</strong> and choose <strong>Add custom connector</strong>.</li>
+<li>Enter <em>iÚčetní</em> as the name and <code>https://api.iucetni.com/mcp</code> as the URL.</li>
+<li>Click <strong>Connect</strong>. The iÚčetní sign-in page opens. Sign in with your account email and password.</li>
+<li>Approve access. That's it: in a new chat, try “Who hasn't paid me yet?”</li>
+</ol>
+
+<h2 id="chatgpt">Connect in ChatGPT</h2>
+<p>In ChatGPT settings, add a custom MCP connector (app) with the URL <code>https://api.iucetni.com/mcp</code>. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.</p>
+
+<h2 id="agents">Other clients and AI agents</h2>
+<p>The server supports the Streamable HTTP transport. OAuth-capable clients (Claude Code, Cursor and others) sign in on their own:</p>
+<div class="code"><code>claude mcp add --transport http iucetni https://api.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://api.iucetni.com/mcp" data-done="Copied">Copy</button></div>
+<p>For your own agents and automations without a sign-in window, issue an <strong>AI key</strong> in the app (Settings → AI keys → Issue key). You can limit it to selected companies and set an expiry. The key is shown only once and is sent as a header:</p>
+<div class="code"><code>Authorization: Bearer uct_…</code></div>
+<p>An agent can, for example, read orders in its own mailbox on <a href="https://namailu.cz" rel="noopener">namailu.cz</a>, prepare a matching invoice in iÚčetní and send it to the customer.</p>
+
+<h2 id="oauth">Authorization for developers</h2>
+<p>The MCP server implements OAuth 2.1 as defined by the MCP authorization specification:</p>
+<ul>
+<li>Authorization Code with PKCE (<code>S256</code>), refresh tokens and token revocation.</li>
+<li>Dynamic Client Registration (RFC 7591) at <code>https://api.iucetni.com/oauth/register</code>.</li>
+<li>Authorization server metadata (RFC 8414): <code>/.well-known/oauth-authorization-server</code>.</li>
+<li>Protected resource metadata (RFC 9728): <code>/.well-known/oauth-protected-resource</code>, referenced from the <code>WWW-Authenticate</code> header of 401 responses.</li>
+<li>Scope: <code>mcp</code>.</li>
+</ul>
+<p>When a user authorizes a client, they sign in with their iÚčetní account and approve access on a consent screen. Each authorization appears in the app under Settings → AI keys with an OAuth label and can be revoked there at any time.</p>
+
+<h2 id="tools">What the AI can do over MCP</h2>
+<p>Main tools exposed by the server:</p>
+<ul class="tools">
+<li><code>list_invoices</code>, <code>get_invoice</code> – documents and their status</li>
+<li><code>create_draft</code>, <code>update_invoice</code> – draft invoices</li>
+<li><code>issue_invoice</code> – issue a draft with the next number</li>
+<li><code>mark_invoice_paid</code> – record a payment</li>
+<li><code>list_customers</code>, <code>create_customer</code> – customers</li>
+<li><code>lookup_ares</code> – company details from the Czech ARES registry</li>
+<li><code>list_catalog</code>, <code>create_catalog_item</code> – price list</li>
+<li><code>list_expenses</code>, <code>create_expense</code>, <code>update_expense</code> – expenses</li>
+<li><code>read_receipt</code> – read a receipt or invoice</li>
+<li><code>list_companies</code>, <code>list_bank_accounts</code> – companies and accounts</li>
+</ul>
+
+<h2 id="security">Security and control</h2>
+<ul>
+<li><strong>Drafts instead of finished documents.</strong> Anything the AI creates is labelled “Draft · AI” and expenses carry an AI badge, so you can spot them at once.</li>
+<li><strong>Open documents are protected.</strong> The AI never writes to a document you have open in the app.</li>
+<li><strong>Revoke with one tap.</strong> Settings → AI keys lists every access (Claude and ChatGPT connections are labelled OAuth) and when it was last used.</li>
+<li><strong>Data stays in the EU.</strong> We store it on servers in the European Union. Only what the AI requests in a conversation is passed to your AI provider. See our <a href="/en/privacy/">Privacy Policy</a>.</li>
+</ul>
+
+<h2 id="policies">Policies and contact</h2>
+<p>Operator: NEMOSERVIS Praha s.r.o., Czech Republic. <a href="/en/privacy/">Privacy Policy</a> · <a href="/en/terms/">Terms of Use</a> · <a href="/en/support/">Support</a> · <a href="mailto:support@iucetni.com">support@iucetni.com</a></p>
