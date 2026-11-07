@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>iÚčetní – fakturace a daňová evidence pro iPhone, iPad a Mac</title>
-<meta name="description" content="Nativní aplikace pro iPhone, iPad a Mac: faktury s QR Platbou a ISDOC, čtení účtenek z fotek, export do Pohody a Money, daňová evidence a AI asistent. Zdarma s daty v cloudu.">
+<meta name="description" content="Nativní aplikace pro iPhone, iPad a Mac: faktury s QR Platbou a ISDOC, čtení účtenek z fotek, export do Pohody a Money, daňová evidence, MCP pro Claude a ChatGPT. Zdarma s daty v cloudu na serverech v EU.">
 <meta name="theme-color" content="#6e0a63" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#140d18" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://iucetni.com/">
@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://iucetni.com/img/icon-512.png">
 <script>try{var t=localStorage.getItem('theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iÚčetní","applicationCategory":"FinanceApplication","operatingSystem":"iOS 26, iPadOS 26, macOS 26","inLanguage":"cs","url":"https://iucetni.com/","description":"Fakturace a daňová evidence podle české legislativy pro iPhone, iPad a Mac.","publisher":{"@type":"Organization","name":"NEMOSERVIS Praha s.r.o.","email":"support@iucetni.com"},"offers":[{"@type":"Offer","name":"Zdarma","price":"0","priceCurrency":"CZK"},{"@type":"Offer","name":"iÚčetní Pro","price":"250","priceCurrency":"CZK"}]}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iÚčetní","applicationCategory":"FinanceApplication","operatingSystem":"iOS 26, iPadOS 26, macOS 26","inLanguage":"cs","url":"https://iucetni.com/","description":"Fakturace a daňová evidence podle české legislativy pro iPhone, iPad a Mac.","publisher":{"@type":"Organization","name":"NEMOSERVIS Praha s.r.o.","email":"support@iucetni.com"},"offers":{"@type":"Offer","name":"Zdarma","price":"0","priceCurrency":"CZK"}}
 </script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
@@ -55,7 +55,7 @@
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74s1.78.74 2.99.72c1.24-.02 2.02-1.12 2.77-2.23.88-1.28 1.24-2.52 1.26-2.59-.03-.01-2.42-.93-2.4-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.27z"/></svg>
           <span><small>Již brzy v</small><b>App Store</b></span>
         </a>
-        <a class="btn btn-ghost" href="#cenik">Zdarma a Pro</a>
+        <a class="btn btn-ghost" href="#cenik">Ceník</a>
       </div>
       <div class="platforms">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>iPhone</span>
@@ -389,13 +389,13 @@
 <section id="ai">
   <div class="wrap ai-grid">
     <div class="reveal">
-      <span class="eyebrow">AI asistent · 7 dní zdarma</span>
+      <span class="eyebrow">AI asistent · iÚčetní Pro · 7 dní zdarma</span>
       <h2>Řekněte, co fakturovat. <span class="grad">Zbytek připraví AI.</span></h2>
       <p class="lead" style="margin-top:14px">Asistent v aplikaci připraví koncept faktury, přečte účtenku nebo vám řekne, kdo vám dluží. Rozhodujete ale vždy vy.</p>
       <ul class="checks">
         <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Koncepty, ne hotové doklady</b><span>AI připraví koncept bez čísla. Fakturu z něj vystavíte vy jedním klepnutím.</span></div></li>
         <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Každý zápis potvrzujete</b><span>Bez vašeho souhlasu asistent nic neuloží a do dokladu, který máte otevřený, nezapisuje.</span></div></li>
-        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Claude, ChatGPT nebo vlastní klíč</b><span>Použijte vlastní klíč Claude či OpenAI, nebo si iÚčetní připojte přímo do Claude nebo ChatGPT přes MCP.</span></div></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Claude, OpenAI nebo vlastní klíč</b><span>Asistent v aplikaci je součástí verze Pro. MCP server je zdarma pro všechny: iÚčetní si připojíte přímo do své aplikace Claude nebo ChatGPT.</span></div></li>
       </ul>
     </div>
     <div class="chat reveal" aria-hidden="true">
@@ -439,51 +439,42 @@
   <div class="wrap">
     <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
       <span class="eyebrow">Ceník</span>
-      <h2>Zdarma pro fakturaci v cloudu</h2>
-      <p class="lead" style="margin:0 auto">Všechny funkce fakturace a daňové evidence jsou zdarma, když máte data v cloudu. Pro verze stojí 250 Kč ročně a data ukládá i přímo ve vašem zařízení.</p>
+      <h2>Fakturace zdarma. AI a lokální data v Pro.</h2>
+      <p class="lead" style="margin:0 auto">Fakturace a daňová evidence s daty v cloudu jsou zdarma, a to včetně připojení do Claude nebo ChatGPT přes MCP. Verze Pro přidává AI asistenta přímo v aplikaci a ukládání dat ve vašem zařízení.</p>
     </div>
-    <div class="plans">
+    <div class="plans two">
       <div class="plan reveal">
         <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><path class="s-plum-soft" d="M20 46h34a12 12 0 0 0 1-24 17 17 0 0 0-32-4A14 14 0 0 0 20 46z"/><path d="M20 46h34a12 12 0 0 0 1-24 17 17 0 0 0-32-4A14 14 0 0 0 20 46z" fill="none" stroke-width="2.5" class="k-plum"/><path d="m29 32 6 6 10-11" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="k-orange"/></svg>
         <h3>Zdarma</h3>
         <div class="price">0 Kč</div>
-        <p class="desc">Data bezpečně v cloudu, synchronizace mezi všemi zařízeními.</p>
+        <p class="desc">Data bezpečně v cloudu na serverech v EU a synchronizace mezi všemi zařízeními.</p>
         <ul class="ticks">
           <li>Faktury, zálohy a opravné doklady</li>
           <li>QR Platba a ISDOC v PDF</li>
           <li>Odběratelé z ARES a ceník</li>
           <li>Účtenky z fotek a výdaje</li>
           <li>Daňová evidence, přehledy a sestavy</li>
+          <li><b>MCP server</b>: připojte iÚčetní do Claude nebo ChatGPT</li>
           <li>iPhone, iPad i Mac</li>
         </ul>
       </div>
       <div class="plan featured reveal">
-        <span class="tag">Na vyzkoušení</span>
-        <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><path class="s-ai" d="M30 6l4.5 12.5L47 23l-12.5 4.5L30 40l-4.5-12.5L13 23l12.5-4.5z" opacity=".9"/><path class="s-orange" d="M54 28l2.4 6.6L63 37l-6.6 2.4L54 46l-2.4-6.6L45 37l6.6-2.4z"/><circle class="s-plum" cx="56" cy="12" r="3"/></svg>
-        <h3>AI asistent</h3>
-        <div class="price">7 dní <small>zdarma</small></div>
-        <p class="desc">Vyzkoušejte, jak se fakturuje, když za vás koncepty připravuje AI.</p>
-        <ul class="ticks">
-          <li>Koncepty faktur z běžné věty</li>
-          <li>Čtení účtenek a faktur pomocí AI</li>
-          <li>Dotazy na tržby, úhrady a dlužníky</li>
-          <li>Každý zápis potvrzujete vy</li>
-        </ul>
-      </div>
-      <div class="plan reveal">
-        <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><rect x="16" y="4" width="28" height="48" rx="6" fill="none" stroke-width="2.5" class="k-plum"/><rect class="s-plum-soft" x="20" y="10" width="20" height="34" rx="2"/><rect class="s-orange" x="40" y="28" width="22" height="18" rx="4"/><path d="M45 28v-4a6 6 0 0 1 12 0v4" fill="none" stroke-width="2.5" class="k-orange"/><circle cx="51" cy="37" r="2.4" fill="#fff"/></svg>
+        <span class="tag">7 dní zdarma</span>
+        <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><path class="s-ai" d="M26 6l4.5 12.5L43 23l-12.5 4.5L26 40l-4.5-12.5L9 23l12.5-4.5z" opacity=".9"/><rect x="42" y="24" width="20" height="28" rx="4" fill="none" stroke-width="2.5" class="k-plum"/><rect class="s-orange" x="47" y="34" width="10" height="9" rx="2"/><path d="M49 34v-2a3 3 0 0 1 6 0v2" fill="none" stroke-width="2" class="k-orange"/></svg>
         <h3>iÚčetní Pro</h3>
-        <div class="price">250 Kč <small>/ rok</small></div>
-        <p class="desc">Vše ze Zdarma a k tomu data uložená i lokálně ve vašem zařízení.</p>
+        <div class="price">Připravujeme</div>
+        <p class="desc">Všechno z verze Zdarma a k tomu AI asistent v aplikaci a data uložená i ve vašem zařízení.</p>
         <ul class="ticks">
           <li>Vše z verze Zdarma</li>
-          <li>Data i lokálně v zařízení</li>
+          <li><b>AI asistent</b> s Claude, OpenAI nebo vlastním klíčem</li>
+          <li>Koncepty faktur z běžné věty a čtení účtenek pomocí AI</li>
+          <li><b>Data i lokálně</b> v zařízení</li>
           <li>Jedno předplatné pro iPhone, iPad i Mac</li>
-          <li>Zrušíte kdykoli v nastavení Apple ID</li>
+          <li>7 dní zdarma na vyzkoušení</li>
         </ul>
       </div>
     </div>
-    <p class="plans-note">Ceny jsou včetně DPH. Předplatné se platí přes Apple ID a automaticky se obnovuje, dokud ho nezrušíte. Podrobnosti najdete v <a href="/podminky/">podmínkách použití</a>.</p>
+    <p class="plans-note">Cenu verze Pro zveřejníme při vydání aplikace. Předplatné se bude platit přes Apple ID a půjde kdykoli zrušit. Podrobnosti najdete v <a href="/podminky/">podmínkách použití</a>.</p>
   </div>
 </section>
 
@@ -493,7 +484,7 @@
     <div class="sec-head reveal">
       <span class="eyebrow">Bezpečnost a soukromí</span>
       <h2>Vaše čísla jsou v bezpečí</h2>
-      <p class="lead">Aplikace neobsahuje reklamy ani sledovací nástroje třetích stran. Data jsou vaše a kdykoli si je vyexportujete.</p>
+      <p class="lead">Data jsou uložená na serverech v EU. Aplikace neobsahuje reklamy ani sledovací nástroje třetích stran. Data jsou vaše a kdykoli si je vyexportujete.</p>
     </div>
     <div class="sec-grid">
       <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Face ID a Klíčenka</h3><p>Přístupové údaje jsou v Klíčence. Aplikaci můžete zamknout Face ID nebo Touch ID.</p></div>
@@ -513,13 +504,14 @@
     </div>
     <div class="faq">
       <details><summary>Pro koho je iÚčetní?</summary><p>Pro živnostníky a malé firmy, které fakturují a vedou daňovou evidenci. Hodí se pro plátce DPH, neplátce i identifikované osoby.</p></details>
-      <details><summary>Kolik iÚčetní stojí?</summary><p>S daty v cloudu je aplikace zdarma. AI asistenta si 7 dní vyzkoušíte zdarma. iÚčetní Pro za 250 Kč ročně ukládá data i lokálně ve vašem zařízení. Předplatné platí pro iPhone, iPad i Mac.</p></details>
+      <details><summary>Kolik iÚčetní stojí?</summary><p>Fakturace a daňová evidence s daty v cloudu jsou zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Vyzkoušíte ji 7 dní zdarma a její cenu zveřejníme při vydání. Předplatné platí pro iPhone, iPad i Mac.</p></details>
+      <details><summary>Kde jsou moje data?</summary><p>Na serverech v Evropské unii, přes které se synchronizují všechna vaše zařízení. Ve verzi Pro můžete data ukládat i přímo ve svém zařízení.</p></details>
       <details><summary>Na jakých zařízeních aplikace běží?</summary><p>Na iPhonu a iPadu se systémem iOS / iPadOS 26 a na Macu se systémem macOS 26 nebo novějším. V App Store je to jedna aplikace pro všechna tato zařízení.</p></details>
       <details><summary>Můžu přejít z Pohody, Fakturoidu nebo iDokladu?</summary><p>Ano. V aplikaci pro Mac načtete doklady ze souboru POHODA XML, který exportují Pohoda, Fakturoid i iDoklad. Vydané faktury naopak vyexportujete pro POHODU, Money S3 nebo ABRA Flexi.</p></details>
       <details><summary>Jak funguje čtení účtenek?</summary><p>Účtenku vyfotíte nebo naskenujete, případně vložíte PDF. Aplikace z ní načte dodavatele, IČO, datum, částku a DPH a vy jen zkontrolujete, co vyplnila. Snímek dokladu se uloží jako příloha výdaje.</p></details>
       <details><summary>Je to podvojné účetnictví?</summary><p>Ne. iÚčetní slouží k fakturaci a daňové evidenci (příjmy a výdaje, výdajové paušály). Přiznání k DPH a kontrolní hlášení připravujeme spolu s evidencí přijatých faktur.</p></details>
       <details><summary>Funguje aplikace bez internetu?</summary><p>Ano. Poslední data máte vždy po ruce a úpravy se odešlou, jakmile budete online. Nový doklad vytvořený offline je koncept, nebo dostane číslo z vlastní číselné řady zařízení.</p></details>
-      <details><summary>Jak funguje AI asistent a kam jdou data?</summary><p>Rozhovor s AI probíhá mezi vaším zařízením a zvoleným poskytovatelem AI. Každý zápis do dat potvrzujete vy. Podrobnosti najdete v <a href="/soukromi/">zásadách ochrany soukromí</a>.</p></details>
+      <details><summary>Jak funguje AI asistent a kam jdou data?</summary><p>AI asistent je součástí verze Pro. Rozhovor probíhá mezi vaším zařízením a zvoleným poskytovatelem (Claude, OpenAI nebo vlastní klíč) a každý zápis do dat potvrzujete vy. Zdarma si iÚčetní můžete připojit přes MCP do své aplikace Claude nebo ChatGPT. Podrobnosti najdete v <a href="/soukromi/">zásadách ochrany soukromí</a>.</p></details>
       <details><summary>Jak smažu účet?</summary><p>V aplikaci v Nastavení → Účet. Před smazáním si data vyexportujte, protože účetní doklady je potřeba archivovat. Postup najdete na stránce <a href="/podpora/">Podpora</a>.</p></details>
     </div>
   </div>
