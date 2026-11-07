@@ -5,7 +5,10 @@ Statický web aplikace **iÚčetní** (iPhone, iPad, Mac). Hostuje se přes Clou
 ## Struktura
 | Cesta | Obsah |
 |---|---|
-| `public/index.html` | celá úvodní stránka (CSS a JS inline, bez závislostí) |
+| `public/index.html` | úvodní stránka (ilustrace jsou inline SVG) |
+| `public/assets/` | sdílené CSS a JS, bez externích závislostí |
+| `public/podpora/`, `podminky/`, `soukromi/` | podpora, podmínky použití, ochrana soukromí (URL pro App Store) |
+| `src/*.body.html`, `src/build.py` | zdroj podstránek – po úpravě spustit `python3 src/build.py` (převezme patičku z index.html) |
 | `public/404.html` | stránka „nenalezeno“ |
 | `public/_headers` | bezpečnostní hlavičky a cache |
 | `public/img/` | logo a ikony (malé PNG) |
@@ -21,3 +24,9 @@ Build command nechat prázdný, deploy command `npx wrangler deploy`. Každý pu
 Domény z `routes` se napojí automaticky, pokud je zóna iucetni.com ve stejném účtu Cloudflare.
 
 Ručně: `npx wrangler deploy`.
+
+## Adresy pro App Store Connect
+- Support URL: https://iucetni.com/podpora/
+- Privacy Policy URL: https://iucetni.com/soukromi/
+- Terms of Use (EULA): https://iucetni.com/podminky/ (doplňuje standardní EULA Apple)
+- Marketing URL: https://iucetni.com/

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>iÚčetní – fakturace a daňová evidence pro iPhone, iPad a Mac</title>
-<meta name="description" content="Nativní aplikace pro fakturaci a daňovou evidenci podle české legislativy. Faktury s QR Platbou a ISDOC, ARES, kurzy ČNB, DPH, přehledy a AI asistent. Pro iPhone, iPad a Mac.">
+<meta name="description" content="Nativní aplikace pro iPhone, iPad a Mac: faktury s QR Platbou a ISDOC, čtení účtenek z fotek, export do Pohody a Money, daňová evidence a AI asistent. Zdarma s daty v cloudu.">
 <meta name="theme-color" content="#6e0a63" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#140d18" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://iucetni.com/">
@@ -15,292 +15,137 @@
 <meta property="og:locale" content="cs_CZ">
 <meta property="og:site_name" content="iÚčetní">
 <meta property="og:title" content="iÚčetní – fakturace a daňová evidence pro iPhone, iPad a Mac">
-<meta property="og:description" content="Faktury s QR Platbou a ISDOC, ARES, DPH, daňová evidence a AI asistent. Nativně na všech vašich zařízeních Apple.">
+<meta property="og:description" content="Faktury s QR Platbou a ISDOC, účtenky z fotek, export pro účetní a AI asistent. Nativně pro Apple, zdarma s daty v cloudu.">
 <meta property="og:url" content="https://iucetni.com/">
 <meta property="og:image" content="https://iucetni.com/img/icon-512.png">
+<script>try{var t=localStorage.getItem('theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iÚčetní","applicationCategory":"FinanceApplication","operatingSystem":"iOS 26, iPadOS 26, macOS 26","inLanguage":"cs","url":"https://iucetni.com/","description":"Fakturace a daňová evidence podle české legislativy pro iPhone, iPad a Mac."}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iÚčetní","applicationCategory":"FinanceApplication","operatingSystem":"iOS 26, iPadOS 26, macOS 26","inLanguage":"cs","url":"https://iucetni.com/","description":"Fakturace a daňová evidence podle české legislativy pro iPhone, iPad a Mac.","publisher":{"@type":"Organization","name":"NEMOSERVIS Praha s.r.o.","email":"support@iucetni.com"},"offers":[{"@type":"Offer","name":"Zdarma","price":"0","priceCurrency":"CZK"},{"@type":"Offer","name":"iÚčetní Pro","price":"250","priceCurrency":"CZK"}]}
 </script>
-<style>
-:root{
-  --plum:#6e0a63; --plum-2:#8d1a80; --orange:#ff7a00; --orange-2:#ff9a3d;
-  --bg:#fbf8fb; --bg-2:#f3edf3; --card:#ffffff; --text:#1d1422; --muted:#6b5f70;
-  --line:#e7dde7; --ok:#1f9d55; --warn:#d97706; --ai:#7c3aed;
-  --shadow:0 1px 2px rgba(40,10,40,.06),0 8px 30px rgba(60,10,60,.08);
-  --radius:18px; --max:1120px;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --plum:#e48ad8; --plum-2:#f0a8e6; --orange:#ff9a3d; --orange-2:#ffb26b;
-    --bg:#140d18; --bg-2:#1c1321; --card:#21172a; --text:#f4eef6; --muted:#b4a7ba;
-    --line:#33263b; --ok:#4ade80; --warn:#fbbf24; --ai:#a78bfa;
-    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
-  }
-}
-:root[data-theme="dark"]{
-  --plum:#e48ad8; --plum-2:#f0a8e6; --orange:#ff9a3d; --orange-2:#ffb26b;
-  --bg:#140d18; --bg-2:#1c1321; --card:#21172a; --text:#f4eef6; --muted:#b4a7ba;
-  --line:#33263b; --ok:#4ade80; --warn:#fbbf24; --ai:#a78bfa;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;line-height:1.15;letter-spacing:-.02em;margin:0}
-h1{font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:800}
-h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:750}
-h3{font-size:1.1rem;font-weight:650;letter-spacing:-.01em}
-p{margin:0}
-a{color:var(--plum)}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-.grad{background:linear-gradient(100deg,var(--plum) 10%,var(--orange) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
-.lead{font-size:1.15rem;color:var(--muted);max-width:40em}
-section{padding:88px 0}
-.sec-head{max-width:680px;margin-bottom:44px}
-.sec-head h2{margin:8px 0 14px}
-
-/* header */
-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
-header.scrolled{border-bottom-color:var(--line)}
-.nav{display:flex;align-items:center;gap:24px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:750;font-size:1.15rem;letter-spacing:-.01em}
-.brand img{width:32px;height:32px}
-.nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0}
-.nav ul a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500}
-.nav ul a:hover{color:var(--text)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .15s;cursor:pointer}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--plum);color:#fff;box-shadow:0 6px 20px color-mix(in srgb,var(--plum) 35%,transparent)}
-:root[data-theme="dark"] .btn-primary{color:#1a0d1a}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn-primary{color:#1a0d1a}}
-.btn-ghost{border-color:var(--line);color:var(--text);background:var(--card)}
-.btn-sm{padding:8px 16px;font-size:.9rem}
-.appstore{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:12px;background:var(--text);color:var(--bg);text-decoration:none;line-height:1.1}
-.appstore small{display:block;font-size:.7rem;opacity:.8}
-.appstore b{font-size:1.05rem;font-weight:650}
-.appstore svg{width:24px;height:24px}
-
-/* hero */
-.hero{padding:64px 0 72px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-30% -10% auto auto;width:720px;height:720px;background:radial-gradient(closest-side,color-mix(in srgb,var(--orange) 16%,transparent),transparent);pointer-events:none}
-.hero::after{content:"";position:absolute;inset:auto auto -40% -15%;width:640px;height:640px;background:radial-gradient(closest-side,color-mix(in srgb,var(--plum) 14%,transparent),transparent);pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:1}
-.hero h1{margin:14px 0 20px}
-.hero .lead{margin-bottom:30px}
-.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.platforms{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:28px;color:var(--muted);font-size:.92rem}
-.platforms span{display:inline-flex;align-items:center;gap:7px}
-.platforms svg{width:18px;height:18px;color:var(--plum)}
-
-/* invoice mock */
-.mock{position:relative}
-.invoice{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:26px;font-size:.86rem;transform:rotate(-1.2deg)}
-.inv-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
-.inv-top .t{font-weight:700;font-size:1rem}
-.inv-top .n{color:var(--muted);font-size:.8rem}
-.inv-logo{width:36px;height:36px}
-.inv-parties{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
-.inv-parties div{background:var(--bg-2);border-radius:12px;padding:10px 12px}
-.inv-parties small{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}
-.inv-parties b{display:block;font-size:.88rem}
-.inv-parties span{color:var(--muted);font-size:.76rem}
-.inv-items{width:100%;border-collapse:collapse;margin-bottom:14px}
-.inv-items th{text-align:left;color:var(--muted);font-weight:500;font-size:.72rem;padding:6px 0;border-bottom:1px solid var(--line)}
-.inv-items td{padding:8px 0;border-bottom:1px dashed var(--line)}
-.inv-items .r{text-align:right;font-variant-numeric:tabular-nums}
-.inv-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
-.qr{width:84px;height:84px;padding:6px;background:#fff;border-radius:10px;border:1px solid var(--line)}
-.qr-label{font-size:.7rem;color:var(--muted);margin-top:4px;text-align:center}
-.total small{display:block;color:var(--muted);font-size:.75rem;text-align:right}
-.total b{font-size:1.5rem;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.chip{position:absolute;display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:999px;padding:8px 14px;font-size:.82rem;font-weight:600;white-space:nowrap}
-.chip i{width:9px;height:9px;border-radius:50%;display:inline-block}
-.chip.c1{top:-14px;right:8%;animation:float 6s ease-in-out infinite}
-.chip.c2{bottom:22%;left:-26px;animation:float 7s ease-in-out infinite .8s}
-.chip.c3{bottom:-16px;right:14%;animation:float 6.5s ease-in-out infinite 1.6s}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-
-/* trust strip */
-.strip{border-block:1px solid var(--line);background:var(--bg-2);padding:22px 0}
-.strip ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;list-style:none;margin:0;padding:0;color:var(--muted);font-weight:600;font-size:.95rem}
-.strip li{display:flex;align-items:center;gap:8px}
-.strip li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--orange)}
-
-/* features */
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.card h3{margin:14px 0 8px}
-.card p{color:var(--muted);font-size:.95rem}
-.ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--plum) 11%,transparent);color:var(--plum)}
-.ico.o{background:color-mix(in srgb,var(--orange) 14%,transparent);color:var(--orange)}
-.ico svg{width:22px;height:22px}
-
-/* devices */
-.devices{background:var(--bg-2)}
-.dev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.dev{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.dev svg.big{width:40px;height:40px;color:var(--plum)}
-.dev h3{font-size:1.3rem;margin:14px 0 6px}
-.dev .sub{color:var(--muted);font-size:.9rem;margin-bottom:16px}
-.dev ul{margin:0;padding:0;list-style:none}
-.dev li{position:relative;padding:7px 0 7px 26px;font-size:.95rem;border-top:1px solid var(--line)}
-.dev li::before{content:"";position:absolute;left:2px;top:14px;width:12px;height:7px;border-left:2px solid var(--orange);border-bottom:2px solid var(--orange);transform:rotate(-45deg)}
-.sync{margin-top:26px;display:flex;gap:14px;align-items:center;justify-content:center;color:var(--muted);font-size:.95rem;text-align:center;flex-wrap:wrap}
-.sync code{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:2px 8px;font-size:.88rem;color:var(--text)}
-
-/* AI */
-.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.chat{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px;display:flex;flex-direction:column;gap:12px;font-size:.92rem}
-.msg{max-width:85%;padding:10px 14px;border-radius:16px}
-.msg.me{align-self:flex-end;background:var(--plum);color:#fff;border-bottom-right-radius:5px}
-:root[data-theme="dark"] .msg.me{color:#1a0d1a}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .msg.me{color:#1a0d1a}}
-.msg.bot{align-self:flex-start;background:var(--bg-2);border-bottom-left-radius:5px}
-.draft{border:1.5px dashed var(--ai);border-radius:14px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.draft small{color:var(--ai);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;display:block}
-.draft .btn{padding:7px 14px;font-size:.85rem}
-.checks{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
-.checks li{display:grid;grid-template-columns:28px 1fr;gap:12px}
-.checks li b{display:block}
-.checks li span{color:var(--muted);font-size:.95rem}
-.dot{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--ai) 15%,transparent);color:var(--ai)}
-.dot svg{width:15px;height:15px}
-
-/* tax */
-.tax{background:linear-gradient(135deg,var(--plum),color-mix(in srgb,var(--plum) 60%,var(--orange)));color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-:root[data-theme="dark"] .tax{background:linear-gradient(135deg,#3b0a35,#5a1d2a)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tax{background:linear-gradient(135deg,#3b0a35,#5a1d2a)}}
-.tax .eyebrow{color:#ffd0a3}
-.tax h2{margin:8px 0 14px}
-.tax p{opacity:.88}
-.tax table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.1);border-radius:16px;overflow:hidden;font-variant-numeric:tabular-nums}
-.tax th,.tax td{padding:11px 16px;text-align:left;font-size:.93rem}
-.tax th{font-weight:600;opacity:.8;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;background:rgba(0,0,0,.12)}
-.tax td{border-top:1px solid rgba(255,255,255,.14)}
-.tax td:last-child,.tax th:last-child{text-align:right}
-.tax .note{font-size:.82rem;opacity:.75;margin-top:12px}
-
-/* security */
-.sec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.sec-grid .card{padding:22px}
-
-/* faq */
-.faq{max-width:780px}
-details{border-bottom:1px solid var(--line);padding:4px 0}
-summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font-weight:600;font-size:1.05rem;position:relative}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"";position:absolute;right:6px;top:26px;width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s}
-details[open] summary::after{transform:rotate(-135deg);top:30px}
-details p{color:var(--muted);padding:0 0 20px}
-
-/* final cta */
-.final{text-align:center;padding:96px 0}
-.final img{width:72px;height:72px;margin-bottom:18px}
-.final h2{margin-bottom:14px}
-.final .lead{margin:0 auto 28px}
-.final .cta{justify-content:center}
-
-footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.9rem}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
-.foot a{color:var(--muted);text-decoration:none}
-.foot a:hover{color:var(--text)}
-.foot nav{display:flex;gap:20px;flex-wrap:wrap}
-.theme-btn{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
-
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}.chip{animation:none}html{scroll-behavior:auto}}
-
-@media (max-width:980px){
-  .hero-grid,.ai-grid,.tax{grid-template-columns:1fr}
-  .grid,.dev-grid{grid-template-columns:1fr 1fr}
-  .sec-grid{grid-template-columns:1fr 1fr}
-  .nav ul{display:none}
-  .nav .btn{margin-left:auto}
-  .mock{max-width:520px;margin:0 auto;width:100%}
-  .tax{padding:36px}
-}
-@media (max-width:620px){
-  .wrap{padding:0 16px}
-  section{padding:64px 0}
-  .grid,.dev-grid,.sec-grid{grid-template-columns:1fr}
-  .hero{padding:40px 0 56px}
-  .invoice{padding:18px;transform:none}
-  .inv-parties{grid-template-columns:1fr}
-  .chip.c2{left:-6px}
-  .tax{padding:28px 20px;border-radius:22px}
-  .tax th,.tax td{padding:9px 10px}
-}
-</style>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 
 <header id="top">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="iÚčetní – úvod"><img src="/img/logo.png" alt="" width="32" height="32">iÚčetní</a>
-    <ul>
+    <a class="brand" href="/" aria-label="iÚčetní – úvod"><img src="/img/logo.png" alt="" width="32" height="32">iÚčetní</a>
+    <ul id="menu">
       <li><a href="#funkce">Funkce</a></li>
-      <li><a href="#zarizeni">Zařízení</a></li>
+      <li><a href="#apple">Pro Apple</a></li>
+      <li><a href="#doklady">Účtenky z fotek</a></li>
       <li><a href="#ai">AI asistent</a></li>
-      <li><a href="#evidence">Daňová evidence</a></li>
-      <li><a href="#faq">Otázky</a></li>
+      <li><a href="#cenik">Ceník</a></li>
+      <li><a href="/podpora/">Podpora</a></li>
     </ul>
     <a class="btn btn-primary btn-sm" href="#stahnout">Brzy v App Store</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
 <main>
+<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Pro OSVČ a malé firmy</span>
-      <h1>Fakturace a daňová evidence <span class="grad">na všech vašich zařízeních Apple</span></h1>
-      <p class="lead">iÚčetní je nativní aplikace pro iPhone, iPad a Mac. Vystavíte fakturu s QR Platbou a ISDOC, pohlídáte úhrady a na konci roku máte připravenou knihu příjmů a výdajů. Podle české legislativy, pro plátce i neplátce DPH.</p>
+      <span class="eyebrow">Vytvořeno pro Apple</span>
+      <h1>Fakturace a daňová evidence <span class="grad">pro iPhone, iPad a Mac</span></h1>
+      <p class="lead">Nativní aplikace, která na iPhonu, iPadu i Macu působí jako jejich přirozená součást. Fakturu s QR Platbou vystavíte za minutu, účtenku jen vyfotíte a na konci roku máte připravenou knihu příjmů a výdajů. Podle české legislativy, <strong>zdarma s daty v cloudu</strong>.</p>
       <div class="cta">
         <a class="appstore" href="#stahnout" aria-label="Brzy v App Store">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74s1.78.74 2.99.72c1.24-.02 2.02-1.12 2.77-2.23.88-1.28 1.24-2.52 1.26-2.59-.03-.01-2.42-.93-2.4-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.27z"/></svg>
           <span><small>Již brzy v</small><b>App Store</b></span>
         </a>
-        <a class="btn btn-ghost" href="#funkce">Prohlédnout funkce</a>
+        <a class="btn btn-ghost" href="#cenik">Zdarma a Pro</a>
       </div>
       <div class="platforms">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>iPhone</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>iPad</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>Mac</span>
+        <span>· jedna aplikace pro všechna zařízení</span>
       </div>
     </div>
 
-    <div class="mock" aria-hidden="true">
-      <div class="invoice">
-        <div class="inv-top">
-          <div><div class="t">Faktura – daňový doklad</div><div class="n">č. 20260042 · VS 20260042</div></div>
-          <img class="inv-logo" src="/img/logo.png" alt="">
-        </div>
-        <div class="inv-parties">
-          <div><small>Dodavatel</small><b>Novák Design s.r.o.</b><span>IČO 12345678 · DIČ CZ12345678</span></div>
-          <div><small>Odběratel</small><b>Kavárna U Mostu</b><span>IČO 87654321 · z ARES</span></div>
-        </div>
-        <table class="inv-items">
-          <thead><tr><th>Položka</th><th class="r">DPH</th><th class="r">Celkem</th></tr></thead>
-          <tbody>
-            <tr><td>Grafický návrh menu</td><td class="r">21 %</td><td class="r">14 520,00</td></tr>
-            <tr><td>Tisk 200 ks</td><td class="r">21 %</td><td class="r">6 050,00</td></tr>
-            <tr><td>Doprava</td><td class="r">21 %</td><td class="r">605,00</td></tr>
-          </tbody>
-        </table>
-        <div class="inv-bottom">
-          <div>
-            <svg class="qr" viewBox="0 0 25 25" shape-rendering="crispEdges"><path fill="#1d1422" d="M0 0h7v7H0zM18 0h7v7h-7zM0 18h7v7H0z"/><path fill="#fff" d="M1 1h5v5H1zM19 1h5v5h-5zM1 19h5v5H1z"/><path fill="#1d1422" d="M2 2h3v3H2zM20 2h3v3h-3zM2 20h3v3H2zM9 1h1v1H9zM11 0h2v2h-2zM14 2h2v1h-2zM9 4h3v1H9zM13 4h1v2h-1zM15 5h2v1h-2zM8 6h1v2H8zM10 7h2v1h-2zM0 9h2v1H0zM3 8h2v2H3zM6 9h3v1H6zM10 9h1v3h-1zM12 9h3v1h-3zM16 8h2v2h-2zM19 9h1v1h-1zM21 8h3v1h-3zM1 11h2v2H1zM4 12h3v1H4zM8 11h1v1H8zM12 11h2v2h-2zM15 11h1v3h-1zM17 12h3v1h-3zM22 11h2v2h-2zM0 14h1v2H0zM2 15h3v1H2zM6 14h2v2H6zM9 14h2v1H9zM11 16h3v1h-3zM17 14h1v2h-1zM19 15h2v1h-2zM23 15h2v1h-2zM8 18h2v1H8zM11 19h1v2h-1zM13 18h3v1h-3zM9 21h1v3H9zM12 22h2v1h-2zM15 20h1v2h-1zM17 18h3v3h-3zM18 19h1v1h-1zM21 18h1v2h-1zM23 18h1v1h-1zM22 21h2v1h-2zM17 22h1v3h-1zM19 23h2v1h-2zM14 23h1v2h-1zM23 23h2v2h-2z"/></svg>
-            <div class="qr-label">QR Platba</div>
-          </div>
-          <div class="total"><small>Celkem k úhradě</small><b>21 175,00 Kč</b></div>
-        </div>
-      </div>
+    <div class="hero-devices" aria-hidden="true">
+      <svg class="ill" viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
+        <!-- Mac -->
+        <rect class="s-card" x="10" y="20" width="440" height="282" rx="16"/>
+        <rect class="s-bg2" x="22" y="32" width="416" height="258" rx="8"/>
+        <rect class="s-card" x="22" y="32" width="104" height="258" rx="8" style="stroke:none;opacity:.7"/>
+        <circle cx="36" cy="46" r="4" fill="#ff5f57"/><circle cx="50" cy="46" r="4" fill="#febc2e"/><circle cx="64" cy="46" r="4" fill="#28c840"/>
+        <rect class="s-plum-soft" x="32" y="66" width="84" height="16" rx="5"/>
+        <rect class="s-plum" x="40" y="72" width="44" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="94" width="56" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="112" width="40" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="130" width="60" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="148" width="48" height="4" rx="2"/>
+        <rect class="s-muted" x="40" y="166" width="36" height="4" rx="2"/>
+        <!-- dlaždice -->
+        <rect class="s-card" x="138" y="46" width="90" height="44" rx="8"/>
+        <rect class="s-muted" x="148" y="56" width="40" height="4" rx="2"/>
+        <rect class="s-text" x="148" y="70" width="58" height="8" rx="3"/>
+        <rect class="s-card" x="236" y="46" width="90" height="44" rx="8"/>
+        <rect class="s-muted" x="246" y="56" width="44" height="4" rx="2"/>
+        <rect class="s-orange" x="246" y="70" width="48" height="8" rx="3"/>
+        <rect class="s-card" x="334" y="46" width="92" height="44" rx="8"/>
+        <rect class="s-muted" x="344" y="56" width="36" height="4" rx="2"/>
+        <rect class="s-ok" x="344" y="70" width="54" height="8" rx="3"/>
+        <!-- řádky dokladů -->
+        <g>
+          <rect class="s-card" x="138" y="102" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="114" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="114" width="80" height="5" rx="2.5"/>
+          <rect class="s-ok" x="352" y="111" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ok" x="362" y="115" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="138" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="150" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="150" width="64" height="5" rx="2.5"/>
+          <rect class="s-orange" x="352" y="147" width="62" height="12" rx="6" opacity=".2"/><rect class="s-orange" x="362" y="151" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="174" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="186" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="186" width="90" height="5" rx="2.5"/>
+          <rect class="s-ai" x="352" y="183" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ai" x="362" y="187" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="210" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="222" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="222" width="70" height="5" rx="2.5"/>
+          <rect class="s-ok" x="352" y="219" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ok" x="362" y="223" width="42" height="4" rx="2"/>
+          <rect class="s-card" x="138" y="246" width="288" height="30" rx="7"/>
+          <rect class="s-text" x="150" y="258" width="58" height="5" rx="2.5"/><rect class="s-muted" x="220" y="258" width="56" height="5" rx="2.5"/>
+          <rect class="s-ok" x="352" y="255" width="62" height="12" rx="6" opacity=".2"/><rect class="s-ok" x="362" y="259" width="42" height="4" rx="2"/>
+        </g>
+        <path class="s-card" d="M-4 302h468l-14 16H10z"/>
+        <rect class="s-faint" x="190" y="303" width="80" height="5" rx="2.5"/>
+
+        <!-- iPad -->
+        <rect class="s-card" x="24" y="250" width="196" height="160" rx="16"/>
+        <rect class="s-bg2" x="34" y="260" width="176" height="140" rx="8"/>
+        <rect class="s-card" x="42" y="268" width="76" height="124" rx="6"/>
+        <rect class="s-muted" x="50" y="278" width="50" height="4" rx="2"/>
+        <rect class="s-faint" x="50" y="290" width="60" height="10" rx="3"/>
+        <rect class="s-faint" x="50" y="306" width="60" height="10" rx="3"/>
+        <rect class="s-faint" x="50" y="322" width="60" height="10" rx="3"/>
+        <rect class="s-plum" x="50" y="370" width="60" height="14" rx="7"/>
+        <rect class="s-card" x="126" y="268" width="76" height="124" rx="4"/>
+        <rect class="s-plum" x="134" y="276" width="20" height="20" rx="4"/>
+        <rect class="s-text" x="134" y="304" width="44" height="4" rx="2"/>
+        <rect class="s-muted" x="134" y="314" width="58" height="3" rx="1.5"/>
+        <rect class="s-muted" x="134" y="322" width="52" height="3" rx="1.5"/>
+        <rect class="s-muted" x="134" y="330" width="58" height="3" rx="1.5"/>
+        <rect class="s-text" x="160" y="372" width="34" height="6" rx="3"/>
+
+        <!-- iPhone -->
+        <rect class="s-card" x="386" y="132" width="160" height="300" rx="30" style="stroke-width:2"/>
+        <rect class="s-bg2" x="396" y="142" width="140" height="280" rx="22"/>
+        <rect class="s-text" x="444" y="150" width="44" height="12" rx="6"/>
+        <rect class="s-text" x="410" y="178" width="78" height="7" rx="3.5"/>
+        <rect class="s-muted" x="410" y="191" width="54" height="5" rx="2.5"/>
+        <rect x="421" y="210" width="90" height="90" rx="10" fill="#fff" stroke="#e7dde7"/>
+        <g transform="translate(428 217) scale(3.04)" shape-rendering="crispEdges">
+          <path fill="#1d1422" d="M0 0h7v7H0zM18 0h7v7h-7zM0 18h7v7H0z"/><path fill="#fff" d="M1 1h5v5H1zM19 1h5v5h-5zM1 19h5v5H1z"/><path fill="#1d1422" d="M2 2h3v3H2zM20 2h3v3h-3zM2 20h3v3H2zM9 1h1v1H9zM11 0h2v2h-2zM14 2h2v1h-2zM9 4h3v1H9zM13 4h1v2h-1zM15 5h2v1h-2zM8 6h1v2H8zM10 7h2v1h-2zM0 9h2v1H0zM3 8h2v2H3zM6 9h3v1H6zM10 9h1v3h-1zM12 9h3v1h-3zM16 8h2v2h-2zM19 9h1v1h-1zM21 8h3v1h-3zM1 11h2v2H1zM4 12h3v1H4zM8 11h1v1H8zM12 11h2v2h-2zM15 11h1v3h-1zM17 12h3v1h-3zM22 11h2v2h-2zM0 14h1v2H0zM2 15h3v1H2zM6 14h2v2H6zM9 14h2v1H9zM11 16h3v1h-3zM17 14h1v2h-1zM19 15h2v1h-2zM23 15h2v1h-2zM8 18h2v1H8zM11 19h1v2h-1zM13 18h3v1h-3zM9 21h1v3H9zM12 22h2v1h-2zM15 20h1v2h-1zM17 18h3v3h-3zM18 19h1v1h-1zM21 18h1v2h-1zM23 18h1v1h-1zM22 21h2v1h-2zM17 22h1v3h-1zM19 23h2v1h-2zM14 23h1v2h-1zM23 23h2v2h-2z"/>
+        </g>
+        <text x="466" y="330" text-anchor="middle" class="s-text" style="font:700 19px -apple-system,BlinkMacSystemFont,sans-serif">21 175 Kč</text>
+        <text x="466" y="348" text-anchor="middle" class="s-muted" style="font:500 10px -apple-system,BlinkMacSystemFont,sans-serif;opacity:1">splatnost 21. 11. 2026</text>
+        <rect class="s-plum" x="410" y="370" width="112" height="30" rx="15"/>
+        <rect x="438" y="383" width="56" height="5" rx="2.5" fill="#fff"/>
+        <rect class="s-text" x="440" y="410" width="52" height="4" rx="2"/>
+      </svg>
       <span class="chip c1"><i style="background:var(--ok)"></i>Uhrazeno 12. 11.</span>
-      <span class="chip c2"><i style="background:var(--plum)"></i>ISDOC vložený v PDF</span>
-      <span class="chip c3"><i style="background:var(--ai)"></i>Koncept od AI</span>
+      <span class="chip c2" style="bottom:auto;top:8%;left:-6px"><i style="background:var(--plum)"></i>ISDOC vložený v PDF</span>
+      <span class="chip c3" style="right:auto;left:38%;bottom:-10px"><i style="background:var(--ai)"></i>Koncept od AI</span>
     </div>
   </div>
 </section>
@@ -308,74 +153,195 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
 <div class="strip">
   <div class="wrap">
     <ul>
-      <li>ISDOC 6.0.2</li><li>QR Platba</li><li>ARES</li><li>Kurzy ČNB</li><li>DPH 21 / 12 / 0 %</li><li>Přenesená daňová povinnost</li>
+      <li>ISDOC 6.0.2</li><li>QR Platba</li><li>ARES</li><li>Kurzy ČNB</li><li>POHODA · Money · ABRA</li><li>DPH 21 / 12 / 0 %</li>
     </ul>
   </div>
 </div>
 
+<!-- ============ FUNKCE ============ -->
 <section id="funkce">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Funkce</span>
       <h2>Vše pro fakturaci, nic navíc</h2>
-      <p class="lead">Vystavíte doklad, odešlete ho a víte, kdo vám dluží. Aplikace hlídá legislativní náležitosti za vás.</p>
+      <p class="lead">Vystavíte doklad, odešlete ho a víte, kdo vám dluží. Na legislativní náležitosti dokladů dohlíží aplikace.</p>
     </div>
     <div class="grid">
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div>
         <h3>Faktury, zálohy, dobropisy</h3>
-        <p>Faktury, zálohové faktury i opravné daňové doklady. Živý náhled PDF už při psaní a číselné řady podle vzoru, třeba <code>{RRRR}{NNNN}</code>.</p>
+        <p>Faktury, zálohové faktury i opravné daňové doklady. Výsledné PDF vidíte už při psaní a čísla dokladů se řadí podle vzoru, třeba 20260001.</p>
       </article>
       <article class="card reveal">
         <div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v.01M14 21h3M21 18v3h-1"/></svg></div>
         <h3>QR Platba a ISDOC</h3>
-        <p>QR kód pro platbu na každé faktuře. Elektronická faktura ISDOC 6.0.2 je vložená přímo v PDF, takže si ji odběratel načte do svého účetnictví.</p>
+        <p>Na každé faktuře je QR kód pro platbu. Elektronická faktura ISDOC 6.0.2 je vložená přímo v PDF, takže si ji odběratel načte do svého účetnictví.</p>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.4-5.5 6.5-5.5s5.7 2.1 6.5 5.5"/><path d="M17 4.5a3.5 3.5 0 0 1 0 7M19 14.8c1.4.9 2.3 2.6 2.6 5.2"/></svg></div>
         <h3>Odběratelé z ARES</h3>
-        <p>Zadáte IČO a aplikace doplní název, DIČ i adresu. Ke každému odběrateli si nastavíte vlastní splatnost, zkratku a interní poznámku.</p>
+        <p>Zadáte IČO a aplikace doplní název, DIČ i adresu. Každému odběrateli můžete nastavit vlastní splatnost, zkratku a interní poznámku.</p>
       </article>
       <article class="card reveal">
         <div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2"/></svg></div>
         <h3>Ceník položek</h3>
-        <p>Uložené položky s interním kódem vložíte do faktury jedním klepnutím. Ve výběru jsou nahoře položky daného odběratele.</p>
+        <p>Uložené položky s interním kódem vložíte do faktury jedním klepnutím. Ve výběru se nahoře zobrazí položky daného odběratele.</p>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
         <h3>DPH a cizí měny</h3>
-        <p>Sazby 21, 12 i 0 %, přenesená daňová povinnost, plnění do EU, vývoz i osvobozená plnění. U cizí měny se kurz ČNB a rekapitulace DPH v Kč doplní samy.</p>
+        <p>Sazby 21, 12 i 0 %, přenesená daňová povinnost, plnění do EU, vývoz i osvobozená plnění. U cizí měny aplikace sama doplní kurz ČNB a rekapitulaci DPH v Kč.</p>
       </article>
       <article class="card reveal">
-        <div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.5L4 17.5z"/><path d="m4 6 8 5 8-5"/></svg></div>
-        <h3>Tisk, e-mail, PDF</h3>
-        <p>Odeslání přes Mail jedním klepnutím, tisk přes AirPrint, PDF do Souborů nebo přes AirDrop. Funguje to i pro víc dokladů najednou.</p>
-      </article>
-      <article class="card reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
         <h3>Přehledy a sestavy</h3>
-        <p>Fakturováno, uhrazeno, neuhrazeno a po splatnosti. Graf tržeb po měsících, statistika podle odběratelů a sestavy do PDF i CSV.</p>
-      </article>
-      <article class="card reveal">
-        <div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-        <h3>Úhrady pod kontrolou</h3>
-        <p>Úhradu označíte potažením prstu nebo hromadně. Doklady po splatnosti uvidíte hned. Na místě ukážete zákazníkovi velký QR kód a zaplatí rovnou z banky.</p>
-      </article>
-      <article class="card reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
-        <h3>Více firem v jedné aplikaci</h3>
-        <p>Plátce DPH, neplátce i identifikovaná osoba. Každá firma má vlastní odběratele, ceník, číselné řady, bankovní účty a logo.</p>
+        <p>Kolik jste vyfakturovali, kolik vám zaplatili, co je po splatnosti. K tomu graf tržeb po měsících, statistika podle odběratelů a sestavy do PDF i CSV.</p>
       </article>
     </div>
   </div>
 </section>
 
+<!-- ============ PRO APPLE ============ -->
+<section id="apple" class="apple">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Pro Apple</span>
+      <h2>Ne webová stránka v obalu. <span class="grad">Opravdu nativní aplikace.</span></h2>
+      <p class="lead">iÚčetní je napsané ve Swiftu a SwiftUI pro iOS 26, iPadOS 26 a macOS 26. Používá to, co vaše zařízení Apple už umí, a chová se tak, jak jste zvyklí.</p>
+    </div>
+    <div class="apple-grid">
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 1 4 4v4a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><div><b>Siri a Zkratky</b><span>„Kolik mám neuhrazeno v iÚčetní?“ nebo „Nová faktura v iÚčetní“.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M9 9v1M15 9v1M12 9v4h-1M9.5 15.5c1.4 1 3.6 1 5 0"/></svg><div><b>Face ID a Touch ID</b><span>Aplikaci zamknete biometrií a v přepínači aplikací je obsah skrytý.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 6V4h10v2M7 14h10v6H7z"/></svg><div><b>AirPrint</b><span>Tisk jednoho i více dokladů jedním klepnutím.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12v9M8 17l4 4 4-4"/><path d="M5 13a7 7 0 1 1 14 0M8.5 13a3.5 3.5 0 1 1 7 0"/></svg><div><b>AirDrop a Soubory</b><span>PDF a ISDOC uložíte do Souborů nebo pošlete přes AirDrop.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><div><b>Apple Mail</b><span>Zpráva s fakturou v příloze a předvyplněným textem je hned připravená.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M8 9h8M8 12h8M8 15h5"/></svg><div><b>Skener dokumentů</b><span>Systémový skener ořízne a narovná účtenku, i když má víc stran.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 8-8M16 7l2 2M14 9l2 2"/></svg><div><b>Klíčenka</b><span>Přístupové údaje jsou uložené v Klíčence, nikde jinde.</span></div></div>
+      <div class="apple-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg><div><b>Spotlight a rychlé akce</b><span>Podržením ikony založíte novou fakturu nebo výdaj.</span></div></div>
+    </div>
+    <div class="apple-banner reveal"><span><b>Jeden nákup v App Store</b> pro iPhone, iPad i Mac. Stejná aplikace, stejná data, stejné ovládání.</span></div>
+  </div>
+</section>
+
+<!-- ============ ÚČTENKY Z FOTEK ============ -->
+<section id="doklady">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Účtenky a přijaté faktury</span>
+      <h2>Vyfoťte účtenku. <span class="grad">Údaje se vyplní samy.</span></h2>
+      <p class="lead">Výdaje nemusíte přepisovat. Účtenku vyfotíte, nebo vložíte PDF faktury od dodavatele, a aplikace z ní načte údaje.</p>
+      <ul class="ticks">
+        <li><b>Fotka, sken nebo PDF.</b> <small>Skener dokument ořízne a narovná. Vícestránkový doklad uloží jako jedno PDF.</small></li>
+        <li><b>Automatické vyplnění.</b> <small>Dodavatel, IČO, číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.</small></li>
+        <li><b>Snímek zůstane u výdaje.</b> <small>Originál dokladu máte vždy po ruce. Stačí ho otevřít přímo u výdaje.</small></li>
+        <li><b>ISDOC rovnou do výdajů.</b> <small>Elektronickou fakturu od dodavatele načtete i se všemi údaji.</small></li>
+      </ul>
+    </div>
+    <div class="ill-wrap reveal" aria-hidden="true">
+      <svg class="ill" viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg">
+        <circle class="s-orange-soft" cx="170" cy="210" r="160"/>
+        <!-- telefon -->
+        <rect class="s-card" x="70" y="30" width="200" height="350" rx="34" style="stroke-width:2"/>
+        <rect x="82" y="42" width="176" height="326" rx="26" fill="#1d1422"/>
+        <rect x="146" y="52" width="48" height="12" rx="6" fill="#000"/>
+        <!-- účtenka v hledáčku -->
+        <g transform="rotate(-4 170 200)">
+          <path d="M118 96h104v196l-8-6-9 6-9-6-9 6-9-6-9 6-9-6-9 6-9-6-9 6-8-6z" fill="#fffdf8"/>
+          <rect x="136" y="110" width="68" height="7" rx="3.5" fill="#1d1422"/>
+          <rect x="130" y="126" width="80" height="4" rx="2" fill="#b8aebb"/>
+          <rect x="130" y="136" width="60" height="4" rx="2" fill="#b8aebb"/>
+          <path d="M130 150h80" stroke="#d9d0db" stroke-dasharray="3 3"/>
+          <rect x="130" y="160" width="50" height="4" rx="2" fill="#8a7f8d"/><rect x="190" y="160" width="20" height="4" rx="2" fill="#8a7f8d"/>
+          <rect x="130" y="172" width="40" height="4" rx="2" fill="#8a7f8d"/><rect x="194" y="172" width="16" height="4" rx="2" fill="#8a7f8d"/>
+          <rect x="130" y="184" width="56" height="4" rx="2" fill="#8a7f8d"/><rect x="188" y="184" width="22" height="4" rx="2" fill="#8a7f8d"/>
+          <path d="M130 198h80" stroke="#d9d0db" stroke-dasharray="3 3"/>
+          <rect x="130" y="208" width="34" height="7" rx="3" fill="#1d1422"/><rect x="176" y="208" width="34" height="7" rx="3" fill="#1d1422"/>
+          <rect x="140" y="232" width="60" height="22" rx="2" fill="#efe9ef"/>
+          <rect x="144" y="236" width="2" height="14" fill="#1d1422"/><rect x="149" y="236" width="1" height="14" fill="#1d1422"/><rect x="152" y="236" width="3" height="14" fill="#1d1422"/><rect x="158" y="236" width="1" height="14" fill="#1d1422"/><rect x="161" y="236" width="2" height="14" fill="#1d1422"/><rect x="166" y="236" width="1" height="14" fill="#1d1422"/><rect x="169" y="236" width="3" height="14" fill="#1d1422"/><rect x="175" y="236" width="1" height="14" fill="#1d1422"/><rect x="178" y="236" width="2" height="14" fill="#1d1422"/><rect x="183" y="236" width="1" height="14" fill="#1d1422"/><rect x="186" y="236" width="3" height="14" fill="#1d1422"/><rect x="192" y="236" width="2" height="14" fill="#1d1422"/>
+        </g>
+        <!-- rohy hledáčku -->
+        <g fill="none" stroke-width="4" stroke-linecap="round" class="k-orange">
+          <path d="M104 100v-16h16M236 100v-16h-16M104 290v16h16M236 290v16h-16"/>
+        </g>
+        <rect class="scanline s-orange" x="104" y="110" width="132" height="3" rx="1.5" opacity=".85"/>
+        <!-- spoušť -->
+        <circle cx="170" cy="340" r="17" fill="none" stroke="#fff" stroke-width="3"/>
+        <circle cx="170" cy="340" r="12" fill="#fff"/>
+        <!-- šipka -->
+        <path d="M282 200c22 0 34-8 46-20" fill="none" stroke-width="2.5" stroke-dasharray="5 6" class="k-plum"/>
+        <path class="s-plum" d="m326 172 12 2-4 12z"/>
+        <!-- karta výdaje -->
+        <rect class="s-card" x="300" y="112" width="210" height="236" rx="18" style="filter:drop-shadow(0 10px 20px rgba(60,10,60,.12))"/>
+        <text x="320" y="144" class="s-text" style="font:700 14px -apple-system,BlinkMacSystemFont,sans-serif">Nový výdaj</text>
+        <g style="font:500 10.5px -apple-system,BlinkMacSystemFont,sans-serif">
+          <text x="320" y="172" class="s-muted" style="opacity:1">Dodavatel</text><rect class="s-text" x="390" y="164" width="80" height="7" rx="3.5"/>
+          <text x="320" y="200" class="s-muted" style="opacity:1">IČO</text><rect class="s-text" x="390" y="192" width="56" height="7" rx="3.5"/>
+          <text x="320" y="228" class="s-muted" style="opacity:1">Datum</text><rect class="s-text" x="390" y="220" width="50" height="7" rx="3.5"/>
+          <text x="320" y="256" class="s-muted" style="opacity:1">DPH</text><rect class="s-text" x="390" y="248" width="40" height="7" rx="3.5"/>
+          <text x="320" y="284" class="s-muted" style="opacity:1">Celkem</text>
+        </g>
+        <text x="390" y="290" class="s-text" style="font:800 17px -apple-system,BlinkMacSystemFont,sans-serif">1 249 Kč</text>
+        <g class="s-ok">
+          <circle cx="488" cy="168" r="7"/><circle cx="488" cy="196" r="7"/><circle cx="488" cy="224" r="7"/><circle cx="488" cy="252" r="7"/><circle cx="488" cy="281" r="7"/>
+        </g>
+        <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m485 168 2 2 4-4M485 196l2 2 4-4M485 224l2 2 4-4M485 252l2 2 4-4M485 281l2 2 4-4"/>
+        </g>
+        <rect class="s-plum-soft" x="320" y="306" width="170" height="28" rx="8"/>
+        <path class="k-plum" d="M332 314v12h9l3-3v-9z" fill="none" stroke-width="1.6"/>
+        <text x="352" y="324" class="s-plum" style="font:600 10.5px -apple-system,BlinkMacSystemFont,sans-serif">uctenka.pdf · příloha</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPORT ============ -->
+<section id="export" style="padding-top:0">
+  <div class="wrap split rev">
+    <div class="reveal">
+      <span class="eyebrow">Spolupráce s účetní</span>
+      <h2>Vaše účetní dostane data <span class="grad">v programu, který používá</span></h2>
+      <p class="lead">Vydané faktury vyexportujete do formátu účetního programu a přechod z jiné fakturace zvládnete importem.</p>
+      <ul class="ticks">
+        <li><b>Export vydaných faktur</b> pro POHODU, Money S3 a ABRA Flexi. <small>Soubory odpovídají oficiálním schématům (XSD) výrobců.</small></li>
+        <li><b>Import z POHODA XML.</b> <small>Převezmete doklady z Pohody, Fakturoidu i iDokladu, protože všechny tento formát exportují.</small></li>
+        <li><b>ISDOC</b> pro odběratele i pro načtení přijatých faktur do výdajů.</li>
+        <li><b>Kniha příjmů a výdajů a sestavy</b> v PDF a CSV.</li>
+      </ul>
+      <div class="formats"><span>POHODA XML</span><span>Money S3 XML</span><span>ABRA Flexi XML</span><span>ISDOC 6.0.2</span><span>PDF</span><span>CSV</span></div>
+      <p style="margin-top:14px;color:var(--muted);font-size:.88rem">Export a import pro účetní programy je zatím dostupný v aplikaci pro Mac.</p>
+    </div>
+    <div class="ill-wrap reveal" aria-hidden="true">
+      <svg class="ill" viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg">
+        <circle class="s-plum-soft" cx="260" cy="190" r="150"/>
+        <g fill="none" stroke-width="2" stroke-dasharray="4 6" class="k-muted" opacity=".6">
+          <path d="M260 190 110 70M260 190 410 70M260 190 80 200M260 190 440 200M260 190 130 320M260 190 390 320"/>
+        </g>
+        <circle class="pulse s-orange" cx="185" cy="130" r="4"/><circle class="pulse s-orange" cx="335" cy="130" r="4" style="animation-delay:.6s"/><circle class="pulse s-orange" cx="170" cy="195" r="4" style="animation-delay:1.2s"/><circle class="pulse s-orange" cx="350" cy="195" r="4" style="animation-delay:.3s"/><circle class="pulse s-orange" cx="195" cy="255" r="4" style="animation-delay:.9s"/><circle class="pulse s-orange" cx="325" cy="255" r="4" style="animation-delay:1.5s"/>
+        <!-- ikona aplikace -->
+        <rect x="200" y="130" width="120" height="120" rx="28" fill="#fff" stroke="#e7dde7" stroke-width="1.5" style="filter:drop-shadow(0 12px 24px rgba(60,10,60,.18))"/>
+        <image href="/img/logo.png" x="218" y="148" width="84" height="84"/>
+        <!-- soubory -->
+        <g style="font:700 11px -apple-system,BlinkMacSystemFont,sans-serif">
+          <g transform="translate(62 36)"><path class="s-card" d="M0 0h66l16 16v52H0z"/><path class="s-line" d="M66 0v16h16"/><rect class="s-plum" x="8" y="40" width="66" height="18" rx="4"/><text x="41" y="53" text-anchor="middle" fill="#fff">POHODA</text><rect class="s-faint" x="8" y="14" width="40" height="4" rx="2"/><rect class="s-faint" x="8" y="24" width="52" height="4" rx="2"/></g>
+          <g transform="translate(376 36)"><path class="s-card" d="M0 0h66l16 16v52H0z"/><path class="s-line" d="M66 0v16h16"/><rect class="s-orange" x="8" y="40" width="66" height="18" rx="4"/><text x="41" y="53" text-anchor="middle" fill="#fff">Money S3</text><rect class="s-faint" x="8" y="14" width="40" height="4" rx="2"/><rect class="s-faint" x="8" y="24" width="52" height="4" rx="2"/></g>
+          <g transform="translate(18 166)"><path class="s-card" d="M0 0h66l16 16v52H0z"/><path class="s-line" d="M66 0v16h16"/><rect class="s-text" x="8" y="40" width="66" height="18" rx="4"/><text x="41" y="53" text-anchor="middle" class="s-card" style="stroke:none">ABRA Flexi</text><rect class="s-faint" x="8" y="14" width="40" height="4" rx="2"/><rect class="s-faint" x="8" y="24" width="52" height="4" rx="2"/></g>
+          <g transform="translate(420 166)"><path class="s-card" d="M0 0h66l16 16v52H0z"/><path class="s-line" d="M66 0v16h16"/><rect class="s-ok" x="8" y="40" width="66" height="18" rx="4"/><text x="41" y="53" text-anchor="middle" fill="#fff">ISDOC</text><rect class="s-faint" x="8" y="14" width="40" height="4" rx="2"/><rect class="s-faint" x="8" y="24" width="52" height="4" rx="2"/></g>
+          <g transform="translate(88 290)"><path class="s-card" d="M0 0h66l16 16v52H0z"/><path class="s-line" d="M66 0v16h16"/><rect class="s-ai" x="8" y="40" width="66" height="18" rx="4"/><text x="41" y="53" text-anchor="middle" fill="#fff">CSV</text><rect class="s-faint" x="8" y="14" width="40" height="4" rx="2"/><rect class="s-faint" x="8" y="24" width="52" height="4" rx="2"/></g>
+          <g transform="translate(350 290)"><path class="s-card" d="M0 0h66l16 16v52H0z"/><path class="s-line" d="M66 0v16h16"/><rect fill="#e5484d" x="8" y="40" width="66" height="18" rx="4"/><text x="41" y="53" text-anchor="middle" fill="#fff">PDF</text><rect class="s-faint" x="8" y="14" width="40" height="4" rx="2"/><rect class="s-faint" x="8" y="24" width="52" height="4" rx="2"/></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ZAŘÍZENÍ ============ -->
 <section id="zarizeni" class="devices">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Zařízení</span>
       <h2>Jedna aplikace, tři obrazovky</h2>
-      <p class="lead">Na každém zařízení je iÚčetní doma. Data se mezi nimi synchronizují, takže fakturu začnete v telefonu a dokončíte na Macu.</p>
+      <p class="lead">Na každém zařízení se iÚčetní ovládá tak, jak jste na něm zvyklí. Data se mezi zařízeními synchronizují, takže fakturu začnete v telefonu a dokončíte na Macu.</p>
     </div>
     <div class="dev-grid">
       <div class="dev reveal">
@@ -383,10 +349,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
         <h3>iPhone</h3>
         <p class="sub">Faktura i úhrada odkudkoli</p>
         <ul>
-          <li>Potažením označíte úhradu nebo pošlete e-mail</li>
+          <li>Potažením prstu označíte úhradu nebo pošlete e-mail</li>
           <li>Velký QR kód pro platbu na místě</li>
-          <li>Siri: „Kolik mám neuhrazeno v iÚčetní“</li>
-          <li>Výdaj s fotkou účtenky</li>
+          <li>Účtenka z fotky do výdajů</li>
+          <li>Siri, Zkratky a rychlé akce</li>
           <li>Zámek Face ID</li>
         </ul>
       </div>
@@ -395,7 +361,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
         <h3>iPad</h3>
         <p class="sub">Formulář a náhled vedle sebe</p>
         <ul>
-          <li>Živý náhled PDF vedle editoru</li>
+          <li>Náhled PDF přímo vedle formuláře</li>
           <li>Tabulka dokladů s řazením podle sloupců</li>
           <li>Postranní panel jako na Macu</li>
           <li>Hromadné akce pro víc dokladů</li>
@@ -409,26 +375,27 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
         <ul>
           <li>Každý doklad ve vlastním okně</li>
           <li>Klávesové zkratky (⌘K ceník, ⌘P tisk)</li>
-          <li>Vlastní sloupce v seznamu dokladů</li>
+          <li>Export pro POHODU, Money a ABRA Flexi</li>
           <li>Apple Mail i Thunderbird</li>
-          <li>Volitelně lokální databáze</li>
+          <li>Vlastní sloupce v seznamu dokladů</li>
         </ul>
       </div>
     </div>
-    <p class="sync reveal">Synchronizace přes zabezpečený server <code>api.iucetni.com</code>. Když jeden doklad upravujete na dvou místech, aplikace změny sloučí.</p>
+    <p class="sync reveal">Když jeden doklad upravujete na dvou zařízeních zároveň, aplikace změny sloučí a nic se nepřepíše.</p>
   </div>
 </section>
 
+<!-- ============ AI ============ -->
 <section id="ai">
   <div class="wrap ai-grid">
     <div class="reveal">
-      <span class="eyebrow">AI asistent</span>
+      <span class="eyebrow">AI asistent · 7 dní zdarma</span>
       <h2>Řekněte, co fakturovat. <span class="grad">Zbytek připraví AI.</span></h2>
-      <p class="lead" style="margin-top:14px">Asistent v aplikaci připraví koncept faktury, přečte účtenku z fotky nebo odpoví, kdo vám dluží. Rozhodnutí ale zůstává na vás.</p>
+      <p class="lead" style="margin-top:14px">Asistent v aplikaci připraví koncept faktury, přečte účtenku nebo vám řekne, kdo vám dluží. Rozhodujete ale vždy vy.</p>
       <ul class="checks">
-        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Koncepty, ne hotové doklady</b><span>AI připraví koncept bez čísla. Vystavíte ho vy jedním klepnutím.</span></div></li>
-        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Každý zápis potvrzujete</b><span>Bez vašeho souhlasu asistent nic neuloží. Do dokladu, který máte zrovna otevřený, nezapisuje.</span></div></li>
-        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Claude, ChatGPT nebo vlastní klíč</b><span>Použijte svůj klíč Claude či OpenAI, nebo připojte iÚčetní přímo do Claude nebo ChatGPT přes MCP.</span></div></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Koncepty, ne hotové doklady</b><span>AI připraví koncept bez čísla. Fakturu z něj vystavíte vy jedním klepnutím.</span></div></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Každý zápis potvrzujete</b><span>Bez vašeho souhlasu asistent nic neuloží a do dokladu, který máte otevřený, nezapisuje.</span></div></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Claude, ChatGPT nebo vlastní klíč</b><span>Použijte vlastní klíč Claude či OpenAI, nebo si iÚčetní připojte přímo do Claude nebo ChatGPT přes MCP.</span></div></li>
       </ul>
     </div>
     <div class="chat reveal" aria-hidden="true">
@@ -444,13 +411,14 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
   </div>
 </section>
 
+<!-- ============ DAŇOVÁ EVIDENCE ============ -->
 <section id="evidence" style="padding-top:0">
   <div class="wrap">
     <div class="tax reveal">
       <div>
         <span class="eyebrow">Daňová evidence</span>
         <h2>Kniha příjmů a výdajů bez tabulek</h2>
-        <p>Výdaje zapíšete i s přílohou. Příjmy se počítají z uhrazených faktur. Aplikace porovná skutečné výdaje s paušálem a ukáže, co vám vyjde nejlépe.</p>
+        <p>Výdaje zapíšete i s přílohou, příjmy aplikace spočítá z uhrazených faktur. Pak porovná skutečné výdaje s paušálem a ukáže, co se vám vyplatí víc.</p>
         <p class="note">Přehled slouží jako podklad, nejde o daňové přiznání.</p>
       </div>
       <table>
@@ -466,21 +434,77 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
   </div>
 </section>
 
-<section id="bezpecnost" style="padding-top:0">
+<!-- ============ CENÍK ============ -->
+<section id="cenik" class="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow">Ceník</span>
+      <h2>Zdarma pro fakturaci v cloudu</h2>
+      <p class="lead" style="margin:0 auto">Všechny funkce fakturace a daňové evidence jsou zdarma, když máte data v cloudu. Pro verze stojí 250 Kč ročně a data ukládá i přímo ve vašem zařízení.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><path class="s-plum-soft" d="M20 46h34a12 12 0 0 0 1-24 17 17 0 0 0-32-4A14 14 0 0 0 20 46z"/><path d="M20 46h34a12 12 0 0 0 1-24 17 17 0 0 0-32-4A14 14 0 0 0 20 46z" fill="none" stroke-width="2.5" class="k-plum"/><path d="m29 32 6 6 10-11" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="k-orange"/></svg>
+        <h3>Zdarma</h3>
+        <div class="price">0 Kč</div>
+        <p class="desc">Data bezpečně v cloudu, synchronizace mezi všemi zařízeními.</p>
+        <ul class="ticks">
+          <li>Faktury, zálohy a opravné doklady</li>
+          <li>QR Platba a ISDOC v PDF</li>
+          <li>Odběratelé z ARES a ceník</li>
+          <li>Účtenky z fotek a výdaje</li>
+          <li>Daňová evidence, přehledy a sestavy</li>
+          <li>iPhone, iPad i Mac</li>
+        </ul>
+      </div>
+      <div class="plan featured reveal">
+        <span class="tag">Na vyzkoušení</span>
+        <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><path class="s-ai" d="M30 6l4.5 12.5L47 23l-12.5 4.5L30 40l-4.5-12.5L13 23l12.5-4.5z" opacity=".9"/><path class="s-orange" d="M54 28l2.4 6.6L63 37l-6.6 2.4L54 46l-2.4-6.6L45 37l6.6-2.4z"/><circle class="s-plum" cx="56" cy="12" r="3"/></svg>
+        <h3>AI asistent</h3>
+        <div class="price">7 dní <small>zdarma</small></div>
+        <p class="desc">Vyzkoušejte, jak se fakturuje, když za vás koncepty připravuje AI.</p>
+        <ul class="ticks">
+          <li>Koncepty faktur z běžné věty</li>
+          <li>Čtení účtenek a faktur pomocí AI</li>
+          <li>Dotazy na tržby, úhrady a dlužníky</li>
+          <li>Každý zápis potvrzujete vy</li>
+        </ul>
+      </div>
+      <div class="plan reveal">
+        <svg class="ill" viewBox="0 0 72 56" aria-hidden="true"><rect x="16" y="4" width="28" height="48" rx="6" fill="none" stroke-width="2.5" class="k-plum"/><rect class="s-plum-soft" x="20" y="10" width="20" height="34" rx="2"/><rect class="s-orange" x="40" y="28" width="22" height="18" rx="4"/><path d="M45 28v-4a6 6 0 0 1 12 0v4" fill="none" stroke-width="2.5" class="k-orange"/><circle cx="51" cy="37" r="2.4" fill="#fff"/></svg>
+        <h3>iÚčetní Pro</h3>
+        <div class="price">250 Kč <small>/ rok</small></div>
+        <p class="desc">Vše ze Zdarma a k tomu data uložená i lokálně ve vašem zařízení.</p>
+        <ul class="ticks">
+          <li>Vše z verze Zdarma</li>
+          <li>Data i lokálně v zařízení</li>
+          <li>Jedno předplatné pro iPhone, iPad i Mac</li>
+          <li>Zrušíte kdykoli v nastavení Apple ID</li>
+        </ul>
+      </div>
+    </div>
+    <p class="plans-note">Ceny jsou včetně DPH. Předplatné se platí přes Apple ID a automaticky se obnovuje, dokud ho nezrušíte. Podrobnosti najdete v <a href="/podminky/">podmínkách použití</a>.</p>
+  </div>
+</section>
+
+<!-- ============ BEZPEČNOST ============ -->
+<section id="bezpecnost">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Bezpečnost a spolehlivost</span>
+      <span class="eyebrow">Bezpečnost a soukromí</span>
       <h2>Vaše čísla jsou v bezpečí</h2>
+      <p class="lead">Aplikace neobsahuje reklamy ani sledovací nástroje třetích stran. Data jsou vaše a kdykoli si je vyexportujete.</p>
     </div>
     <div class="sec-grid">
       <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Face ID a Klíčenka</h3><p>Přístupové údaje jsou v Klíčence. Aplikaci můžete zamknout Face ID nebo Touch ID.</p></div>
-      <div class="card reveal"><div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><path d="M3 3l18 18"/></svg></div><h3>Funguje i offline</h3><p>Data vidíte i bez signálu a změny se odešlou po připojení. Vlastní číselná řada zařízení se nikdy nepotká s Macem.</p></div>
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></svg></div><h3>Bez přepisování</h3><p>Otevřený doklad je zamčený pro ostatní zařízení. Souběžné změny se sloučí po polích a nic se neztratí.</p></div>
-      <div class="card reveal"><div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Zamčené doklady</h3><p>Vystavený doklad zamknete proti úpravám. Opravu pak řešíte opravným dokladem, jak to vyžaduje zákon.</p></div>
+      <div class="card reveal"><div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><path d="M3 3l18 18"/></svg></div><h3>Funguje i offline</h3><p>Data uvidíte i bez signálu a změny se odešlou, jakmile budete online. Vlastní číselná řada zařízení zajistí, že se čísla dokladů nepotkají.</p></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></svg></div><h3>Bez přepisování</h3><p>Otevřený doklad je zamčený pro ostatní zařízení. Souběžné změny se sloučí po jednotlivých polích.</p></div>
+      <div class="card reveal"><div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Zamčené doklady</h3><p>Vystavený doklad zamknete proti úpravám. Opravu pak uděláte opravným dokladem, jak to vyžaduje zákon.</p></div>
     </div>
   </div>
 </section>
 
+<!-- ============ FAQ ============ -->
 <section id="faq" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -489,12 +513,14 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
     </div>
     <div class="faq">
       <details><summary>Pro koho je iÚčetní?</summary><p>Pro živnostníky a malé firmy, které fakturují a vedou daňovou evidenci. Hodí se pro plátce DPH, neplátce i identifikované osoby.</p></details>
-      <details><summary>Na jakých zařízeních aplikace běží?</summary><p>Na iPhonu a iPadu s iOS / iPadOS 26 a na Macu s macOS 26 nebo novějším. Je to jedna aplikace v App Store pro všechna zařízení.</p></details>
-      <details><summary>Je to podvojné účetnictví?</summary><p>Ne. iÚčetní je určené pro fakturaci a daňovou evidenci (příjmy a výdaje, výdajové paušály). Přiznání k DPH a kontrolní hlášení připravujeme spolu s evidencí přijatých faktur.</p></details>
-      <details><summary>Funguje aplikace bez internetu?</summary><p>Ano. Poslední data máte vždy po ruce a úpravy se uloží do fronty, která se odešle po připojení. Nový doklad offline vznikne jako koncept, nebo dostane číslo z vlastní řady zařízení.</p></details>
-      <details><summary>Kde jsou moje data?</summary><p>Na zabezpečeném serveru iÚčetní, přes který se synchronizují všechna vaše zařízení. Na Macu můžete používat i lokální databázi přímo v počítači.</p></details>
-      <details><summary>Jak funguje AI asistent a kam jdou data?</summary><p>Asistent používá váš vlastní klíč Claude nebo OpenAI. Rozhovor probíhá přímo mezi zařízením a vybraným poskytovatelem AI a server iÚčetní váš klíč nevidí. Zápisy do dat vždy potvrzujete. iÚčetní můžete také připojit jako MCP server ve své aplikaci Claude nebo ChatGPT.</p></details>
-      <details><summary>Co splňují vystavené faktury?</summary><p>Všechny povinné náležitosti podle českých předpisů: údaje dodavatele a odběratele, DUZP, rekapitulaci DPH v Kč, zákonné texty pro přenesenou povinnost, plnění do EU nebo vývoz a platební údaje s QR Platbou.</p></details>
+      <details><summary>Kolik iÚčetní stojí?</summary><p>S daty v cloudu je aplikace zdarma. AI asistenta si 7 dní vyzkoušíte zdarma. iÚčetní Pro za 250 Kč ročně ukládá data i lokálně ve vašem zařízení. Předplatné platí pro iPhone, iPad i Mac.</p></details>
+      <details><summary>Na jakých zařízeních aplikace běží?</summary><p>Na iPhonu a iPadu se systémem iOS / iPadOS 26 a na Macu se systémem macOS 26 nebo novějším. V App Store je to jedna aplikace pro všechna tato zařízení.</p></details>
+      <details><summary>Můžu přejít z Pohody, Fakturoidu nebo iDokladu?</summary><p>Ano. V aplikaci pro Mac načtete doklady ze souboru POHODA XML, který exportují Pohoda, Fakturoid i iDoklad. Vydané faktury naopak vyexportujete pro POHODU, Money S3 nebo ABRA Flexi.</p></details>
+      <details><summary>Jak funguje čtení účtenek?</summary><p>Účtenku vyfotíte nebo naskenujete, případně vložíte PDF. Aplikace z ní načte dodavatele, IČO, datum, částku a DPH a vy jen zkontrolujete, co vyplnila. Snímek dokladu se uloží jako příloha výdaje.</p></details>
+      <details><summary>Je to podvojné účetnictví?</summary><p>Ne. iÚčetní slouží k fakturaci a daňové evidenci (příjmy a výdaje, výdajové paušály). Přiznání k DPH a kontrolní hlášení připravujeme spolu s evidencí přijatých faktur.</p></details>
+      <details><summary>Funguje aplikace bez internetu?</summary><p>Ano. Poslední data máte vždy po ruce a úpravy se odešlou, jakmile budete online. Nový doklad vytvořený offline je koncept, nebo dostane číslo z vlastní číselné řady zařízení.</p></details>
+      <details><summary>Jak funguje AI asistent a kam jdou data?</summary><p>Rozhovor s AI probíhá mezi vaším zařízením a zvoleným poskytovatelem AI. Každý zápis do dat potvrzujete vy. Podrobnosti najdete v <a href="/soukromi/">zásadách ochrany soukromí</a>.</p></details>
+      <details><summary>Jak smažu účet?</summary><p>V aplikaci v Nastavení → Účet. Před smazáním si data vyexportujte, protože účetní doklady je potřeba archivovat. Postup najdete na stránce <a href="/podpora/">Podpora</a>.</p></details>
     </div>
   </div>
 </section>
@@ -503,48 +529,43 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
   <div class="wrap">
     <img src="/img/icon-192.png" alt="" width="72" height="72" style="border-radius:16px">
     <h2>iÚčetní bude brzy v App Store</h2>
-    <p class="lead">Fakturace a daňová evidence pro iPhone, iPad a Mac v jedné aplikaci.</p>
+    <p class="lead">Fakturace a daňová evidence pro iPhone, iPad a Mac v jedné aplikaci. S daty v cloudu zdarma.</p>
     <div class="cta">
       <span class="appstore" aria-label="Brzy v App Store">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74s1.78.74 2.99.72c1.24-.02 2.02-1.12 2.77-2.23.88-1.28 1.24-2.52 1.26-2.59-.03-.01-2.42-.93-2.4-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.27z"/></svg>
         <span><small>Již brzy v</small><b>App Store</b></span>
       </span>
+      <a class="btn btn-ghost" href="mailto:support@iucetni.com">support@iucetni.com</a>
     </div>
   </div>
 </section>
 </main>
 
+<!--FOOTER-->
 <footer>
-  <div class="wrap foot">
-    <span>© 2026 iÚčetní</span>
-    <nav>
-      <a href="#funkce">Funkce</a>
-      <a href="#ai">AI asistent</a>
-      <a href="#faq">Otázky</a>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/"><img src="/img/logo.png" alt="" width="28" height="28">iÚčetní</a>
+        <p>Vyvíjí a provozuje NEMOSERVIS Praha s.r.o.<br>Belgická 23, 120 00 Praha 2<br>IČO 26122375 · DIČ CZ26122375</p>
+      </div>
+      <div>
+        <h4>Aplikace</h4>
+        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#apple">Pro Apple</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/#faq">Časté otázky</a></li></ul>
+      </div>
+      <div>
+        <h4>Informace</h4>
+        <ul><li><a href="/podpora/">Podpora</a></li><li><a href="/podminky/">Podmínky použití</a></li><li><a href="/soukromi/">Ochrana soukromí</a></li><li><a href="mailto:support@iucetni.com">support@iucetni.com</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky společnosti Apple Inc.</span>
       <button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button>
-    </nav>
+    </div>
   </div>
 </footer>
+<!--/FOOTER-->
 
-<script>
-(function(){
-  var h=document.querySelector('header');
-  var onScroll=function(){h.classList.toggle('scrolled',window.scrollY>8)};
-  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
-
-  var els=document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-    els.forEach(function(el){io.observe(el)});
-  }else{els.forEach(function(el){el.classList.add('in')})}
-
-  var root=document.documentElement,btn=document.getElementById('theme');
-  var modes=['auto','light','dark'],names={auto:'auto',light:'světlý',dark:'tmavý'};
-  var cur='auto';try{cur=localStorage.getItem('theme')||'auto'}catch(e){}
-  var apply=function(m){if(m==='auto')root.removeAttribute('data-theme');else root.setAttribute('data-theme',m);btn.textContent='Motiv: '+names[m]};
-  apply(cur);
-  btn.addEventListener('click',function(){cur=modes[(modes.indexOf(cur)+1)%3];try{localStorage.setItem('theme',cur)}catch(e){}apply(cur)});
-})();
-</script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
