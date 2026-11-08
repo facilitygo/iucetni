@@ -254,6 +254,7 @@ For one user on one device of your choice. Data safely in the cloud on EU server
 - Tax records, overviews and reports
 - MCP server: connect iÚčetní to Claude or ChatGPT (doesn't count as a device)
 - 1 device: iPhone, iPad or Mac
+- Trial AI assistant to try out soon
 
 7 days free
 
@@ -396,7 +397,7 @@ AI features are optional. If you don't use them, no data is sent to AI providers
 
 - AI assistant: the conversation and the data the assistant works with are sent to the AI provider you choose: Anthropic (Claude), OpenAI, or a provider whose key you enter. With your own key, data goes directly from your device and is subject to that provider's terms. The key is stored only in the device Keychain and our server never sees it.
 - AI receipt reading: the image or PDF of a document is sent via our server to Anthropic, which extracts its details. The result is used only to fill in the expense.
-- AI without your own key (trial and Pro): requests are processed by our server, possibly together with an AI provider. We keep request counts for usage limits, but we do not store conversation content.
+- AI without your own key (trial AI, also in the Free plan): requests are processed by our server, possibly together with an AI provider. We keep request counts for usage limits, but we do not store conversation content.
 - MCP connections: when you connect iÚčetní to Claude, ChatGPT or another client and authorize it (OAuth) or give it an AI key, that client receives only the data its AI requests while you use it. You can revoke access at any time in Settings → AI keys.
 
 Data on our servers stays in the EU. AI providers (Anthropic, OpenAI), however, are based in the USA. Data is transferred to them under the European Commission adequacy decision (EU-US Data Privacy Framework) or standard contractual clauses.
@@ -919,6 +920,7 @@ Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpe�
 - Daňová evidence, přehledy a sestavy
 - MCP server: připojte iÚčetní do Claude nebo ChatGPT (nepočítá se jako zařízení)
 - 1 zařízení: iPhone, iPad, nebo Mac
+- Zkušební AI asistent na vyzkoušení brzy
 
 7 dní zdarma
 
@@ -1073,7 +1075,7 @@ AI funkce jsou volitelné. Pokud je nepoužíváte, žádná data k poskytovatel
 
 - AI asistent: rozhovor a údaje, se kterými asistent pracuje, se předávají zvolenému poskytovateli AI: Anthropic (Claude), OpenAI, nebo poskytovateli, ke kterému zadáte vlastní klíč. Při použití vlastního klíče odcházejí údaje přímo z vašeho zařízení a řídí se podmínkami daného poskytovatele. Klíč ukládáme jen do Klíčenky zařízení a náš server ho nevidí.
 - Čtení dokladů pomocí AI: snímek nebo PDF dokladu odešleme přes náš server společnosti Anthropic. Ta z něj přečte údaje a výsledek použijeme jen k vyplnění výdaje.
-- AI bez vlastního klíče (zkušební období a verze Pro): požadavky zpracovává náš server, případně ve spolupráci s poskytovatelem AI. Kvůli limitům evidujeme počet požadavků, obsah rozhovorů ale neukládáme.
+- AI bez vlastního klíče (zkušební AI, i ve verzi Zdarma): požadavky zpracovává náš server, případně ve spolupráci s poskytovatelem AI. Kvůli limitům evidujeme počet požadavků, obsah rozhovorů ale neukládáme.
 - Připojení přes MCP: když iÚčetní připojíte do své aplikace Claude nebo ChatGPT, předává se zvolenému poskytovateli jen to, co si v ní vyžádáte. Přístup kdykoli zrušíte v Nastavení → Klíče pro AI.
 
 Každý zápis navržený AI potvrzujete vy. Data na našich serverech zůstávají v EU. Poskytovatelé AI (Anthropic, OpenAI) ale sídlí v USA a údaje se k nim předávají na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-US Data Privacy Framework), nebo standardních smluvních doložek.
