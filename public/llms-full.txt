@@ -75,7 +75,7 @@ Plumber iPhone AI assistant · Pro
 Petr has just finished a bathroom for the Nováks. He bought the material on one supplier invoice, but part of it was for stock. By the time he takes off his overalls, the customer has the invoice in their inbox.
 
 - He snaps the supplier invoice and the AI reads all the line items.
-- Together with the assistant he picks what belongs to this job and leaves out the sealant and gloves kept for stock.
+- Together with the assistant he picks what belongs to this job, leaves out the sealant and gloves kept for stock and adds his usual 15% markup on the material.
 - He adds labour and travel from his price list and has the invoice issued.
 - He emails it right from the site, or shows the customer the QR code so they can pay on the spot.
 
@@ -732,7 +732,7 @@ Instalatér iPhone AI asistent · Pro
 Petr dokončil koupelnu u Novákových. Materiál nakoupil ve stavebninách na jednu fakturu, ale část z ní je na sklad. Než si sundá montérky, má zákazník fakturu v e-mailu.
 
 - Vyfotí fakturu od dodavatele a AI z ní přečte všechny položky.
-- S asistentem projde, co patří k zakázce. Silikon a rukavice na sklad vynechají.
+- S asistentem projde, co patří k zakázce. Silikon a rukavice na sklad vynechají a k materiálu připočtou jeho obvyklou 15% marži.
 - Přidá hodiny práce a dopravu z ceníku a nechá fakturu vystavit.
 - Fakturu pošle e-mailem přímo z terénu, nebo zákazníkovi ukáže QR kód a ten zaplatí hned.
 

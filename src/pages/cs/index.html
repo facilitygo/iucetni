@@ -112,14 +112,14 @@ key: index
         <p>Petr dokončil koupelnu u Novákových. Materiál nakoupil ve stavebninách na jednu fakturu, ale část z ní je na sklad. Než si sundá montérky, má zákazník fakturu v e-mailu.</p>
         <ol class="steps">
           <li>Vyfotí fakturu od dodavatele a AI z ní přečte všechny položky.</li>
-          <li>S asistentem projde, co patří k zakázce. Silikon a rukavice na sklad vynechají.</li>
+          <li>S asistentem projde, co patří k zakázce. Silikon a rukavice na sklad vynechají a k materiálu připočtou jeho obvyklou 15% marži.</li>
           <li>Přidá hodiny práce a dopravu z ceníku a nechá fakturu vystavit.</li>
           <li>Fakturu pošle e-mailem přímo z terénu, nebo zákazníkovi ukáže QR kód a ten zaplatí hned.</li>
         </ol>
       </div>
       <div class="case-mock" aria-hidden="true">
         <div class="mock-card">
-          <div class="mock-msg me">Přeúčtuj Novákovým jen materiál na koupelnu, přidej 3,5 h práce a dopravu.</div>
+          <div class="mock-msg me">Přeúčtuj Novákovým jen materiál na koupelnu s 15% marží, přidej 3,5 h práce a dopravu.</div>
           <div class="mock-msg bot">Silikon a rukavice jsou podle mě na sklad, vynechávám je. Souhlasí?</div>
           <div class="mock-sub">Faktura od dodavatele · Stavebniny Kovář</div>
           <ul class="mock-items">
@@ -128,10 +128,11 @@ key: index
             <li class="on"><span>Kulový ventil ½″ · 2 ks</span><b>418 Kč</b></li>
             <li class="off"><span>Silikon sanitární · 4 ks</span><b>356 Kč</b></li>
             <li class="off"><span>Pracovní rukavice · 10 párů</span><b>290 Kč</b></li>
+            <li class="add"><span>Marže na materiál · 15 % z 1 854 Kč</span><b>278 Kč</b></li>
             <li class="add"><span>Práce · 3,5 h × 650 Kč</span><b>2 275 Kč</b></li>
             <li class="add"><span>Doprava · 38 km × 12 Kč</span><b>456 Kč</b></li>
           </ul>
-          <div class="mock-total"><span class="mock-qr"></span><div><small>Faktura 20260143 · Novákovi</small><b>4 585 Kč</b></div><span class="mock-pill ok">Odesláno</span></div>
+          <div class="mock-total"><span class="mock-qr"></span><div><small>Faktura 20260143 · Novákovi</small><b>4 863 Kč</b></div><span class="mock-pill ok">Odesláno</span></div>
         </div>
       </div>
     </article>
