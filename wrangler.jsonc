@@ -3,6 +3,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "iucetni",
   "compatibility_date": "2026-10-01",
+  "observability": {
+    "enabled": false
+  },
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page",
