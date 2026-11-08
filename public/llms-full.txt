@@ -259,7 +259,9 @@ For one user on one device of your choice. Data safely in the cloud on EU server
 
 ### iÚčetní Pro
 
-Coming soon
+CZK 99 / month
+
+or CZK 749 a year save 37%
 
 Everything in Free with no device limit, for your whole team and with the in-app AI assistant.
 
@@ -271,7 +273,7 @@ Everything in Free with no device limit, for your whole team and with the in-app
 - Local data on your device
 - 7-day free trial
 
-Pro pricing will be announced at launch. The subscription will be billed through your Apple ID and can be cancelled at any time. See the Terms of Use.
+Prices include VAT. The yearly plan works out at CZK 62 a month. The subscription is billed through your Apple ID and renews automatically until you cancel it. See the Terms of Use.
 
 Security and privacy
 
@@ -305,7 +307,7 @@ Sole traders and small businesses in the Czech Republic that issue invoices and 
 
 How much does it cost?
 
-On one device, invoicing and tax records with data in the cloud are free, including the MCP server for Claude and ChatGPT. Pro adds unlimited devices, multiple users per company, the in-app AI assistant and on-device data storage; it comes with a 7-day free trial and its price will be announced at launch.
+On one device, invoicing and tax records with data in the cloud are free, including the MCP server for Claude and ChatGPT. Pro adds unlimited devices, multiple users per company, the in-app AI assistant and on-device data storage; it costs CZK 99 a month or CZK 749 a year, with a 7-day free trial.
 
 Can I use iÚčetní on several devices or with a colleague?
 
@@ -475,9 +477,9 @@ With your data stored in the cloud, you can use the app free of charge. The Free
 Pro adds unlimited devices, multiple users per company, the in-app AI assistant (Claude, OpenAI or your own AI provider key) and data storage directly on your device. You are responsible for the users you invite to your company and for their activity.
 
 - Free trial: you can try Pro free for 7 days. Unless you cancel during the trial, the subscription becomes paid when the trial ends. AI usage during the trial may be subject to request limits.
-- The price is shown in the App Store and in the app before purchase and includes VAT.
+- The price is CZK 99 per month or CZK 749 per year, including VAT. If the price shown in the App Store or in the app before purchase differs, the displayed price applies.
 - The subscription is purchased in the app through the App Store; payment is charged to your Apple ID at confirmation of purchase.
-- The subscription renews automatically unless cancelled at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the period.
+- The subscription renews automatically for another period (a month or a year, depending on the option you chose) unless cancelled at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the period.
 - Manage and cancel the subscription in Settings → [your name] → Subscriptions or in your App Store account settings. Cancellation takes effect at the end of the paid period.
 - Refunds are handled by Apple under its rules ( reportaproblem.apple.com).
 - The subscription covers iPhone, iPad and Mac with the same Apple ID.
@@ -921,7 +923,9 @@ Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpe�
 
 ### iÚčetní Pro
 
-Připravujeme
+99 Kč / měsíc
+
+nebo 749 Kč ročně ušetříte 37 %
 
 Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistentem v aplikaci.
 
@@ -933,7 +937,7 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 - Data i lokálně v zařízení
 - 7 dní zdarma na vyzkoušení
 
-Cenu verze Pro zveřejníme při vydání aplikace. Předplatné se bude platit přes Apple ID a půjde kdykoli zrušit. Podrobnosti najdete v podmínkách použití.
+Ceny jsou včetně DPH. Roční předplatné vychází na 62 Kč měsíčně. Předplatné se platí přes Apple ID a automaticky se obnovuje, dokud ho nezrušíte. Podrobnosti najdete v podmínkách použití.
 
 Bezpečnost a soukromí
 
@@ -967,7 +971,7 @@ Pro živnostníky a malé firmy, které fakturují a vedou daňovou evidenci. Ho
 
 Kolik iÚčetní stojí?
 
-Na jednom zařízení je fakturace a daňová evidence s daty v cloudu zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Vyzkoušíte ji 7 dní zdarma a její cenu zveřejníme při vydání.
+Na jednom zařízení je fakturace a daňová evidence s daty v cloudu zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Stojí 99 Kč měsíčně nebo 749 Kč ročně a 7 dní ji vyzkoušíte zdarma.
 
 Můžu iÚčetní používat na více zařízeních nebo s kolegou?
 
@@ -1149,9 +1153,9 @@ S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma je
 Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci (Claude, OpenAI nebo vlastní klíč poskytovatele AI) a ukládání dat přímo ve vašem zařízení. Za uživatele, které do firmy přizvete, a za jejich činnost odpovídáte vy.
 
 - Zkušební období: verzi Pro si můžete 7 dní vyzkoušet zdarma. Pokud předplatné během zkušebního období nezrušíte, začne se po jeho skončení platit. Zkušební provoz AI může mít limity počtu požadavků.
-- Cena je uvedená v App Store a v aplikaci před nákupem a zahrnuje DPH.
+- Cena je 99 Kč za měsíc nebo 749 Kč za rok včetně DPH. Pokud se cena v App Store nebo v aplikaci před nákupem liší, platí tato zobrazená cena.
 - Předplatné se kupuje v aplikaci přes App Store a platba se strhne z vašeho Apple ID při potvrzení nákupu.
-- Předplatné se automaticky obnovuje na další období, pokud ho nezrušíte alespoň 24 hodin před koncem aktuálního období. Platba za obnovení se strhne během 24 hodin před koncem období.
+- Předplatné se automaticky obnovuje na další období (měsíc, nebo rok podle zvolené varianty), pokud ho nezrušíte alespoň 24 hodin před koncem aktuálního období. Platba za obnovení se strhne během 24 hodin před koncem období.
 - Předplatné spravujete a rušíte v Nastavení → [vaše jméno] → Předplatná nebo v nastavení účtu App Store. Zrušení platí od konce zaplaceného období.
 - O vrácení peněz rozhoduje Apple podle svých pravidel ( reportaproblem.apple.com).
 - Předplatné platí pro iPhone, iPad i Mac se stejným Apple ID.
