@@ -279,6 +279,31 @@ Everything in Free with no device limit, for your whole team and with the in-app
 
 The yearly plan works out at CZK 62 a month. The subscription is billed through your Apple ID and renews automatically until you cancel it. The invoice and receipt estimate is indicative and gets more accurate as you use the AI. AI with your own key and AI apps connected over MCP are paid to their provider. See the Terms of Use.
 
+### AI packs for Pro
+
+If the AI included in Pro isn't enough, add a pack. It is used only after your monthly allowance runs out, and the app shows how much is left.
+
+Small
+CZK 49
+
+roughly 10 invoices
+valid for 3 months
+
+Medium
+CZK 299
+
+roughly 70 invoices
+until used up, at most 6 months
+
+Large
+CZK 999
+
+roughly 400 invoices with Claude Haiku,
+or roughly 200 invoices with the more accurate Claude Sonnet
+valid for 1 year · switch models any time
+
+Invoice counts are indicative. A pack is used according to actual consumption, and the estimate gets more accurate as you use the AI. Receipts use less than invoices.
+
 Security and privacy
 
 ## Your numbers are safe
@@ -493,7 +518,7 @@ Pro adds unlimited devices, multiple users per company, the in-app AI assistant 
 - Refunds are handled by Apple under its rules ( reportaproblem.apple.com).
 - The subscription covers iPhone, iPad and Mac with the same Apple ID. You can share Pro with family members through Apple Family Sharing; each of them then gets Pro for their own iÚčetní account. The Free plan is not shared.
 - AI included in Pro: the subscription includes a monthly AI allowance with the Claude Haiku model, roughly enough for 15 invoices and 15 receipts. The actual number depends on how you use it. The app shows your current usage and estimate. Unused allowance does not carry over to the next month.
-- AI top-up packs are bought in the app through the App Store as one-time purchases; they are charged by Apple and refunds follow Apple's rules. A pack is used only after the monthly allowance is exhausted.
+- AI packs are available with Pro and are used only after the monthly allowance is exhausted: Small (CZK 49, roughly 10 invoices, valid for 3 months), Medium (CZK 299, roughly 70 invoices, until used up, at most 6 months) and Large (CZK 999, roughly 400 invoices with Claude Haiku or 200 invoices with Claude Sonnet, valid for 1 year; the model can be switched at any time). A pack is used according to actual AI consumption; invoice counts are indicative. Any unused allowance expires at the end of the validity period. Packs are bought in the app through the App Store, charged by Apple, and refunds follow Apple's rules.
 - You pay for the AI assistant with your own API key (Anthropic, OpenAI) to the provider according to usage and their terms; it does not count towards the Pro allowance.
 - When the subscription ends, Pro features become unavailable and all devices are signed out. You can then sign in again on one device with the Free plan. Invited users lose access to the company. No data is deleted, and renewing the subscription restores full access.
 
@@ -957,6 +982,31 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 
 Roční předplatné vychází na 62 Kč měsíčně. Předplatné se platí přes Apple ID a automaticky se obnovuje, dokud ho nezrušíte. Odhad počtu faktur a dokladů je orientační a zpřesňuje se podle toho, jak AI používáte. AI s vlastním klíčem a AI aplikace připojené přes MCP platíte jejich poskytovateli. Podrobnosti najdete v podmínkách použití.
 
+### AI balíčky k Pro
+
+Když vám AI v ceně Pro nestačí, dokoupíte si balíček. Čerpá se až po vyčerpání měsíčního objemu a aplikace ukazuje, kolik z něj zbývá.
+
+Malý
+49 Kč
+
+zhruba 10 faktur
+platnost 3 měsíce
+
+Střední
+299 Kč
+
+zhruba 70 faktur
+do vyčerpání, nejvýš 6 měsíců
+
+Velký
+999 Kč
+
+zhruba 400 faktur s Claude Haiku,
+nebo zhruba 200 faktur s přesnějším Claude Sonnet
+platnost 1 rok · model lze kdykoli přepnout
+
+Počty faktur jsou orientační. Balíček se čerpá podle skutečné spotřeby a odhad se zpřesňuje podle toho, jak AI používáte. Doklady (účtenky) spotřebují méně než faktury.
+
 Bezpečnost a soukromí
 
 ## Vaše čísla jsou v bezpečí
@@ -1183,7 +1233,7 @@ Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jed
 - O vrácení peněz rozhoduje Apple podle svých pravidel ( reportaproblem.apple.com).
 - Předplatné platí pro iPhone, iPad i Mac se stejným Apple ID. Předplatné Pro můžete sdílet s členy rodiny přes Rodinné sdílení Apple, každý z nich pak má Pro pro svůj vlastní účet iÚčetní. Verze Zdarma se nesdílí.
 - AI v ceně Pro: předplatné zahrnuje měsíční objem AI s modelem Claude Haiku, orientačně zhruba na 15 faktur a 15 dokladů. Skutečný počet závisí na způsobu používání. Aktuální spotřebu a odhad vidíte v aplikaci. Nevyčerpaný objem se do dalšího měsíce nepřevádí.
-- Balíčky AI se kupují v aplikaci přes App Store jako jednorázový nákup, platí je Apple a vracení peněz se řídí jeho pravidly. Balíček se čerpá až po vyčerpání měsíčního objemu.
+- Balíčky AI jsou k dispozici k verzi Pro a čerpají se až po vyčerpání měsíčního objemu: Malý (49 Kč, orientačně 10 faktur, platnost 3 měsíce), Střední (299 Kč, orientačně 70 faktur, do vyčerpání, nejvýš 6 měsíců) a Velký (999 Kč, orientačně 400 faktur s modelem Claude Haiku nebo 200 faktur s modelem Claude Sonnet, platnost 1 rok; model lze průběžně přepínat). Balíček se čerpá podle skutečné spotřeby AI, uvedené počty faktur jsou orientační. Po uplynutí platnosti nevyčerpaný objem zaniká. Balíčky se kupují v aplikaci přes App Store, platí je Apple a vracení peněz se řídí jeho pravidly.
 - AI asistenta s vlastním API klíčem (Anthropic, OpenAI) platíte poskytovateli podle spotřeby a jeho podmínek, do objemu v ceně Pro se nepočítá.
 - Po skončení předplatného přestanou být funkce verze Pro dostupné a všechna zařízení se odhlásí. Poté se můžete znovu přihlásit na jednom zařízení ve verzi Zdarma. Přizvaní uživatelé ztratí přístup k firmě. Data se nemažou a po obnovení předplatného je máte zpět v plném rozsahu.
 
