@@ -271,6 +271,7 @@ Everything in Free with no device limit, for your whole team and with the in-app
 - AI assistant with Claude, OpenAI or your own key
 - Invoice drafts from a sentence, AI receipt reading
 - Local data on your device
+- Apple Family Sharing
 - 7-day free trial
 
 The yearly plan works out at CZK 62 a month. The subscription is billed through your Apple ID and renews automatically until you cancel it. See the Terms of Use.
@@ -482,7 +483,7 @@ Pro adds unlimited devices, multiple users per company, the in-app AI assistant 
 - The subscription renews automatically for another period (a month or a year, depending on the option you chose) unless cancelled at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the period.
 - Manage and cancel the subscription in Settings → [your name] → Subscriptions or in your App Store account settings. Cancellation takes effect at the end of the paid period.
 - Refunds are handled by Apple under its rules ( reportaproblem.apple.com).
-- The subscription covers iPhone, iPad and Mac with the same Apple ID.
+- The subscription covers iPhone, iPad and Mac with the same Apple ID. You can share Pro with family members through Apple Family Sharing; each of them then gets Pro for their own iÚčetní account. The Free plan is not shared.
 - If you use your own AI provider key, you pay that provider for its usage under its terms.
 - When the subscription ends, Pro features become unavailable and all devices are signed out. You can then sign in again on one device with the Free plan. Invited users lose access to the company. No data is deleted, and renewing the subscription restores full access.
 
@@ -935,6 +936,7 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 - AI asistent s Claude, OpenAI nebo vlastním klíčem
 - Koncepty faktur z běžné věty a čtení účtenek pomocí AI
 - Data i lokálně v zařízení
+- Rodinné sdílení Apple
 - 7 dní zdarma na vyzkoušení
 
 Roční předplatné vychází na 62 Kč měsíčně. Předplatné se platí přes Apple ID a automaticky se obnovuje, dokud ho nezrušíte. Podrobnosti najdete v podmínkách použití.
@@ -1158,7 +1160,7 @@ Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jed
 - Předplatné se automaticky obnovuje na další období (měsíc, nebo rok podle zvolené varianty), pokud ho nezrušíte alespoň 24 hodin před koncem aktuálního období. Platba za obnovení se strhne během 24 hodin před koncem období.
 - Předplatné spravujete a rušíte v Nastavení → [vaše jméno] → Předplatná nebo v nastavení účtu App Store. Zrušení platí od konce zaplaceného období.
 - O vrácení peněz rozhoduje Apple podle svých pravidel ( reportaproblem.apple.com).
-- Předplatné platí pro iPhone, iPad i Mac se stejným Apple ID.
+- Předplatné platí pro iPhone, iPad i Mac se stejným Apple ID. Předplatné Pro můžete sdílet s členy rodiny přes Rodinné sdílení Apple, každý z nich pak má Pro pro svůj vlastní účet iÚčetní. Verze Zdarma se nesdílí.
 - Při použití vlastního klíče poskytovatele AI platíte za jeho využití tomuto poskytovateli podle jeho podmínek.
 - Po skončení předplatného přestanou být funkce verze Pro dostupné a všechna zařízení se odhlásí. Poté se můžete znovu přihlásit na jednom zařízení ve verzi Zdarma. Přizvaní uživatelé ztratí přístup k firmě. Data se nemažou a po obnovení předplatného je máte zpět v plném rozsahu.
 
