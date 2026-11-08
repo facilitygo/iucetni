@@ -214,7 +214,7 @@ Drafts, not finished documents AI prepares a draft without a number. You issue i
 You confirm every change The assistant saves nothing without your consent and never writes to a document you have open.
 
 -
-AI included in Pro Pro includes the Claude Haiku model for roughly 10 invoices and 20 receipts a month. The app shows your usage and an estimate of how many invoices you have left. Need more? Buy a top-up pack or use your own Claude or OpenAI key. MCP for your own Claude or ChatGPT app is free for everyone. How to connect
+AI included in Pro Pro includes the Claude Haiku model for 10 invoices and 20 receipts a month. The app shows your usage and an estimate of how many invoices you have left. Need more? Buy an AI pack, also available in the Free plan, or use your own Claude or OpenAI key. MCP for your own Claude or ChatGPT app is free for everyone. How to connect
 
 Works with Claude OpenAI
 
@@ -256,6 +256,7 @@ For one user on one device of your choice. Data safely in the cloud on EU server
 - MCP server: connect iÚčetní to Claude or ChatGPT (doesn't count as a device)
 - 1 device: iPhone, iPad or Mac
 - Trial AI assistant provided by us, with a limited number of requests
+- AI packs available without Pro too
 
 7 days free
 
@@ -270,7 +271,7 @@ Everything in Free with no device limit, for your whole team and with the in-app
 - Everything in Free
 - Unlimited devices with sync: iPhone, iPad and Mac
 - Multiple users per company, e.g. a colleague or your accountant. The owner's subscription covers them
-- AI assistant included: Claude Haiku for roughly 10 invoices and 20 receipts a month
+- AI assistant included: Claude Haiku for 10 invoices and 20 receipts a month
 - Usage and remaining-invoice estimate right in the app
 - More AI with top-up packs, or at no extra charge with your own Claude or OpenAI key
 - Local data on your device
@@ -279,32 +280,32 @@ Everything in Free with no device limit, for your whole team and with the in-app
 
 The yearly plan works out at CZK 62 a month. The subscription is billed through your Apple ID and renews automatically until you cancel it. The invoice and receipt estimate is indicative and gets more accurate as you use the AI. AI with your own key and AI apps connected over MCP are paid to their provider. See the Terms of Use.
 
-### AI packs for Pro
+### AI packs
 
-If the AI included in Pro isn't enough, add a pack. You pay once, it doesn't expire, and it is used only after your monthly allowance runs out. The app shows how much is left.
+AI packs are available in both Free and Pro. A pack doesn't expire; with Pro it is used only after your monthly allowance runs out, and the app shows how much is left.
 
 Small
 CZK 49
 
-roughly 10 invoices
+10 invoices
 and 20 receipts
-one-time · lasts until used up
+lasts until used up
 
 Medium
 CZK 299
 
-roughly 80 invoices
+80 invoices
 and 150 receipts
-one-time · lasts until used up
+lasts until used up
 
 Large
 CZK 999
 
-roughly 300 invoices and 600 receipts with Claude Haiku,
-or roughly 30 invoices and 60 receipts with the more accurate Claude Sonnet, depending on how much you chat with the AI
-one-time · lasts until used up · switch models for future conversations
+300 invoices and 600 receipts with Claude Haiku,
+or 30 invoices and 60 receipts with the more accurate Claude Sonnet, depending on how much you chat with the AI
+lasts until used up · switch models for future conversations
 
-Invoice counts are indicative. A pack is used according to actual consumption, and the estimate gets more accurate as you use the AI. Receipts use less than invoices. AI packs work with an active Pro subscription.
+Invoice counts are indicative. A pack is used according to actual consumption, and the estimate gets more accurate as you use the AI. Receipts use less than invoices.
 
 Security and privacy
 
@@ -338,7 +339,7 @@ Sole traders and small businesses in the Czech Republic that issue invoices and 
 
 How much does it cost?
 
-On one device, invoicing and tax records with data in the cloud are free, including the MCP server for Claude and ChatGPT. Pro adds unlimited devices, multiple users per company, the in-app AI assistant and on-device data storage; it costs CZK 99 a month or CZK 749 a year, with a 7-day free trial. Pro includes AI with the Claude Haiku model for roughly 10 invoices and 20 receipts a month; more is available in top-up packs. AI with your own key and over MCP is paid to the provider. A limited trial AI in the Free plan is provided by us.
+On one device, invoicing and tax records with data in the cloud are free, including the MCP server for Claude and ChatGPT. Pro adds unlimited devices, multiple users per company, the in-app AI assistant and on-device data storage; it costs CZK 99 a month or CZK 749 a year, with a 7-day free trial. Pro includes AI with the Claude Haiku model for 10 invoices and 20 receipts a month; more is available in AI packs, which you can also buy in the Free plan. AI with your own key and over MCP is paid to the provider. A limited trial AI in the Free plan is provided by us.
 
 Can I use iÚčetní on several devices or with a colleague?
 
@@ -426,7 +427,7 @@ We never use your customers' data for our own purposes and never share it, excep
 
 ## 5. AI features and MCP
 
-AI features are optional. If you don't use them, no data is sent to AI providers. The in-app AI assistant is part of Pro; MCP connections are available in Free as well.
+AI features are optional. If you don't use them, no data is sent to AI providers. The in-app AI assistant is part of Pro, and in Free it is available with an AI pack; MCP connections are available in Free as well.
 
 - AI assistant in Pro (Claude Haiku included) and AI packs: the conversation and the data the assistant works with are sent via our server to Anthropic. We record usage for limits but do not store conversation content.
 - AI assistant with your own key: the conversation and the data the assistant works with are sent to the AI provider you choose: Anthropic (Claude), OpenAI, or a provider whose key you enter. With your own key, data goes directly from your device and is subject to that provider's terms. The key is stored only in the device Keychain and our server never sees it.
@@ -439,6 +440,7 @@ Processors for AI features:
 - Anthropic, PBC (USA) – AI assistant and document reading.
 - OpenAI (USA) – backup document reading, only when Anthropic's service is unavailable.
 - iÚčetní's own model – backup document reading on our servers; data does not leave our infrastructure.
+- iÚčetní's own decision model – assessing unusually long conversations for compliance with the Terms of Use, on our servers; data does not leave our infrastructure.
 
 We share only the content needed for the feature: assistant conversation text and images of documents you ask us to read. Under their terms, providers do not use it to train models. Our server does not keep conversation content or the documents it reads. We store only the expense you save (including the attachment, if you add one) and a record of AI usage (token count, cost) to account for your allowance. If you do not want documents processed by AI, don't use document reading and enter the data manually. Every change proposed by AI is confirmed by you.
 
@@ -514,7 +516,7 @@ The app is intended primarily for businesses. If you use it as a consumer, you k
 
 ### Free
 
-With your data stored in the cloud, you can use the app free of charge. The Free plan is intended for one user on one device and includes invoicing, tax records and connecting your own Claude or ChatGPT through the MCP server. AI clients connected over MCP don't count towards the device limit. To use the app on another device, sign out on the original one; support can revoke access for a lost device.
+With your data stored in the cloud, you can use the app free of charge. The Free plan is intended for one user on one device and includes invoicing, tax records and connecting your own Claude or ChatGPT through the MCP server. AI features can be added with AI packs. AI clients connected over MCP don't count towards the device limit. To use the app on another device, sign out on the original one; support can revoke access for a lost device.
 
 ### iÚčetní Pro
 
@@ -527,8 +529,8 @@ Pro adds unlimited devices, multiple users per company, the in-app AI assistant 
 - Manage and cancel the subscription in Settings → [your name] → Subscriptions or in your App Store account settings. Cancellation takes effect at the end of the paid period.
 - Refunds are handled by Apple under its rules ( reportaproblem.apple.com).
 - The subscription covers iPhone, iPad and Mac with the same Apple ID. You can share Pro with family members through Apple Family Sharing; each of them then gets Pro for their own iÚčetní account. The Free plan is not shared.
-- AI included in Pro: the subscription includes a monthly AI allowance with the Claude Haiku model, roughly enough for 10 invoices and 20 receipts. The actual number depends on how you use it. The app shows your current usage and estimate. Unused allowance does not carry over to the next month.
-- AI packs are one-time purchases for Pro that last until used up. They are used only after the monthly allowance is exhausted: Small (CZK 49, roughly 10 invoices and 20 receipts), Medium (CZK 299, roughly 80 invoices and 150 receipts) and Large (CZK 999, roughly 300 invoices and 600 receipts with Claude Haiku, or about a tenth of that, 30 invoices and 60 receipts, with Claude Sonnet depending on conversation length; the model can be switched for future conversations). A pack is used according to actual AI consumption; invoice and receipt counts are indicative. Unused pack allowance does not expire. It can be used while you have an active Pro subscription and is available again when Pro is renewed. Packs are bought in the app through the App Store, charged by Apple, and refunds follow Apple's rules.
+- AI included in Pro: the subscription includes a monthly AI allowance with the Claude Haiku model, enough for about 10 invoices and 20 receipts. The actual number depends on how you use it. The app shows your current usage and estimate. Unused allowance does not carry over to the next month.
+- AI packs can be bought in both Free and Pro and last until used up. With Pro, they are used only after the monthly allowance is exhausted: Small (CZK 49, about 10 invoices and 20 receipts), Medium (CZK 299, about 80 invoices and 150 receipts) and Large (CZK 999, about 300 invoices and 600 receipts with Claude Haiku, or about a tenth of that, 30 invoices and 60 receipts, with Claude Sonnet depending on conversation length; the model can be switched for future conversations). A pack is used according to AI consumption (see section 4); invoice and receipt counts are indicative. Unused pack allowance does not expire, including after a Pro subscription ends. Packs are bought in the app through the App Store, charged by Apple, and refunds follow Apple's rules.
 - You pay for the AI assistant with your own API key (Anthropic, OpenAI) to the provider according to usage and their terms; it does not count towards the Pro allowance.
 - When the subscription ends, Pro features become unavailable and all devices are signed out. You can then sign in again on one device with the Free plan. Invited users lose access to the company. No data is deleted, and renewing the subscription restores full access.
 
@@ -539,6 +541,7 @@ We may change prices or plan contents. Subscription price changes follow App Sto
 - Artificial intelligence. The iÚčetní assistant and document reading use language models from external providers. Conversations with the assistant included in Pro and from AI packs are processed by Anthropic (Claude). Documents you ask us to read are processed by Anthropic; if its service is unavailable, they may be processed by OpenAI or by iÚčetní's own model running on our servers. We send providers only the content needed for the feature (conversation text, document images). AI output may contain mistakes: check extracted data and the assistant's suggestions before saving. You are responsible for the content of your documents and invoices. The AI allowance in Pro and in AI packs is limited; unused monthly Pro allowance does not carry over, while pack allowance lasts until used up.
 - Where data goes. When you use the AI assistant or connect over MCP, the data the AI works with is passed to the provider of the chosen model: Anthropic (Claude) or OpenAI (ChatGPT and OpenAI models). When processing is done by iÚčetní's own model, the data stays on our servers. With MCP, you choose the provider by choosing which AI app you connect.
 - Price by model. Smarter models cost more for the same work. As a rough guide, issuing one invoice with AI costs from about CZK 0.15 with Claude Haiku up to about CZK 15 with the most capable models such as Claude Opus or OpenAI Sol. The actual cost depends on conversation length, the provider's prices and the exchange rate. With AI included in Pro and in packs this is drawn from your allowance; with your own key you pay the provider; over MCP it counts toward your AI app subscription.
+- Monitoring of AI use. AI included in Pro and from AI packs runs through our servers. We check that it is not used in breach of these terms, that is, for anything other than working with iÚčetní and communicating with our MCP server. Unusually long conversations are assessed by our own decision model running on our infrastructure; the conversation content does not leave it. If the assessment shows use in breach of these terms, we may deduct a higher credit for that conversation. A conversation that serves work with iÚčetní is charged as a usual one even if it is longer than usual, and we bear the extra cost.
 - The trial AI in the app is provided by us free of charge, with a limited number of requests and for invoicing tasks only. We may change its scope or availability, or discontinue it.
 - Third-party AI models and AI apps are not under our control. You pay for conversations with AI over MCP (Claude, ChatGPT and others) to their provider under your own subscription. We are not responsible for their availability, behaviour or answers; our MCP server only gives them the access you grant.
 - AI outputs (draft documents, details read from receipts, answers) may contain errors. Always check them before issuing a document or saving an expense.
@@ -938,7 +941,7 @@ Koncepty, ne hotové doklady AI připraví koncept bez čísla. Fakturu z něj v
 Každý zápis potvrzujete Bez vašeho souhlasu asistent nic neuloží a do dokladu, který máte otevřený, nezapisuje.
 
 -
-AI v ceně Pro Pro obsahuje model Claude Haiku zhruba na 10 faktur a 20 dokladů měsíčně. Spotřebu a odhad, na kolik faktur ještě zbývá, vidíte přímo v aplikaci. Víc dokoupíte v balíčcích, nebo použijete vlastní klíč Claude či OpenAI. MCP pro vaši aplikaci Claude nebo ChatGPT je zdarma pro všechny. Jak na to
+AI v ceně Pro Pro obsahuje model Claude Haiku na 10 faktur a 20 dokladů měsíčně. Spotřebu a odhad, na kolik faktur ještě zbývá, vidíte přímo v aplikaci. Víc dokoupíte v balíčcích AI, a to i ve verzi Zdarma, nebo použijete vlastní klíč Claude či OpenAI. MCP pro vaši aplikaci Claude nebo ChatGPT je zdarma pro všechny. Jak na to
 
 Funguje s Claude OpenAI
 
@@ -980,6 +983,7 @@ Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpe�
 - MCP server: připojte iÚčetní do Claude nebo ChatGPT (nepočítá se jako zařízení)
 - 1 zařízení: iPhone, iPad, nebo Mac
 - Zkušební AI asistent od nás, s omezeným počtem dotazů
+- Balíčky AI si můžete dokoupit i bez Pro
 
 7 dní zdarma
 
@@ -994,7 +998,7 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 - Vše z verze Zdarma
 - Neomezeně zařízení se synchronizací: iPhone, iPad i Mac
 - Více uživatelů v jedné firmě, třeba kolega nebo účetní. Stačí jedno předplatné vlastníka
-- AI asistent v ceně: Claude Haiku zhruba na 10 faktur a 20 dokladů měsíčně
+- AI asistent v ceně: Claude Haiku na 10 faktur a 20 dokladů měsíčně
 - Spotřeba a odhad zbývajících faktur přímo v aplikaci
 - Víc AI v balíčcích, nebo bez příplatku s vlastním klíčem Claude či OpenAI
 - Data i lokálně v zařízení
@@ -1003,32 +1007,32 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 
 Roční předplatné vychází na 62 Kč měsíčně. Předplatné se platí přes Apple ID a automaticky se obnovuje, dokud ho nezrušíte. Odhad počtu faktur a dokladů je orientační a zpřesňuje se podle toho, jak AI používáte. AI s vlastním klíčem a AI aplikace připojené přes MCP platíte jejich poskytovateli. Podrobnosti najdete v podmínkách použití.
 
-### AI balíčky k Pro
+### Balíčky AI
 
-Když vám AI v ceně Pro nestačí, dokoupíte si balíček. Platíte ho jednou, nevyprší a čerpá se až po vyčerpání měsíčního objemu. Aplikace ukazuje, kolik z něj zbývá.
+Balíček AI si koupíte ve verzi Zdarma i Pro. Nevyprší, v Pro se čerpá až po vyčerpání měsíčního objemu a aplikace ukazuje, kolik z něj zbývá.
 
 Malý
 49 Kč
 
-zhruba 10 faktur
+10 faktur
 a 20 dokladů
-jednorázově · platí do vyčerpání
+platí do vyčerpání
 
 Střední
 299 Kč
 
-zhruba 80 faktur
+80 faktur
 a 150 dokladů
-jednorázově · platí do vyčerpání
+platí do vyčerpání
 
 Velký
 999 Kč
 
-zhruba 300 faktur a 600 dokladů s Claude Haiku,
-nebo zhruba 30 faktur a 60 dokladů s přesnějším Claude Sonnet, podle toho, jak moc se s AI domlouváte
-jednorázově · platí do vyčerpání · model lze přepnout pro další rozhovory
+300 faktur a 600 dokladů s Claude Haiku,
+nebo 30 faktur a 60 dokladů s přesnějším Claude Sonnet, podle toho, jak moc se s AI domlouváte
+platí do vyčerpání · model lze přepnout pro další rozhovory
 
-Počty faktur jsou orientační. Balíček se čerpá podle skutečné spotřeby a odhad se zpřesňuje podle toho, jak AI používáte. Doklady (účtenky) spotřebují méně než faktury. Balíček AI funguje s aktivním Pro.
+Počty faktur jsou orientační. Balíček se čerpá podle skutečné spotřeby a odhad se zpřesňuje podle toho, jak AI používáte. Doklady (účtenky) spotřebují méně než faktury.
 
 Bezpečnost a soukromí
 
@@ -1062,7 +1066,7 @@ Pro živnostníky a malé firmy, které fakturují a vedou daňovou evidenci. Ho
 
 Kolik iÚčetní stojí?
 
-Na jednom zařízení je fakturace a daňová evidence s daty v cloudu zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Stojí 99 Kč měsíčně nebo 749 Kč ročně a 7 dní ji vyzkoušíte zdarma. AI s modelem Claude Haiku je v Pro v ceně zhruba na 10 faktur a 20 dokladů měsíčně, víc lze dokoupit v balíčcích. AI s vlastním klíčem a přes MCP platíte poskytovateli. Omezenou zkušební AI ve verzi Zdarma poskytujeme my.
+Na jednom zařízení je fakturace a daňová evidence s daty v cloudu zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Stojí 99 Kč měsíčně nebo 749 Kč ročně a 7 dní ji vyzkoušíte zdarma. AI s modelem Claude Haiku je v Pro v ceně na 10 faktur a 20 dokladů měsíčně, víc lze dokoupit v balíčcích AI. Balíčky si můžete koupit i ve verzi Zdarma. AI s vlastním klíčem a přes MCP platíte poskytovateli. Omezenou zkušební AI ve verzi Zdarma poskytujeme my.
 
 Můžu iÚčetní používat na více zařízeních nebo s kolegou?
 
@@ -1098,7 +1102,7 @@ Ano. Poslední data máte vždy po ruce a úpravy se odešlou, jakmile budete on
 
 Jak funguje AI asistent a kam jdou data?
 
-Ve verzi Zdarma je omezená zkušební AI. V Pro je v ceně model Claude Haiku zhruba na 10 faktur a 20 dokladů měsíčně a požadavky jdou přes náš server. Pokud chcete víc, dokoupíte balíček, nebo zadáte vlastní klíč Claude či OpenAI a platíte poskytovateli podle spotřeby. Přes MCP si iÚčetní připojíte i do své aplikace Claude nebo ChatGPT, tam platíte jejich předplatné. Každý zápis do dat potvrzujete vy. Podrobnosti najdete v zásadách ochrany soukromí.
+Ve verzi Zdarma je omezená zkušební AI a AI si můžete dokoupit v balíčku. V Pro je v ceně model Claude Haiku na 10 faktur a 20 dokladů měsíčně. Požadavky v ceně Pro i z balíčků jdou přes náš server. Pokud chcete víc, dokoupíte balíček, nebo zadáte vlastní klíč Claude či OpenAI a platíte poskytovateli podle spotřeby. Přes MCP si iÚčetní připojíte i do své aplikace Claude nebo ChatGPT, tam platíte jejich předplatné. Každý zápis do dat potvrzujete vy. Podrobnosti najdete v zásadách ochrany soukromí.
 
 Jak smažu účet?
 
@@ -1162,7 +1166,7 @@ Do aplikace zadáváte údaje o svých odběratelích a dodavatelích, napříkl
 
 ## 5. AI funkce
 
-AI funkce jsou volitelné. Pokud je nepoužíváte, žádná data k poskytovatelům AI neodcházejí. AI asistent v aplikaci je součástí verze Pro a připojení přes MCP je dostupné i ve verzi Zdarma.
+AI funkce jsou volitelné. Pokud je nepoužíváte, žádná data k poskytovatelům AI neodcházejí. AI asistent v aplikaci je součástí verze Pro, ve verzi Zdarma ho zpřístupní balíček AI, a připojení přes MCP je dostupné i ve verzi Zdarma.
 
 - AI asistent v Pro (Claude Haiku v ceně) a balíčky AI: rozhovor a údaje, se kterými asistent pracuje, posíláme přes náš server společnosti Anthropic. Kvůli limitům evidujeme spotřebu, obsah rozhovorů neukládáme.
 - AI asistent s vlastním klíčem: rozhovor a údaje, se kterými asistent pracuje, se předávají zvolenému poskytovateli AI: Anthropic (Claude), OpenAI, nebo poskytovateli, ke kterému zadáte vlastní klíč. Při použití vlastního klíče odcházejí údaje přímo z vašeho zařízení a řídí se podmínkami daného poskytovatele. Klíč ukládáme jen do Klíčenky zařízení a náš server ho nevidí.
@@ -1175,6 +1179,7 @@ Zpracovatelé pro funkce AI:
 - Anthropic, PBC (USA) – AI asistent a čtení dokladů.
 - OpenAI (USA) – záložní čtení dokladů, jen když služba Anthropic není dostupná.
 - Vlastní model iÚčetní – záložní čtení dokladů na našich serverech, data neopouštějí naši infrastrukturu.
+- Vlastní rozhodovací model iÚčetní – posouzení neobvykle dlouhých rozhovorů kvůli dodržování podmínek použití, na našich serverech, data neopouštějí naši infrastrukturu.
 
 Předáváme jen obsah potřebný pro funkci: text rozhovoru s asistentem a obrázky dokladů, které necháte přečíst. Poskytovatelé je podle svých podmínek nepoužívají k trénování modelů. Obsah rozhovorů ani čtené doklady si náš server neukládá. Uložíme jen výdaj, který sami uložíte (včetně přílohy, pokud ji přiložíte), a záznam o spotřebě AI (počet tokenů, cena) kvůli vyúčtování objemu. Pokud nechcete, aby se doklady zpracovávaly pomocí AI, funkci čtení dokladů nepoužívejte a údaje zadejte ručně.
 
@@ -1250,7 +1255,7 @@ Aplikace je určena především podnikatelům. Pokud ji používáte jako spot�
 
 ### Zdarma
 
-S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma je určena pro jednoho uživatele na jednom zařízení a obsahuje fakturaci, daňovou evidenci a připojení k vlastní aplikaci Claude nebo ChatGPT přes MCP server. Připojení AI klientů přes MCP se do limitu zařízení nepočítá. Pokud chcete aplikaci používat na jiném zařízení, odhlaste se na původním. Přístup ztraceného zařízení zruší podpora.
+S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma je určena pro jednoho uživatele na jednom zařízení a obsahuje fakturaci, daňovou evidenci a připojení k vlastní aplikaci Claude nebo ChatGPT přes MCP server. AI funkce si lze dokoupit v balíčcích AI. Připojení AI klientů přes MCP se do limitu zařízení nepočítá. Pokud chcete aplikaci používat na jiném zařízení, odhlaste se na původním. Přístup ztraceného zařízení zruší podpora.
 
 ### iÚčetní Pro
 
@@ -1263,8 +1268,8 @@ Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jed
 - Předplatné spravujete a rušíte v Nastavení → [vaše jméno] → Předplatná nebo v nastavení účtu App Store. Zrušení platí od konce zaplaceného období.
 - O vrácení peněz rozhoduje Apple podle svých pravidel ( reportaproblem.apple.com).
 - Předplatné platí pro iPhone, iPad i Mac se stejným Apple ID. Předplatné Pro můžete sdílet s členy rodiny přes Rodinné sdílení Apple, každý z nich pak má Pro pro svůj vlastní účet iÚčetní. Verze Zdarma se nesdílí.
-- AI v ceně Pro: předplatné zahrnuje měsíční objem AI s modelem Claude Haiku, orientačně zhruba na 10 faktur a 20 dokladů. Skutečný počet závisí na způsobu používání. Aktuální spotřebu a odhad vidíte v aplikaci. Nevyčerpaný objem se do dalšího měsíce nepřevádí.
-- Balíčky AI jsou jednorázové nákupy k verzi Pro, které platí do vyčerpání. Čerpají se až po vyčerpání měsíčního objemu: Malý (49 Kč, orientačně 10 faktur a 20 dokladů), Střední (299 Kč, orientačně 80 faktur a 150 dokladů) a Velký (999 Kč, orientačně 300 faktur a 600 dokladů s modelem Claude Haiku, nebo zhruba desetinu, tedy 30 faktur a 60 dokladů, s modelem Claude Sonnet podle délky konverzací; model lze přepnout pro další rozhovory). Balíček se čerpá podle skutečné spotřeby AI, uvedené počty faktur a dokladů jsou orientační. Nevyčerpaný objem balíčku nepropadá. Čerpat ho lze, když máte aktivní Pro; po obnovení Pro na něj navážete. Balíčky se kupují v aplikaci přes App Store, platí je Apple a vracení peněz se řídí jeho pravidly.
+- AI v ceně Pro: předplatné zahrnuje měsíční objem AI s modelem Claude Haiku, orientačně na 10 faktur a 20 dokladů. Skutečný počet závisí na způsobu používání. Aktuální spotřebu a odhad vidíte v aplikaci. Nevyčerpaný objem se do dalšího měsíce nepřevádí.
+- Balíčky AI lze koupit ve verzi Zdarma i Pro a platí do vyčerpání. V Pro se čerpají až po vyčerpání měsíčního objemu: Malý (49 Kč, orientačně 10 faktur a 20 dokladů), Střední (299 Kč, orientačně 80 faktur a 150 dokladů) a Velký (999 Kč, orientačně 300 faktur a 600 dokladů s modelem Claude Haiku, nebo přibližně desetinu, tedy 30 faktur a 60 dokladů, s modelem Claude Sonnet podle délky konverzací; model lze přepnout pro další rozhovory). Balíček se čerpá podle spotřeby AI (viz bod 4), uvedené počty faktur a dokladů jsou orientační. Nevyčerpaný objem balíčku nepropadá, a to ani po skončení předplatného Pro. Balíčky se kupují v aplikaci přes App Store, platí je Apple a vracení peněz se řídí jeho pravidly.
 - AI asistenta s vlastním API klíčem (Anthropic, OpenAI) platíte poskytovateli podle spotřeby a jeho podmínek, do objemu v ceně Pro se nepočítá.
 - Po skončení předplatného přestanou být funkce verze Pro dostupné a všechna zařízení se odhlásí. Poté se můžete znovu přihlásit na jednom zařízení ve verzi Zdarma. Přizvaní uživatelé ztratí přístup k firmě. Data se nemažou a po obnovení předplatného je máte zpět v plném rozsahu.
 
@@ -1275,6 +1280,7 @@ Cenu nebo rozsah verzí můžeme změnit. Změna ceny předplatného se řídí 
 - Umělá inteligence. Asistent a čtení dokladů v iÚčetní využívají jazykové modely externích poskytovatelů. Rozhovory s asistentem v ceně Pro a z balíčků AI zpracovává Anthropic (Claude). Doklady, které necháte přečíst, zpracovává Anthropic; pokud jeho služba není dostupná, může je zpracovat OpenAI nebo vlastní model iÚčetní provozovaný na našich serverech. Poskytovateli posíláme jen obsah potřebný pro danou funkci (text rozhovoru, obrázky dokladu). Výsledky AI mohou obsahovat chyby: údaje z dokladu i návrhy asistenta před uložením zkontrolujte. Za obsah dokladů a faktur odpovídáte vy. Objem AI v Pro a v balíčcích AI je omezený; nevyčerpaný měsíční objem Pro se nepřevádí, objem balíčku platí do vyčerpání.
 - Kam data směřují. Při použití AI asistenta nebo připojení přes MCP se data, se kterými AI pracuje, předávají poskytovateli zvoleného modelu: společnosti Anthropic (Claude), nebo OpenAI (ChatGPT a modely OpenAI). Pokud zpracování provádí vlastní model iÚčetní, data zůstávají na našich serverech. U MCP určujete poskytovatele vy tím, kterou AI aplikaci připojíte.
 - Cena podle modelu. Chytřejší modely stojí za stejnou práci víc. Orientačně stojí vystavení jedné faktury s pomocí AI zhruba od 0,15 Kč u modelu Claude Haiku až po zhruba 15 Kč u nejvýkonnějších modelů, jako jsou Claude Opus nebo OpenAI Sol. Skutečná cena závisí na délce rozhovoru, ceníku poskytovatele a kurzu měny. U AI v ceně Pro a v balíčcích se podle toho čerpá objem, u vlastního klíče platíte poskytovateli a u MCP se čerpá vaše předplatné AI aplikace.
+- Kontrola využití AI. AI v ceně Pro a z balíčků AI běží přes naše servery. Kontrolujeme, zda se nepoužívá v rozporu s těmito podmínkami, tedy k jinému účelu než k práci s iÚčetní a komunikaci s naším MCP serverem. Neobvykle dlouhé rozhovory posuzuje náš vlastní rozhodovací model, který běží na naší infrastruktuře; obsah rozhovoru ji přitom neopouští. Pokud posouzení ukáže použití v rozporu s podmínkami, můžeme za takový rozhovor odečíst vyšší kredit. Rozhovor, který slouží práci s iÚčetní, je i při delší než obvyklé délce účtován jako obvyklý a náklady navíc neseme my.
 - Zkušební AI v aplikaci poskytujeme my zdarma, s omezeným počtem dotazů a jen pro práci s fakturací. Rozsah a dostupnost můžeme měnit nebo ji ukončit.
 - AI modely a AI aplikace třetích stran nejsou v naší správě. Za konverzace s AI přes MCP (Claude, ChatGPT a další) platíte jejich poskytovateli v rámci svého předplatného. Za jejich dostupnost, chování ani odpovědi neodpovídáme. Náš MCP server jim zpřístupní jen to, k čemu jim udělíte přístup.
 - Výstupy AI (koncepty dokladů, přečtené údaje z účtenek, odpovědi) mohou obsahovat chyby. Před vystavením dokladu nebo uložením výdaje je vždy zkontrolujte.
