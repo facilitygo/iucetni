@@ -45,7 +45,7 @@ L = {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 NEMOSERVIS Praha s.r.o. NEMOSERVIS je ochranná známka společnosti NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky Apple Inc. Claude je ochranná známka Anthropic PBC, OpenAI a ChatGPT jsou ochranné známky OpenAI.</span>
+      <span>© 2026 NEMOSERVIS Praha s.r.o. NEMOSERVIS® je registrovaná ochranná známka společnosti NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky Apple Inc. Claude je ochranná známka Anthropic PBC, OpenAI a ChatGPT jsou ochranné známky OpenAI.</span>
       <span class="foot-tools"><a class="lang-link" href="{other}" hreflang="en" lang="en">English</a><button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button></span>
     </div>
   </div>
@@ -74,7 +74,7 @@ L = {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 NEMOSERVIS Praha s.r.o. NEMOSERVIS is a trademark of NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri and App Store are trademarks of Apple Inc. Claude is a trademark of Anthropic PBC; OpenAI and ChatGPT are trademarks of OpenAI.</span>
+      <span>© 2026 NEMOSERVIS Praha s.r.o. NEMOSERVIS® is a registered trademark of NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri and App Store are trademarks of Apple Inc. Claude is a trademark of Anthropic PBC; OpenAI and ChatGPT are trademarks of OpenAI.</span>
       <span class="foot-tools"><a class="lang-link" href="{other}" hreflang="cs" lang="cs">Česky</a><button class="theme-btn" id="theme" type="button" aria-label="Switch theme">Theme: auto</button></span>
     </div>
   </div>
@@ -190,7 +190,7 @@ ROBOTS = "# iucetni.com – vyhledávače i AI crawleři jsou vítáni / search 
 
 LLMS = f"""# iÚčetní
 
-> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro (CZK 99/month or CZK 749/year, 7-day free trial) adds unlimited devices, multiple users per company, an in-app AI assistant (Claude, OpenAI or own key) and on-device storage. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
+> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro (CZK 99/month or CZK 749/year, 7-day free trial) adds unlimited devices, multiple users per company, an in-app AI assistant using the user's own Claude or OpenAI API key, and on-device storage. AI usage is paid by the user to the AI provider (API usage, or their Claude/ChatGPT subscription when connecting over MCP); a limited free trial AI in the app is provided by iÚčetní. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
 
 Key facts:
 - Platforms: iOS 26, iPadOS 26, macOS 26 – one App Store app (coming soon). The app UI is in Czech.
