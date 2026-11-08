@@ -49,10 +49,17 @@ key: soukromi
 <ul>
 <li><strong>AI assistant in Pro (Claude Haiku included) and AI packs:</strong> the conversation and the data the assistant works with are sent via our server to Anthropic. We record usage for limits but do not store conversation content.</li>
 <li><strong>AI assistant with your own key:</strong> the conversation and the data the assistant works with are sent to the AI provider you choose: Anthropic (Claude), OpenAI, or a provider whose key you enter. With your own key, data goes directly from your device and is subject to that provider's terms. The key is stored only in the device Keychain and our server never sees it.</li>
-<li><strong>AI receipt reading:</strong> the image or PDF of a document is sent via our server to Anthropic, which extracts its details. The result is used only to fill in the expense.</li>
+<li><strong>AI receipt reading:</strong> the image or PDF of a document is sent via our server to Anthropic, which extracts its details. The result is used only to fill in the expense. If Anthropic's service is unavailable, the document may be read by OpenAI or by iÚčetní's own model on our servers.</li>
 <li><strong>Trial AI in the app</strong> (also in the Free plan): provided by us. Requests are processed by our server, possibly together with an AI provider we have a contract with. We keep request counts for usage limits, but we do not store conversation content.</li>
 <li><strong>MCP connections:</strong> when you connect iÚčetní to Claude, ChatGPT or another client and authorize it (OAuth) or give it an AI key, that client receives only the data its AI requests while you use it. You can revoke access at any time in Settings → AI keys.</li>
 </ul>
+<p><strong>Processors for AI features:</strong></p>
+<ul>
+<li>Anthropic, PBC (USA) – AI assistant and document reading.</li>
+<li>OpenAI (USA) – backup document reading, only when Anthropic's service is unavailable.</li>
+<li>iÚčetní's own model – backup document reading on our servers; data does not leave our infrastructure.</li>
+</ul>
+<p>We share only the content needed for the feature: assistant conversation text and images of documents you ask us to read. Under their terms, providers do not use it to train models. Our server does not keep conversation content or the documents it reads. We store only the expense you save (including the attachment, if you add one) and a record of AI usage (token count, cost) to account for your allowance. If you do not want documents processed by AI, don't use document reading and enter the data manually. Every change proposed by AI is confirmed by you.</p>
 <p>Data on our servers stays in the EU. AI providers (Anthropic, OpenAI), however, are based in the USA. Data is transferred to them under the European Commission adequacy decision (EU-US Data Privacy Framework) or standard contractual clauses.</p>
 
 <h2 id="recipients">6. Who we share data with</h2>

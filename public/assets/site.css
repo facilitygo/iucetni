@@ -170,6 +170,7 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"";position:absolute;right:6px;top:26px;width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s}
 details[open] summary::after{transform:rotate(-135deg);top:30px}
 details p{color:var(--muted);padding:0 0 20px}
+details ul{color:var(--muted);padding:0 0 20px 20px;margin:0}details li{margin:0 0 8px}
 
 /* final cta */
 .final{text-align:center;padding:96px 0}
