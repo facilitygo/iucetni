@@ -22,8 +22,9 @@ iPad
 Mac
 · one app for all your devices
 
-Connects to Claude ChatGPT
-via MCP →
+Connects to Claude ChatGPT via MCP →
+
+In-app AI assistant Claude OpenAI via API · Pro
 
 - ISDOC 6.0.2
 - QR payments
@@ -688,8 +689,9 @@ iPad
 Mac
 · jedna aplikace pro všechna zařízení
 
-Připojíte do Claude ChatGPT
-přes MCP →
+Připojíte do Claude ChatGPT přes MCP →
+
+AI asistent v aplikaci Claude OpenAI přes API · Pro
 
 - ISDOC 6.0.2
 - QR Platba
