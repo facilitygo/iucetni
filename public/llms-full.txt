@@ -252,7 +252,7 @@ For one user on one device of your choice. Data safely in the cloud on EU server
 - Customers from ARES and a price list
 - Receipts from photos and expenses
 - Tax records, overviews and reports
-- MCP server: connect iÚčetní to Claude or ChatGPT
+- MCP server: connect iÚčetní to Claude or ChatGPT (doesn't count as a device)
 - 1 device: iPhone, iPad or Mac
 
 7 days free
@@ -267,7 +267,7 @@ Everything in Free with no device limit, for your whole team and with the in-app
 
 - Everything in Free
 - Unlimited devices with sync: iPhone, iPad and Mac
-- Multiple users per company, e.g. a colleague or your accountant
+- Multiple users per company, e.g. a colleague or your accountant. The owner's subscription covers them
 - AI assistant with Claude, OpenAI or your own key
 - Invoice drafts from a sentence, AI receipt reading
 - Local data on your device
@@ -311,7 +311,7 @@ On one device, invoicing and tax records with data in the cloud are free, includ
 
 Can I use iÚčetní on several devices or with a colleague?
 
-Yes, with Pro. The Free plan is for one user on one device. With Pro you get iPhone, iPad and Mac with the same data, and you can invite more users to your company, such as a colleague or your accountant.
+Yes, with Pro. The Free plan is for one user on one device. To switch to another device, sign out on the original one. Claude or ChatGPT connected over MCP doesn't count towards the limit. With Pro you get iPhone, iPad and Mac with the same data, and you can invite more users to your company, such as a colleague or your accountant. The company owner's subscription covers them too.
 
 Where is my data stored?
 
@@ -470,11 +470,11 @@ The app is intended primarily for businesses. If you use it as a consumer, you k
 
 ### Free
 
-With your data stored in the cloud, you can use the app free of charge. The Free plan is intended for one user on one device and includes invoicing, tax records and connecting your own Claude or ChatGPT through the MCP server.
+With your data stored in the cloud, you can use the app free of charge. The Free plan is intended for one user on one device and includes invoicing, tax records and connecting your own Claude or ChatGPT through the MCP server. AI clients connected over MCP don't count towards the device limit. To use the app on another device, sign out on the original one; support can revoke access for a lost device.
 
 ### iÚčetní Pro
 
-Pro adds unlimited devices, multiple users per company, the in-app AI assistant (Claude, OpenAI or your own AI provider key) and data storage directly on your device. You are responsible for the users you invite to your company and for their activity.
+Pro adds unlimited devices, multiple users per company, the in-app AI assistant (Claude, OpenAI or your own AI provider key) and data storage directly on your device. The company owner's subscription also covers the users they invite to the company. The owner is responsible for those users and their activity.
 
 - Free trial: you can try Pro free for 7 days. Unless you cancel during the trial, the subscription becomes paid when the trial ends. AI usage during the trial may be subject to request limits.
 - The price is CZK 99 per month or CZK 749 per year. This is the final price including VAT; payment and tax are collected and remitted by Apple as the App Store seller. If the price shown in the App Store or in the app before purchase differs, the displayed price applies.
@@ -484,7 +484,7 @@ Pro adds unlimited devices, multiple users per company, the in-app AI assistant 
 - Refunds are handled by Apple under its rules ( reportaproblem.apple.com).
 - The subscription covers iPhone, iPad and Mac with the same Apple ID.
 - If you use your own AI provider key, you pay that provider for its usage under its terms.
-- When the subscription ends, Pro features become unavailable, but you keep your data.
+- When the subscription ends, Pro features become unavailable and all devices are signed out. You can then sign in again on one device with the Free plan. Invited users lose access to the company. No data is deleted, and renewing the subscription restores full access.
 
 We may change prices or plan contents. Subscription price changes follow App Store rules and Apple will notify you in advance.
 
@@ -916,7 +916,7 @@ Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpe�
 - Odběratelé z ARES a ceník
 - Účtenky z fotek a výdaje
 - Daňová evidence, přehledy a sestavy
-- MCP server: připojte iÚčetní do Claude nebo ChatGPT
+- MCP server: připojte iÚčetní do Claude nebo ChatGPT (nepočítá se jako zařízení)
 - 1 zařízení: iPhone, iPad, nebo Mac
 
 7 dní zdarma
@@ -931,7 +931,7 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 
 - Vše z verze Zdarma
 - Neomezeně zařízení se synchronizací: iPhone, iPad i Mac
-- Více uživatelů v jedné firmě, třeba kolega nebo účetní
+- Více uživatelů v jedné firmě, třeba kolega nebo účetní. Stačí jedno předplatné vlastníka
 - AI asistent s Claude, OpenAI nebo vlastním klíčem
 - Koncepty faktur z běžné věty a čtení účtenek pomocí AI
 - Data i lokálně v zařízení
@@ -975,7 +975,7 @@ Na jednom zařízení je fakturace a daňová evidence s daty v cloudu zdarma, v
 
 Můžu iÚčetní používat na více zařízeních nebo s kolegou?
 
-Ano, ve verzi Pro. Verze Zdarma je pro jednoho uživatele na jednom zařízení. S Pro máte iPhone, iPad i Mac se stejnými daty a do firmy můžete přizvat další uživatele, třeba kolegu nebo účetní.
+Ano, ve verzi Pro. Verze Zdarma je pro jednoho uživatele na jednom zařízení. Pokud chcete přejít na jiné, na původním zařízení se odhlaste. Připojení Claude nebo ChatGPT přes MCP se do limitu nepočítá. S Pro máte iPhone, iPad i Mac se stejnými daty a do firmy můžete přizvat další uživatele, třeba kolegu nebo účetní. Předplatné vlastníka firmy platí i pro ně.
 
 Kde jsou moje data?
 
@@ -1146,11 +1146,11 @@ Aplikace je určena především podnikatelům. Pokud ji používáte jako spot�
 
 ### Zdarma
 
-S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma je určena pro jednoho uživatele na jednom zařízení a obsahuje fakturaci, daňovou evidenci a připojení k vlastní aplikaci Claude nebo ChatGPT přes MCP server.
+S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma je určena pro jednoho uživatele na jednom zařízení a obsahuje fakturaci, daňovou evidenci a připojení k vlastní aplikaci Claude nebo ChatGPT přes MCP server. Připojení AI klientů přes MCP se do limitu zařízení nepočítá. Pokud chcete aplikaci používat na jiném zařízení, odhlaste se na původním. Přístup ztraceného zařízení zruší podpora.
 
 ### iÚčetní Pro
 
-Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci (Claude, OpenAI nebo vlastní klíč poskytovatele AI) a ukládání dat přímo ve vašem zařízení. Za uživatele, které do firmy přizvete, a za jejich činnost odpovídáte vy.
+Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci (Claude, OpenAI nebo vlastní klíč poskytovatele AI) a ukládání dat přímo ve vašem zařízení. Předplatné vlastníka firmy platí i pro uživatele, které do firmy přizve. Za tyto uživatele a jejich činnost odpovídá vlastník.
 
 - Zkušební období: verzi Pro si můžete 7 dní vyzkoušet zdarma. Pokud předplatné během zkušebního období nezrušíte, začne se po jeho skončení platit. Zkušební provoz AI může mít limity počtu požadavků.
 - Cena je 99 Kč za měsíc nebo 749 Kč za rok. Jde o konečnou cenu včetně DPH. Platbu i daň vybírá a odvádí Apple jako prodejce v App Store. Pokud se cena v App Store nebo v aplikaci před nákupem liší, platí tato zobrazená cena.
@@ -1160,7 +1160,7 @@ Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jed
 - O vrácení peněz rozhoduje Apple podle svých pravidel ( reportaproblem.apple.com).
 - Předplatné platí pro iPhone, iPad i Mac se stejným Apple ID.
 - Při použití vlastního klíče poskytovatele AI platíte za jeho využití tomuto poskytovateli podle jeho podmínek.
-- Po skončení předplatného přestanou být funkce verze Pro dostupné, o svá data ale nepřijdete.
+- Po skončení předplatného přestanou být funkce verze Pro dostupné a všechna zařízení se odhlásí. Poté se můžete znovu přihlásit na jednom zařízení ve verzi Zdarma. Přizvaní uživatelé ztratí přístup k firmě. Data se nemažou a po obnovení předplatného je máte zpět v plném rozsahu.
 
 Cenu nebo rozsah verzí můžeme změnit. Změna ceny předplatného se řídí pravidly App Store a Apple vás na ni předem upozorní.
 
