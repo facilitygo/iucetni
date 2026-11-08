@@ -254,7 +254,7 @@ For one user on one device of your choice. Data safely in the cloud on EU server
 - Tax records, overviews and reports
 - MCP server: connect iÚčetní to Claude or ChatGPT (doesn't count as a device)
 - 1 device: iPhone, iPad or Mac
-- Trial AI assistant to try out soon
+- Trial AI assistant to try out
 
 7 days free
 
@@ -920,7 +920,7 @@ Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpe�
 - Daňová evidence, přehledy a sestavy
 - MCP server: připojte iÚčetní do Claude nebo ChatGPT (nepočítá se jako zařízení)
 - 1 zařízení: iPhone, iPad, nebo Mac
-- Zkušební AI asistent na vyzkoušení brzy
+- Zkušební AI asistent na vyzkoušení
 
 7 dní zdarma
 
