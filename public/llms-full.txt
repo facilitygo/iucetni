@@ -68,16 +68,16 @@ Use cases
 
 On a building site, behind a café counter, at the farm gate, or through an AI agent that handles your email. Four examples of how iÚčetní fits into an ordinary day.
 
-Plumber iPhone AI assistant · Pro
+Plumber iPhone · dictation AI assistant · Pro
 
-### The job is billed before he leaves the site
+### He dictates the job, the AI issues the invoice
 
-Petr has just finished a bathroom for the Nováks. He bought the material on one supplier invoice, but part of it was for stock. By the time he takes off his overalls, the customer has the invoice in their inbox.
+Petr has just finished a bathroom for the Nováks. In the morning he bought material at the wholesaler on a single receipt, but not all of it is for this job. He handles the invoice in one sentence before he packs up his tools.
 
-- He snaps the supplier invoice and the AI reads all the line items.
-- Together with the assistant he picks what belongs to this job, leaves out the sealant and gloves kept for stock and adds his usual 15% markup on the material.
-- He adds labour and travel from his price list and has the invoice issued.
-- He emails it right from the site, or shows the customer the QR code so they can pay on the spot.
+- In the morning he snaps the wholesaler's receipt. The AI reads it and saves it as an expense with all its line items.
+- At the customer's he dictates what he used, how many hours he spent and how far he drove. The AI knows his usual markup from his earlier invoices.
+- The AI picks the pipe, elbows and valves from the receipt and asks about the rest: the sealant and gloves? Petr says that's everything.
+- The AI issues the invoice. Petr emails it, or shows the customer the QR code so they can pay on the spot.
 
 Café iPhone and Mac · 2 users Pro
 
@@ -734,16 +734,16 @@ Příběhy z praxe
 
 Na stavbě, za pultem kavárny, na dvoře nebo přes AI agenta, který za vás vyřizuje poštu. Čtyři ukázky, jak iÚčetní zapadne do běžného dne.
 
-Instalatér iPhone AI asistent · Pro
+Instalatér iPhone · diktování AI asistent · Pro
 
-### Zakázka vyúčtovaná ještě na místě
+### Nadiktuje zakázku, AI vystaví fakturu
 
-Petr dokončil koupelnu u Novákových. Materiál nakoupil ve stavebninách na jednu fakturu, ale část z ní je na sklad. Než si sundá montérky, má zákazník fakturu v e-mailu.
+Petr dokončil koupelnu u Novákových. Ráno nakoupil ve velkoobchodu materiál na jeden doklad, ale ne všechno je na tuhle zakázku. Fakturu vyřídí jednou větou, ještě než sbalí nářadí.
 
-- Vyfotí fakturu od dodavatele a AI z ní přečte všechny položky.
-- S asistentem projde, co patří k zakázce. Silikon a rukavice na sklad vynechají a k materiálu připočtou jeho obvyklou 15% marži.
-- Přidá hodiny práce a dopravu z ceníku a nechá fakturu vystavit.
-- Fakturu pošle e-mailem přímo z terénu, nebo zákazníkovi ukáže QR kód a ten zaplatí hned.
+- Ráno vyfotí doklad z velkoobchodu. AI ho přečte a uloží jako výdaj i s položkami.
+- U zákazníka nadiktuje, co použil, kolik hodin tu byl a kolik najel. Obvyklou marži AI zná z jeho dřívějších faktur.
+- AI vybere z dokladu trubku, kolena a ventily a doptá se na zbytek: silikon a rukavice? Petr odpoví, že to je vše.
+- AI fakturu vystaví. Petr ji pošle e-mailem, nebo zákazníkovi ukáže QR kód a ten zaplatí hned.
 
 Kavárna iPhone a Mac · 2 uživatelé Pro
 
