@@ -34,3 +34,13 @@ Ručně: `npx wrangler deploy`.
 | Privacy Policy | https://iucetni.com/soukromi/ | https://iucetni.com/en/privacy/ |
 | Terms of Use | https://iucetni.com/podminky/ | https://iucetni.com/en/terms/ |
 | MCP dokumentace | https://iucetni.com/mcp/ | https://iucetni.com/en/mcp/ |
+
+## Vyhledávače a AI
+`src/build.py` generuje `robots.txt` (výslovně povoluje AI crawlery: GPTBot, ClaudeBot, PerplexityBot, Google-Extended…),
+`sitemap.xml`, `llms.txt` (shrnutí pro jazykové modely) a `llms-full.txt` (celý text webu cs + en).
+V Cloudflare (Security → Bots / AI Crawl Control) nesmí být zapnuté blokování AI botů ani „managed robots.txt“.
+
+## Loga třetích stran
+`src/ill/logo-claude.svg` a `src/ill/logo-openai.svg` jsou beze změny z [Lobe Icons](https://github.com/lobehub/lobe-icons)
+(`@lobehub/icons-static-svg@1.97.0`, licence MIT). Ochranné známky patří Anthropic PBC a OpenAI; používají se jen
+k označení kompatibility („Funguje s“).

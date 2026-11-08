@@ -45,7 +45,7 @@ L = {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky společnosti Apple Inc.</span>
+      <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri a App Store jsou ochranné známky Apple Inc. Claude je ochranná známka Anthropic PBC, OpenAI a ChatGPT jsou ochranné známky OpenAI.</span>
       <span class="foot-tools"><a class="lang-link" href="{other}" hreflang="en" lang="en">English</a><button class="theme-btn" id="theme" type="button" aria-label="Přepnout motiv">Motiv: auto</button></span>
     </div>
   </div>
@@ -74,7 +74,7 @@ L = {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri and App Store are trademarks of Apple Inc.</span>
+      <span>© 2026 NEMOSERVIS Praha s.r.o. Apple, iPhone, iPad, Mac, Siri and App Store are trademarks of Apple Inc. Claude is a trademark of Anthropic PBC; OpenAI and ChatGPT are trademarks of OpenAI.</span>
       <span class="foot-tools"><a class="lang-link" href="{other}" hreflang="cs" lang="cs">Česky</a><button class="theme-btn" id="theme" type="button" aria-label="Switch theme">Theme: auto</button></span>
     </div>
   </div>
@@ -177,5 +177,106 @@ def main():
     (PUB / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
 
 
+# ---------- pro vyhledávače a AI: robots.txt, llms.txt, llms-full.txt ----------
+from html.parser import HTMLParser
+
+AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai",
+           "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot", "Applebot-Extended", "CCBot",
+           "Meta-ExternalAgent", "Amazonbot", "DuckAssistBot", "MistralAI-User", "Bingbot"]
+
+ROBOTS = "# iucetni.com – vyhledávače i AI crawleři jsou vítáni / search engines and AI crawlers are welcome\n" \
+    "User-agent: *\nAllow: /\n\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in AI_BOTS) + \
+    f"Sitemap: {SITE}/sitemap.xml\n# LLM summary: {SITE}/llms.txt · full text: {SITE}/llms-full.txt\n"
+
+LLMS = f"""# iÚčetní
+
+> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free with data in the EU cloud; iÚčetní Pro adds an in-app AI assistant (Claude, OpenAI or own key) and on-device storage. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
+
+Key facts:
+- Platforms: iOS 26, iPadOS 26, macOS 26 – one App Store app (coming soon). The app UI is in Czech.
+- MCP server: `https://mcp.iucetni.com/mcp/` (Streamable HTTP). Auth: OAuth 2.1 (Authorization Code + PKCE S256, dynamic client registration, scope `mcp`) or a Bearer AI key issued in the app. Free in every plan.
+- MCP tools include list_invoices, get_invoice, get_invoice_pdf, create_draft, update_invoice, issue_invoice, mark_invoice_paid, list_customers, create_customer, lookup_ares, list_catalog, create_catalog_item, list_expenses, create_expense, update_expense, read_receipt, list_companies, list_bank_accounts.
+- Data is stored on servers in the EU. No ads, no third-party tracking.
+- Czech specifics: ARES company registry lookup, Czech National Bank exchange rates, VAT 21/12/0 %, reverse charge, flat-rate expenses (80/60/40/30 %).
+- Support: support@iucetni.com
+
+## Docs
+
+- [MCP server – how to connect (EN)]({SITE}/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
+- [MCP server – návod (CS)]({SITE}/mcp/)
+- [Product overview (EN)]({SITE}/en/): features, use cases, pricing, FAQ
+- [Přehled aplikace (CS)]({SITE}/): funkce, příběhy, ceník, časté otázky
+
+## Policies
+
+- [Privacy Policy (EN)]({SITE}/en/privacy/) · [Ochrana soukromí (CS)]({SITE}/soukromi/)
+- [Terms of Use (EN)]({SITE}/en/terms/) · [Podmínky použití (CS)]({SITE}/podminky/)
+- [Support (EN)]({SITE}/en/support/) · [Podpora (CS)]({SITE}/podpora/)
+
+## Optional
+
+- [Full text of the website]({SITE}/llms-full.txt)
+- [OAuth protected resource metadata](https://mcp.iucetni.com/.well-known/oauth-protected-resource/mcp/)
+- [OAuth authorization server metadata](https://mcp.iucetni.com/.well-known/oauth-authorization-server)
+"""
+
+
+class _Text(HTMLParser):
+    """Převod stránky na čistý text (Markdown-like) – bez SVG, skriptů, hlavičky, patičky a ilustrativních náhledů."""
+    SKIP = {"script", "style", "svg", "header", "footer", "nav", "button", "head"}
+    BLOCK = {"p", "li", "h1", "h2", "h3", "h4", "tr", "summary", "details", "section", "article", "div", "ol", "ul", "table"}
+
+    def __init__(self):
+        super().__init__(); self.out = []; self.skip = 0; self.stack = []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        hidden = a.get("aria-hidden") == "true"
+        if tag in ("br", "img", "meta", "link", "input"):
+            if tag == "br" and not self.skip: self.out.append("\n")
+            return
+        self.stack.append((tag, hidden or tag in self.SKIP))
+        if hidden or tag in self.SKIP: self.skip += 1; return
+        if self.skip: return
+        if tag in self.BLOCK: self.out.append("\n")
+        if tag in ("h1", "h2", "h3"): self.out.append("#" * int(tag[1]) + " ")
+        if tag == "li": self.out.append("- ")
+        if tag == "td": self.out.append(" | ")
+        if tag in ("span", "small", "b", "a", "code"): self.out.append(" ")
+
+    def handle_endtag(self, tag):
+        while self.stack:
+            t, sk = self.stack.pop()
+            if sk: self.skip -= 1
+            if t == tag: break
+        if not self.skip and tag in self.BLOCK and tag != "li": self.out.append("\n")
+        if not self.skip and tag in ("span", "small"): self.out.append(" ")
+
+    def handle_data(self, data):
+        if not self.skip: self.out.append(data)
+
+    def text(self):
+        t = "".join(self.out)
+        t = re.sub(r"[ \t]+", " ", t)
+        t = re.sub(r" *\n *", "\n", t)
+        t = re.sub(r"\n\n(?=- )", "\n", t)
+        t = re.sub(r" ([.,:;!?])", r"\1", t)
+        return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+
+def write_ai_files():
+    (PUB / "robots.txt").write_text(ROBOTS)
+    (PUB / "llms.txt").write_text(LLMS)
+    parts = [f"# iÚčetní – full website text\n\nSource: {SITE} · generated by src/build.py\n"]
+    for lang_i, lang in ((1, "en"), (0, "cs")):
+        for key, paths in ROUTES.items():
+            f = PUB / paths[lang_i].lstrip("/") / "index.html"
+            p = _Text(); p.feed(f.read_text())
+            parts.append(f"\n\n---\n\nURL: {SITE}{paths[lang_i]}\n\n" + p.text())
+    (PUB / "llms-full.txt").write_text("".join(parts) + "\n")
+    print("ok public/robots.txt, llms.txt, llms-full.txt")
+
+
 if __name__ == "__main__":
     main()
+    write_ai_files()

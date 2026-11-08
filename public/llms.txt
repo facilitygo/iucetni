@@ -1,0 +1,30 @@
+# iÚčetní
+
+> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free with data in the EU cloud; iÚčetní Pro adds an in-app AI assistant (Claude, OpenAI or own key) and on-device storage. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
+
+Key facts:
+- Platforms: iOS 26, iPadOS 26, macOS 26 – one App Store app (coming soon). The app UI is in Czech.
+- MCP server: `https://mcp.iucetni.com/mcp/` (Streamable HTTP). Auth: OAuth 2.1 (Authorization Code + PKCE S256, dynamic client registration, scope `mcp`) or a Bearer AI key issued in the app. Free in every plan.
+- MCP tools include list_invoices, get_invoice, get_invoice_pdf, create_draft, update_invoice, issue_invoice, mark_invoice_paid, list_customers, create_customer, lookup_ares, list_catalog, create_catalog_item, list_expenses, create_expense, update_expense, read_receipt, list_companies, list_bank_accounts.
+- Data is stored on servers in the EU. No ads, no third-party tracking.
+- Czech specifics: ARES company registry lookup, Czech National Bank exchange rates, VAT 21/12/0 %, reverse charge, flat-rate expenses (80/60/40/30 %).
+- Support: support@iucetni.com
+
+## Docs
+
+- [MCP server – how to connect (EN)](https://iucetni.com/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
+- [MCP server – návod (CS)](https://iucetni.com/mcp/)
+- [Product overview (EN)](https://iucetni.com/en/): features, use cases, pricing, FAQ
+- [Přehled aplikace (CS)](https://iucetni.com/): funkce, příběhy, ceník, časté otázky
+
+## Policies
+
+- [Privacy Policy (EN)](https://iucetni.com/en/privacy/) · [Ochrana soukromí (CS)](https://iucetni.com/soukromi/)
+- [Terms of Use (EN)](https://iucetni.com/en/terms/) · [Podmínky použití (CS)](https://iucetni.com/podminky/)
+- [Support (EN)](https://iucetni.com/en/support/) · [Podpora (CS)](https://iucetni.com/podpora/)
+
+## Optional
+
+- [Full text of the website](https://iucetni.com/llms-full.txt)
+- [OAuth protected resource metadata](https://mcp.iucetni.com/.well-known/oauth-protected-resource/mcp/)
+- [OAuth authorization server metadata](https://mcp.iucetni.com/.well-known/oauth-authorization-server)

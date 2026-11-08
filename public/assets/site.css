@@ -420,3 +420,12 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
 .tools li{margin:0;font-size:.92rem}
 .tools code{font-weight:600}
 @media (max-width:620px){.tools{grid-template-columns:1fr}}
+
+/* ---------- funguje s (loga) ---------- */
+.works-with{display:inline-flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:18px;padding:10px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.ww-label{font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.ww-item{display:inline-flex;align-items:center;gap:8px;font-weight:650;font-size:1rem;color:var(--text)}
+.ww-item svg{width:22px;height:22px;flex:none}
+.ww-more{margin-left:10px;font-size:.9rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.hero .works-with{margin-top:22px}
+.doc .works-with{margin:0 0 24px}
