@@ -79,16 +79,16 @@ Petr has just finished a bathroom for the Nováks. He bought the material on one
 - He adds labour and travel from his price list and has the invoice issued.
 - He emails it right from the site, or shows the customer the QR code so they can pay on the spot.
 
-Café iPhone and Mac Free
+Café iPhone and Mac · 2 users Pro
 
 ### Receipts in the morning, catering in the afternoon, numbers at night
 
-Jana runs Kavárna U Mostu. In the morning the roaster and the wholesaler deliver, in the afternoon she caters a meeting for the company next door. Paperwork is no longer an evening job.
+Jana runs Kavárna U Mostu together with Tomáš. In the morning the roaster and the wholesaler deliver, in the afternoon they cater a meeting for the company next door. Each works under their own account in the same company, and paperwork is no longer an evening job.
 
 - She snaps the supplier receipts. The expenses fill in themselves and the image stays attached.
-- She invoices the catering in a minute from items in her price list.
+- Tomáš invoices the catering on his iPhone in a minute from items in the price list.
 - The invoice with a QR code and ISDOC goes out by email and the customer's accountant imports it directly.
-- In the evening, on her Mac, she sees the month's income, expenses and anything overdue.
+- In the evening, on her Mac, Jana sees all documents, the month's income and expenses and anything overdue.
 
 Farm gate sales iPhone Free
 
@@ -134,7 +134,7 @@ Keychain Credentials are stored in the Keychain and nowhere else.
 
 Spotlight and quick actions Long-press the icon to start a new invoice or expense.
 
-One App Store purchase for iPhone, iPad and Mac. Same app, same data, same controls.
+One App Store app for iPhone, iPad and Mac. With Pro, the same data on all of them.
 
 Receipts and supplier invoices
 
@@ -166,7 +166,7 @@ Devices
 
 ## One app, three screens
 
-On every device iÚčetní works the way that device should. Your data syncs between them, so you can start an invoice on your phone and finish it on your Mac.
+On every device iÚčetní works the way that device should. With Pro your data syncs across all your devices, so you can start an invoice on your phone and finish it on your Mac.
 
 ### iPhone
 
@@ -237,15 +237,15 @@ Flat-rate expensesCap
 
 Pricing
 
-## Free invoicing. AI and local data in Pro.
+## Free on one device. No limits with Pro.
 
-Invoicing and tax records with data in the cloud are free, including the MCP connection for Claude and ChatGPT. Pro adds the in-app AI assistant and on-device data storage.
+Invoicing and tax records with data in the cloud are free on one device, including the MCP connection for Claude and ChatGPT. Pro adds unlimited devices, multiple users per company, the in-app AI assistant and on-device data storage.
 
 ### Free
 
 CZK 0
 
-Data safely in the cloud on EU servers, synced across all your devices.
+For one user on one device of your choice. Data safely in the cloud on EU servers.
 
 - Invoices, advances and credit notes
 - QR payments and ISDOC in PDF
@@ -253,7 +253,7 @@ Data safely in the cloud on EU servers, synced across all your devices.
 - Receipts from photos and expenses
 - Tax records, overviews and reports
 - MCP server: connect iÚčetní to Claude or ChatGPT
-- iPhone, iPad and Mac
+- 1 device: iPhone, iPad or Mac
 
 7 days free
 
@@ -261,13 +261,14 @@ Data safely in the cloud on EU servers, synced across all your devices.
 
 Coming soon
 
-Everything in Free, plus the in-app AI assistant and data stored on your device.
+Everything in Free with no device limit, for your whole team and with the in-app AI assistant.
 
 - Everything in Free
+- Unlimited devices with sync: iPhone, iPad and Mac
+- Multiple users per company, e.g. a colleague or your accountant
 - AI assistant with Claude, OpenAI or your own key
 - Invoice drafts from a sentence, AI receipt reading
 - Local data on your device
-- One subscription for iPhone, iPad and Mac
 - 7-day free trial
 
 Pro pricing will be announced at launch. The subscription will be billed through your Apple ID and can be cancelled at any time. See the Terms of Use.
@@ -304,11 +305,15 @@ Sole traders and small businesses in the Czech Republic that issue invoices and 
 
 How much does it cost?
 
-Invoicing and tax records with data in the cloud are free, including the MCP server for Claude and ChatGPT. Pro adds the in-app AI assistant and on-device data storage; it comes with a 7-day free trial and its price will be announced at launch. One subscription covers iPhone, iPad and Mac.
+On one device, invoicing and tax records with data in the cloud are free, including the MCP server for Claude and ChatGPT. Pro adds unlimited devices, multiple users per company, the in-app AI assistant and on-device data storage; it comes with a 7-day free trial and its price will be announced at launch.
+
+Can I use iÚčetní on several devices or with a colleague?
+
+Yes, with Pro. The Free plan is for one user on one device. With Pro you get iPhone, iPad and Mac with the same data, and you can invite more users to your company, such as a colleague or your accountant.
 
 Where is my data stored?
 
-On servers in the European Union, which sync all your devices. With Pro you can also keep data locally on your device.
+On servers in the European Union. With Pro you can also keep data locally on your device.
 
 How do I connect iÚčetní to Claude or ChatGPT?
 
@@ -463,11 +468,11 @@ The app is intended primarily for businesses. If you use it as a consumer, you k
 
 ### Free
 
-With your data stored in the cloud, you can use the app free of charge. The Free plan includes invoicing, tax records and connecting your own Claude or ChatGPT through the MCP server.
+With your data stored in the cloud, you can use the app free of charge. The Free plan is intended for one user on one device and includes invoicing, tax records and connecting your own Claude or ChatGPT through the MCP server.
 
 ### iÚčetní Pro
 
-Pro adds the in-app AI assistant (Claude, OpenAI or your own AI provider key) and data storage directly on your device.
+Pro adds unlimited devices, multiple users per company, the in-app AI assistant (Claude, OpenAI or your own AI provider key) and data storage directly on your device. You are responsible for the users you invite to your company and for their activity.
 
 - Free trial: you can try Pro free for 7 days. Unless you cancel during the trial, the subscription becomes paid when the trial ends. AI usage during the trial may be subject to request limits.
 - The price is shown in the App Store and in the app before purchase and includes VAT.
@@ -736,16 +741,16 @@ Petr dokončil koupelnu u Novákových. Materiál nakoupil ve stavebninách na j
 - Přidá hodiny práce a dopravu z ceníku a nechá fakturu vystavit.
 - Fakturu pošle e-mailem přímo z terénu, nebo zákazníkovi ukáže QR kód a ten zaplatí hned.
 
-Kavárna iPhone a Mac Zdarma
+Kavárna iPhone a Mac · 2 uživatelé Pro
 
 ### Účtenky ráno, catering odpoledne, přehled večer
 
-Jana vede Kavárnu U Mostu. Ráno přijde zboží z pražírny a z velkoobchodu, odpoledne chystá catering na poradu pro firmu ze sousedství. Papíry večer neřeší.
+Jana vede Kavárnu U Mostu spolu s Tomášem. Ráno přijde zboží z pražírny a z velkoobchodu, odpoledne chystají catering na poradu pro firmu ze sousedství. Každý pracuje pod svým účtem ve stejné firmě a papíry večer neřeší.
 
 - Účtenky od dodavatelů vyfotí. Výdaje se vyplní samy a snímek zůstane u výdaje.
-- Catering vyfakturuje za minutu z položek v ceníku.
+- Tomáš na svém iPhonu vyfakturuje catering za minutu z položek v ceníku.
 - Faktura s QR Platbou a ISDOC odejde e-mailem a účetní odběratele si ji rovnou načte.
-- Večer na Macu vidí příjmy a výdaje za měsíc a kdo je po splatnosti.
+- Jana večer na Macu vidí všechny doklady, příjmy a výdaje za měsíc i to, kdo je po splatnosti.
 
 Prodej ze dvora iPhone Zdarma
 
@@ -791,7 +796,7 @@ Klíčenka Přístupové údaje jsou uložené v Klíčence, nikde jinde.
 
 Spotlight a rychlé akce Podržením ikony založíte novou fakturu nebo výdaj.
 
-Jeden nákup v App Store pro iPhone, iPad i Mac. Stejná aplikace, stejná data, stejné ovládání.
+Jedna aplikace v App Store pro iPhone, iPad i Mac. Ve verzi Pro máte na všech zařízeních stejná data.
 
 Účtenky a přijaté faktury
 
@@ -823,7 +828,7 @@ Zařízení
 
 ## Jedna aplikace, tři obrazovky
 
-Na každém zařízení se iÚčetní ovládá tak, jak jste na něm zvyklí. Data se mezi zařízeními synchronizují, takže fakturu začnete v telefonu a dokončíte na Macu.
+Na každém zařízení se iÚčetní ovládá tak, jak jste na něm zvyklí. Ve verzi Pro se data synchronizují mezi všemi vašimi zařízeními, takže fakturu začnete v telefonu a dokončíte na Macu.
 
 ### iPhone
 
@@ -894,15 +899,15 @@ Výdajový paušálStrop výdajů
 
 Ceník
 
-## Fakturace zdarma. AI a lokální data v Pro.
+## Zdarma na jednom zařízení. S Pro bez omezení.
 
-Fakturace a daňová evidence s daty v cloudu jsou zdarma, a to včetně připojení do Claude nebo ChatGPT přes MCP. Verze Pro přidává AI asistenta přímo v aplikaci a ukládání dat ve vašem zařízení.
+Fakturace a daňová evidence s daty v cloudu jsou zdarma na jednom zařízení, a to včetně připojení do Claude nebo ChatGPT přes MCP. Verze Pro přidává neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta a ukládání dat ve vašem zařízení.
 
 ### Zdarma
 
 0 Kč
 
-Data bezpečně v cloudu na serverech v EU a synchronizace mezi všemi zařízeními.
+Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpečně v cloudu na serverech v EU.
 
 - Faktury, zálohy a opravné doklady
 - QR Platba a ISDOC v PDF
@@ -910,7 +915,7 @@ Data bezpečně v cloudu na serverech v EU a synchronizace mezi všemi zařízen
 - Účtenky z fotek a výdaje
 - Daňová evidence, přehledy a sestavy
 - MCP server: připojte iÚčetní do Claude nebo ChatGPT
-- iPhone, iPad i Mac
+- 1 zařízení: iPhone, iPad, nebo Mac
 
 7 dní zdarma
 
@@ -918,13 +923,14 @@ Data bezpečně v cloudu na serverech v EU a synchronizace mezi všemi zařízen
 
 Připravujeme
 
-Všechno z verze Zdarma a k tomu AI asistent v aplikaci a data uložená i ve vašem zařízení.
+Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistentem v aplikaci.
 
 - Vše z verze Zdarma
+- Neomezeně zařízení se synchronizací: iPhone, iPad i Mac
+- Více uživatelů v jedné firmě, třeba kolega nebo účetní
 - AI asistent s Claude, OpenAI nebo vlastním klíčem
 - Koncepty faktur z běžné věty a čtení účtenek pomocí AI
 - Data i lokálně v zařízení
-- Jedno předplatné pro iPhone, iPad i Mac
 - 7 dní zdarma na vyzkoušení
 
 Cenu verze Pro zveřejníme při vydání aplikace. Předplatné se bude platit přes Apple ID a půjde kdykoli zrušit. Podrobnosti najdete v podmínkách použití.
@@ -961,11 +967,15 @@ Pro živnostníky a malé firmy, které fakturují a vedou daňovou evidenci. Ho
 
 Kolik iÚčetní stojí?
 
-Fakturace a daňová evidence s daty v cloudu jsou zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Vyzkoušíte ji 7 dní zdarma a její cenu zveřejníme při vydání. Předplatné platí pro iPhone, iPad i Mac.
+Na jednom zařízení je fakturace a daňová evidence s daty v cloudu zdarma, včetně MCP serveru pro Claude a ChatGPT. Verze Pro přidává neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci a ukládání dat ve vašem zařízení. Vyzkoušíte ji 7 dní zdarma a její cenu zveřejníme při vydání.
+
+Můžu iÚčetní používat na více zařízeních nebo s kolegou?
+
+Ano, ve verzi Pro. Verze Zdarma je pro jednoho uživatele na jednom zařízení. S Pro máte iPhone, iPad i Mac se stejnými daty a do firmy můžete přizvat další uživatele, třeba kolegu nebo účetní.
 
 Kde jsou moje data?
 
-Na serverech v Evropské unii, přes které se synchronizují všechna vaše zařízení. Ve verzi Pro můžete data ukládat i přímo ve svém zařízení.
+Na serverech v Evropské unii. Ve verzi Pro můžete data ukládat i přímo ve svém zařízení.
 
 Na jakých zařízeních aplikace běží?
 
@@ -1132,11 +1142,11 @@ Aplikace je určena především podnikatelům. Pokud ji používáte jako spot�
 
 ### Zdarma
 
-S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma obsahuje fakturaci, daňovou evidenci a připojení k vlastní aplikaci Claude nebo ChatGPT přes MCP server.
+S daty uloženými v cloudu můžete aplikaci používat zdarma. Verze Zdarma je určena pro jednoho uživatele na jednom zařízení a obsahuje fakturaci, daňovou evidenci a připojení k vlastní aplikaci Claude nebo ChatGPT přes MCP server.
 
 ### iÚčetní Pro
 
-Verze Pro navíc obsahuje AI asistenta v aplikaci (Claude, OpenAI nebo vlastní klíč poskytovatele AI) a ukládání dat přímo ve vašem zařízení.
+Verze Pro navíc obsahuje neomezený počet zařízení, více uživatelů v jedné firmě, AI asistenta v aplikaci (Claude, OpenAI nebo vlastní klíč poskytovatele AI) a ukládání dat přímo ve vašem zařízení. Za uživatele, které do firmy přizvete, a za jejich činnost odpovídáte vy.
 
 - Zkušební období: verzi Pro si můžete 7 dní vyzkoušet zdarma. Pokud předplatné během zkušebního období nezrušíte, začne se po jeho skončení platit. Zkušební provoz AI může mít limity počtu požadavků.
 - Cena je uvedená v App Store a v aplikaci před nákupem a zahrnuje DPH.

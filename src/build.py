@@ -190,7 +190,7 @@ ROBOTS = "# iucetni.com – vyhledávače i AI crawleři jsou vítáni / search 
 
 LLMS = f"""# iÚčetní
 
-> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free with data in the EU cloud; iÚčetní Pro adds an in-app AI assistant (Claude, OpenAI or own key) and on-device storage. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
+> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro adds unlimited devices, multiple users per company, an in-app AI assistant (Claude, OpenAI or own key) and on-device storage. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
 
 Key facts:
 - Platforms: iOS 26, iPadOS 26, macOS 26 – one App Store app (coming soon). The app UI is in Czech.
