@@ -9,7 +9,7 @@ key: mcp
 
 <div class="box">
 <p><strong>MCP server URL</strong></p>
-<div class="code" style="margin:8px 0 0"><code>https://mcp.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="https://mcp.iucetni.com/mcp" data-done="Copied">Copy</button></div>
+<div class="code" style="margin:8px 0 0"><code>https://mcp.iucetni.com/mcp/</code><button class="copy-btn" type="button" data-copy="https://mcp.iucetni.com/mcp/" data-done="Copied">Copy</button></div>
 </div>
 
 <nav class="toc" aria-label="Contents">
@@ -19,17 +19,17 @@ key: mcp
 <h2 id="claude">Connect in Claude</h2>
 <ol>
 <li>In Claude (web, desktop or mobile) open <strong>Settings → Connectors</strong> and choose <strong>Add custom connector</strong>.</li>
-<li>Enter <em>iÚčetní</em> as the name and <code>https://mcp.iucetni.com/mcp</code> as the URL.</li>
+<li>Enter <em>iÚčetní</em> as the name and <code>https://mcp.iucetni.com/mcp/</code> as the URL.</li>
 <li>Click <strong>Connect</strong>. The iÚčetní sign-in page opens. Sign in with your account email and password.</li>
 <li>Approve access. That's it: in a new chat, try “Who hasn't paid me yet?”</li>
 </ol>
 
 <h2 id="chatgpt">Connect in ChatGPT</h2>
-<p>In ChatGPT settings, add a custom MCP connector (app) with the URL <code>https://mcp.iucetni.com/mcp</code>. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.</p>
+<p>In ChatGPT settings, add a custom MCP connector (app) with the URL <code>https://mcp.iucetni.com/mcp/</code>. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.</p>
 
 <h2 id="agents">Other clients and AI agents</h2>
 <p>The server supports the Streamable HTTP transport. OAuth-capable clients (Claude Code, Cursor and others) sign in on their own:</p>
-<div class="code"><code>claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp" data-done="Copied">Copy</button></div>
+<div class="code"><code>claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp/</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp/" data-done="Copied">Copy</button></div>
 <p>For your own agents and automations without a sign-in window, issue an <strong>AI key</strong> in the app (Settings → AI keys → Issue key). You can limit it to selected companies and set an expiry. The key is shown only once and is sent as a header:</p>
 <div class="code"><code>Authorization: Bearer uct_…</code></div>
 <p>An agent can, for example, read orders in its own mailbox on <a href="https://namailu.cz" rel="noopener">namailu.cz</a>, prepare a matching invoice in iÚčetní and send it to the customer.</p>
