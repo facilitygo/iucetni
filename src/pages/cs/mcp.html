@@ -9,7 +9,7 @@ key: mcp
 
 <div class="box">
 <p><strong>Adresa MCP serveru</strong></p>
-<div class="code" style="margin:8px 0 0"><code>https://api.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="https://api.iucetni.com/mcp" data-done="Zkopírováno">Kopírovat</button></div>
+<div class="code" style="margin:8px 0 0"><code>https://mcp.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="https://mcp.iucetni.com/mcp" data-done="Zkopírováno">Kopírovat</button></div>
 </div>
 
 <nav class="toc" aria-label="Obsah">
@@ -19,17 +19,17 @@ key: mcp
 <h2 id="claude">Připojení v Claude</h2>
 <ol>
 <li>V Claude (web, desktop nebo mobil) otevřete <strong>Nastavení → Konektory</strong> a zvolte <strong>Přidat vlastní konektor</strong>.</li>
-<li>Jako název zadejte <em>iÚčetní</em> a jako adresu <code>https://api.iucetni.com/mcp</code>.</li>
+<li>Jako název zadejte <em>iÚčetní</em> a jako adresu <code>https://mcp.iucetni.com/mcp</code>.</li>
 <li>Klikněte na <strong>Připojit</strong>. Otevře se přihlašovací stránka iÚčetní, kde se přihlásíte e-mailem a heslem svého účtu.</li>
 <li>Potvrďte přístup. Hotovo: v novém rozhovoru můžete napsat třeba „Kdo mi ještě nezaplatil?“.</li>
 </ol>
 
 <h2 id="chatgpt">Připojení v ChatGPT</h2>
-<p>V nastavení ChatGPT přidejte vlastní konektor (aplikaci) typu MCP s adresou <code>https://api.iucetni.com/mcp</code>. Přihlášení a potvrzení přístupu proběhne stejně jako u Claude. Dostupnost vlastních konektorů závisí na vašem tarifu ChatGPT.</p>
+<p>V nastavení ChatGPT přidejte vlastní konektor (aplikaci) typu MCP s adresou <code>https://mcp.iucetni.com/mcp</code>. Přihlášení a potvrzení přístupu proběhne stejně jako u Claude. Dostupnost vlastních konektorů závisí na vašem tarifu ChatGPT.</p>
 
 <h2 id="agenti">Další klienti a AI agenti</h2>
 <p>Server podporuje transport Streamable HTTP. Klienti s podporou OAuth (Claude Code, Cursor a další) se přihlásí sami:</p>
-<div class="code"><code>claude mcp add --transport http iucetni https://api.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://api.iucetni.com/mcp" data-done="Zkopírováno">Kopírovat</button></div>
+<div class="code"><code>claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp" data-done="Zkopírováno">Kopírovat</button></div>
 <p>Pro vlastní agenty a automatizace bez přihlašovacího okna vydejte v aplikaci <strong>klíč pro AI</strong> (Nastavení → Klíče pro AI → Vydat klíč). Můžete ho omezit na vybrané firmy a nastavit mu platnost. Klíč se zobrazí jen jednou a posílá se v hlavičce:</p>
 <div class="code"><code>Authorization: Bearer uct_…</code></div>
 <p>Agent tak může například číst objednávky ve své e-mailové schránce na <a href="https://namailu.cz" rel="noopener">namailu.cz</a>, připravit podle nich fakturu v iÚčetní a poslat ji odběrateli.</p>
@@ -38,16 +38,19 @@ key: mcp
 <p>MCP server používá OAuth 2.1 podle specifikace MCP:</p>
 <ul>
 <li>Authorization Code s PKCE (<code>S256</code>), refresh tokeny a odvolání tokenu.</li>
-<li>Dynamická registrace klientů (RFC 7591): <code>https://api.iucetni.com/oauth/register</code>.</li>
+<li>Dynamická registrace klientů (RFC 7591): <code>https://mcp.iucetni.com/oauth/register</code>.</li>
 <li>Metadata autorizačního serveru: <code>/.well-known/oauth-authorization-server</code>.</li>
 <li>Metadata chráněného zdroje: <code>/.well-known/oauth-protected-resource</code>. Server je odkazuje v hlavičce <code>WWW-Authenticate</code> odpovědi 401.</li>
 <li>Rozsah (scope): <code>mcp</code>.</li>
+<li>Issuer a autorizační server: <code>https://mcp.iucetni.com</code>. Přihlašovací a souhlasová stránka je česky i anglicky podle <code>ui_locales</code> nebo jazyka prohlížeče.</li>
 </ul>
+<p>Dřívější adresa <code>https://api.iucetni.com/mcp</code> funguje dál, takže už připojené konektory není potřeba měnit.</p>
 
 <h2 id="nastroje">Co AI přes MCP umí</h2>
 <p>Hlavní nástroje serveru:</p>
 <ul class="tools">
 <li><code>list_invoices</code>, <code>get_invoice</code> – doklady a jejich stav</li>
+<li><code>get_invoice_pdf</code> – PDF vystaveného dokladu (volitelně s ISDOC) k odeslání e-mailem</li>
 <li><code>create_draft</code>, <code>update_invoice</code> – koncept faktury</li>
 <li><code>issue_invoice</code> – vystavení konceptu s číslem z řady</li>
 <li><code>mark_invoice_paid</code> – evidence úhrady</li>
