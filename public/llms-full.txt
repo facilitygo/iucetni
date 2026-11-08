@@ -272,7 +272,7 @@ Everything in Free with no device limit, for your whole team and with the in-app
 - Multiple users per company, e.g. a colleague or your accountant. The owner's subscription covers them
 - AI assistant included: Claude Haiku for roughly 15 invoices and 15 receipts a month
 - Usage and remaining-invoice estimate right in the app
-- More AI with top-up packs or your own Claude or OpenAI key
+- More AI with top-up packs, or at no extra charge with your own Claude or OpenAI key
 - Local data on your device
 - Apple Family Sharing
 - 7-day free trial
@@ -950,7 +950,7 @@ Všechno z verze Zdarma bez omezení zařízení, pro celý tým a s AI asistent
 - Více uživatelů v jedné firmě, třeba kolega nebo účetní. Stačí jedno předplatné vlastníka
 - AI asistent v ceně: Claude Haiku zhruba na 15 faktur a 15 dokladů měsíčně
 - Spotřeba a odhad zbývajících faktur přímo v aplikaci
-- Víc AI v balíčcích, nebo s vlastním klíčem Claude či OpenAI
+- Víc AI v balíčcích, nebo bez příplatku s vlastním klíčem Claude či OpenAI
 - Data i lokálně v zařízení
 - Rodinné sdílení Apple
 - 7 dní zdarma na vyzkoušení
