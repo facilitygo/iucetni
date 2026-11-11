@@ -19,12 +19,13 @@ ROUTES = {  # klíč: (cesta cs, cesta en)
     "podminky": ("/podminky/", "/en/terms/"),
     "podpora": ("/podpora/", "/en/support/"),
     "mcp": ("/mcp/", "/en/mcp/"),
+    "bez-aplikace": ("/bez-aplikace/", "/en/without-the-app/"),
 }
 
 L = {
     "cs": {
         "home_nav": [("#funkce", "Funkce"), ("#apple", "Pro Apple"), ("#pribehy", "Příběhy"), ("#ai", "AI asistent"), ("#cenik", "Ceník"), ("/mcp/", "MCP")],
-        "doc_nav": [("/#funkce", "Funkce"), ("/#pribehy", "Příběhy"), ("/#cenik", "Ceník"), ("/mcp/", "MCP server"), ("/podpora/", "Podpora")],
+        "doc_nav": [("/#funkce", "Funkce"), ("/#pribehy", "Příběhy"), ("/#cenik", "Ceník"), ("/bez-aplikace/", "V Claude a ChatGPT"), ("/mcp/", "MCP server"), ("/podpora/", "Podpora")],
         "cta": "Brzy v App Store", "cta_home": "#stahnout", "cta_doc": "/#stahnout",
         "switch": ("EN", "English version"), "home": "iÚčetní – úvod", "menu": "Menu",
         "suffix": " – iÚčetní", "locale": "cs_CZ",
@@ -37,7 +38,7 @@ L = {
       </div>
       <div>
         <h4>Aplikace</h4>
-        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/mcp/">MCP server</a></li></ul>
+        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/bez-aplikace/">V Claude a ChatGPT</a></li><li><a href="/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Informace</h4>
@@ -53,7 +54,7 @@ L = {
     },
     "en": {
         "home_nav": [("#features", "Features"), ("#apple", "Made for Apple"), ("#use-cases", "Use cases"), ("#ai", "AI assistant"), ("#pricing", "Pricing"), ("/en/mcp/", "MCP")],
-        "doc_nav": [("/en/#features", "Features"), ("/en/#use-cases", "Use cases"), ("/en/#pricing", "Pricing"), ("/en/mcp/", "MCP server"), ("/en/support/", "Support")],
+        "doc_nav": [("/en/#features", "Features"), ("/en/#use-cases", "Use cases"), ("/en/#pricing", "Pricing"), ("/en/without-the-app/", "In Claude & ChatGPT"), ("/en/mcp/", "MCP server"), ("/en/support/", "Support")],
         "cta": "Coming to the App Store", "cta_home": "#download", "cta_doc": "/en/#download",
         "switch": ("CZ", "Česká verze"), "home": "iÚčetní – home", "menu": "Menu",
         "suffix": " – iÚčetní", "locale": "en_US",
@@ -66,7 +67,7 @@ L = {
       </div>
       <div>
         <h4>Product</h4>
-        <ul><li><a href="/en/#features">Features</a></li><li><a href="/en/#use-cases">Use cases</a></li><li><a href="/en/#pricing">Pricing</a></li><li><a href="/en/mcp/">MCP server</a></li></ul>
+        <ul><li><a href="/en/#features">Features</a></li><li><a href="/en/#use-cases">Use cases</a></li><li><a href="/en/#pricing">Pricing</a></li><li><a href="/en/without-the-app/">In Claude &amp; ChatGPT</a></li><li><a href="/en/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Information</h4>
@@ -190,7 +191,7 @@ ROBOTS = "# iucetni.com – vyhledávače i AI crawleři jsou vítáni / search 
 
 LLMS = f"""# iÚčetní
 
-> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro (CZK 99/month or CZK 749/year, 7-day free trial) adds unlimited devices, up to 5 more people per company (edit or read-only roles; no Apple Family Sharing), on-device storage and an in-app AI assistant with the Claude Haiku model included (10 invoices and 20 receipts every 30 days, counted per saved invoice or receipt; AI credit (Small, Medium, Large), also available in the Free plan, lasts until used up: CZK 49 10 invoices + 20 receipts, CZK 299 80 invoices + 150 receipts, CZK 999 300 invoices + 600 receipts with Haiku or about a tenth of that with Sonnet; or the user's own Claude/OpenAI key). The app shows AI usage and a personal estimate of remaining invoices. AI over MCP runs in the user's own Claude/ChatGPT subscription; a limited free trial AI is available in the Free plan. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
+> iÚčetní is a native invoicing and tax-records app for iPhone, iPad and Mac, built for Czech sole traders and small businesses. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro (CZK 99/month or CZK 749/year, 7-day free trial) adds unlimited devices, up to 5 more people per company (edit or read-only roles; no Apple Family Sharing), on-device storage and an in-app AI assistant with the Claude Haiku model included (10 invoices and 20 receipts every 30 days, counted per saved invoice or receipt; AI credit (Small, Medium, Large), also available in the Free plan, lasts until used up: CZK 49 10 invoices + 20 receipts, CZK 299 80 invoices + 150 receipts, CZK 999 300 invoices + 600 receipts with Haiku or about a tenth of that with Sonnet; or the user's own Claude/OpenAI key). The app shows AI usage and a personal estimate of remaining invoices. AI over MCP runs in the user's own Claude/ChatGPT subscription and is free on the iÚčetní side (no allowance or credit used), so users can work day to day only in Claude or ChatGPT without opening the app; a limited free trial AI is available in the Free plan. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
 
 Key facts:
 - Platforms: iOS 26, iPadOS 26, macOS 26 – one App Store app (coming soon). The app UI is in Czech.
@@ -202,6 +203,8 @@ Key facts:
 
 ## Docs
 
+- [Invoicing in Claude or ChatGPT without the app (EN)]({SITE}/en/without-the-app/): use iÚčetní only from Claude/ChatGPT over MCP; free in every plan, AI runs in the user's own subscription and uses no iÚčetní AI allowance or credit; the app is needed once to set up the account and company
+- [Fakturace v Claude a ChatGPT bez aplikace (CS)]({SITE}/bez-aplikace/)
 - [MCP server – how to connect (EN)]({SITE}/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
 - [MCP server – návod (CS)]({SITE}/mcp/)
 - [Product overview (EN)]({SITE}/en/): features, use cases, pricing, FAQ
