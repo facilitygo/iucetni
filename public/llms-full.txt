@@ -721,7 +721,7 @@ Main tools exposed by the server:
 - lookup_ares – company details from the Czech ARES registry
 - list_catalog, create_catalog_item – price list
 - list_expenses, create_expense, update_expense – expenses
-- read_receipt – read a receipt or invoice with our AI (counts toward the AI allowance; all other tools are free)
+- read_receipt – read a receipt or invoice
 - list_companies, list_bank_accounts – companies and accounts
 
 ## Security and control
@@ -753,7 +753,7 @@ Works with Claude ChatGPT
 - One window for everything. You already write offers, emails and texts in Claude or ChatGPT. Issue the invoice in the same conversation without switching apps.
 - Just say what you need. “Invoice the Nováks for 6 hours of consulting like last time.” The AI finds the customer, price list and earlier invoices on its own.
 - Works wherever Claude or ChatGPT does. On the web, in the Mac and Windows apps and on your phone, including Android or someone else's computer.
-- The AI costs you nothing with us. The conversation runs in your Claude or ChatGPT subscription. You don't need AI credit or Pro for everyday work.
+- The AI costs you nothing with us. The conversation runs in your Claude or ChatGPT subscription. You don't need AI credit or Pro for it.
 
 ## Getting started
 
@@ -773,7 +773,7 @@ You typeThe AI
 
 | “Same invoice as last month for Kavárna U Mostu, just for November.” | Finds the original invoice, copies the items and changes the period.
 
-| “Here's a photo of a receipt from Bauhaus, add it to expenses.” | Reads the receipt and records an expense with the amount, VAT and supplier. Free when Claude or ChatGPT reads it itself.
+| “Here's a photo of a receipt from Bauhaus, add it to expenses.” | Claude or ChatGPT reads the receipt and records an expense with the amount, VAT and supplier.
 
 | “Who hasn't paid yet and how much is overdue?” | Lists unpaid invoices sorted by due date.
 
@@ -787,9 +787,8 @@ If your Claude or agent also has a mailbox connected, for example at namailu.cz,
 
 ## What it costs
 
-Connecting over MCP is free in every plan, including Free. You pay for the AI in Claude or ChatGPT through your own Anthropic or OpenAI subscription. Invoices, expenses, overviews and PDFs over MCP use none of your AI allowance, so you don't need AI credit or the AI allowance in Pro.
+Connecting over MCP is free in every plan, including Free. You pay for the AI in Claude or ChatGPT through your own Anthropic or OpenAI subscription. Working with your data over MCP uses none of your AI allowance, so you don't need AI credit or the AI allowance in Pro.
 
-- The exception is receipt reading by our server (the read_receipt tool). With Pro it counts as one receipt; in the Free plan it runs in a limited trial mode. When Claude or ChatGPT reads the receipt itself and only records the expense, nothing is counted.
 - A connected AI app doesn't count as a device. The Free plan is enough: one device with the app, plus Claude or ChatGPT.
 - Pro is worth it once you want the app on more devices, to invite a colleague or accountant, or to use the AI assistant inside the app. See pricing.
 - Whether custom connectors are available depends on your Claude or ChatGPT plan.
@@ -1547,7 +1546,7 @@ Hlavní nástroje serveru:
 - lookup_ares – údaje firmy z ARES podle IČO
 - list_catalog, create_catalog_item – ceník
 - list_expenses, create_expense, update_expense – výdaje
-- read_receipt – přečtení účtenky nebo faktury naší AI (počítá se do objemu AI, ostatní nástroje jsou zdarma)
+- read_receipt – přečtení účtenky nebo faktury
 - list_companies, list_bank_accounts – firmy a účty
 
 ## Bezpečnost a kontrola
@@ -1577,7 +1576,7 @@ Funguje s Claude ChatGPT
 - Jedno okno na všechno. V Claude nebo ChatGPT už píšete nabídky, e-maily a texty. Fakturu vystavíte ve stejném rozhovoru a nemusíte přepínat do jiné aplikace.
 - Stačí napsat, co potřebujete. „Vyfakturuj Novákovým 6 hodin konzultací jako minule.“ AI si sama najde odběratele, ceník i dřívější faktury.
 - Funguje všude, kde máte Claude nebo ChatGPT. Na webu, v aplikaci pro Mac a Windows i v mobilu, tedy i na Androidu nebo cizím počítači.
-- AI od nás nic nestojí. Rozhovor běží ve vašem předplatném Claude nebo ChatGPT. AI kredit ani Pro k běžné práci nepotřebujete.
+- AI od nás nic nestojí. Rozhovor běží ve vašem předplatném Claude nebo ChatGPT. AI kredit ani Pro k tomu nepotřebujete.
 
 ## Jak začít
 
@@ -1597,7 +1596,7 @@ NapíšeteAI udělá
 
 | „Udělej stejnou fakturu jako minulý měsíc pro Kavárnu U Mostu, jen s listopadem.“ | Najde původní fakturu, převezme položky a změní období.
 
-| „Tady je fotka účtenky z Bauhausu, zapiš ji do výdajů.“ | Přečte účtenku a založí výdaj s částkou, DPH a dodavatelem. Když ji přečte Claude nebo ChatGPT sám, je to zdarma.
+| „Tady je fotka účtenky z Bauhausu, zapiš ji do výdajů.“ | Claude nebo ChatGPT účtenku přečte a založí výdaj s částkou, DPH a dodavatelem.
 
 | „Kdo mi ještě nezaplatil a kolik je po splatnosti?“ | Vypíše neuhrazené faktury a seřadí je podle splatnosti.
 
@@ -1611,9 +1610,8 @@ Pokud má váš Claude nebo agent připojenou i e-mailovou schránku, třeba na 
 
 ## Kolik to stojí
 
-Připojení přes MCP je zdarma ve všech verzích, i ve verzi Zdarma. AI v Claude nebo ChatGPT platíte v rámci svého předplatného u Anthropic nebo OpenAI. Faktury, výdaje, přehledy i PDF přes MCP z objemu AI nic neodečítají, takže AI kredit ani objem AI v Pro nepotřebujete.
+Připojení přes MCP je zdarma ve všech verzích, i ve verzi Zdarma. AI v Claude nebo ChatGPT platíte v rámci svého předplatného u Anthropic nebo OpenAI. Práce s daty přes MCP z objemu AI nic neodečítá, takže AI kredit ani objem AI v Pro nepotřebujete.
 
-- Výjimkou je čtení účtenky naším serverem (nástroj read_receipt). V Pro odečte jeden doklad, ve verzi Zdarma běží v omezeném zkušebním režimu. Když účtenku přečte přímo Claude nebo ChatGPT a výdaj jen založí, nic se neodečte.
 - Připojená AI aplikace se nepočítá jako zařízení. Verze Zdarma tak stačí: jedno zařízení s aplikací a k tomu Claude nebo ChatGPT.
 - Pro se hodí, až budete chtít aplikaci na více zařízeních, přizvat kolegu nebo účetní, nebo používat AI asistenta přímo v aplikaci. Podrobnosti jsou v ceníku.
 - Dostupnost vlastních konektorů závisí na vašem tarifu Claude nebo ChatGPT.
