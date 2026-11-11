@@ -203,7 +203,7 @@ Key facts:
 
 ## Docs
 
-- [Invoicing in Claude or ChatGPT without the app (EN)]({SITE}/en/without-the-app/): use iÚčetní only from Claude/ChatGPT over MCP; free in every plan, AI runs in the user's own subscription and uses no iÚčetní AI allowance or credit; the app is needed once to set up the account and company
+- [Invoicing in Claude or ChatGPT without the app (EN)]({SITE}/en/without-the-app/): use iÚčetní only from Claude/ChatGPT over MCP; free in every plan, AI runs in the user's own subscription and uses no iÚčetní AI allowance or credit (except read_receipt, where our AI reads an uploaded receipt); the app is needed once to set up the account and company
 - [Fakturace v Claude a ChatGPT bez aplikace (CS)]({SITE}/bez-aplikace/)
 - [MCP server – how to connect (EN)]({SITE}/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
 - [MCP server – návod (CS)]({SITE}/mcp/)

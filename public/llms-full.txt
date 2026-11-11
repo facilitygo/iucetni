@@ -721,7 +721,7 @@ Main tools exposed by the server:
 - lookup_ares – company details from the Czech ARES registry
 - list_catalog, create_catalog_item – price list
 - list_expenses, create_expense, update_expense – expenses
-- read_receipt – read a receipt or invoice
+- read_receipt – read a receipt or invoice with our AI (counts toward the AI allowance; all other tools are free)
 - list_companies, list_bank_accounts – companies and accounts
 
 ## Security and control
@@ -1547,7 +1547,7 @@ Hlavní nástroje serveru:
 - lookup_ares – údaje firmy z ARES podle IČO
 - list_catalog, create_catalog_item – ceník
 - list_expenses, create_expense, update_expense – výdaje
-- read_receipt – přečtení účtenky nebo faktury
+- read_receipt – přečtení účtenky nebo faktury naší AI (počítá se do objemu AI, ostatní nástroje jsou zdarma)
 - list_companies, list_bank_accounts – firmy a účty
 
 ## Bezpečnost a kontrola
