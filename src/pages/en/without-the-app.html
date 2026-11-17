@@ -1,31 +1,45 @@
-title: Invoicing in Claude and ChatGPT without the app
-description: Issue invoices, record expenses and track payments right in Claude or ChatGPT. Connect iÚčetní over MCP for free; the AI runs in your own subscription and costs you nothing with us.
+title: Invoicing in a conversation with AI – no accounting software
+description: You don't need accounting software. Tell Claude or ChatGPT what you need and the AI issues the invoice over MCP, emails it through namailu.cz, sends records to your accountant and prepares your tax return figures. Free to connect.
 kind: doc
 key: bez-aplikace
 ---
-<span class="eyebrow">No app needed · AI free from us</span>
-<h1>Invoice right inside Claude or ChatGPT</h1>
-<p class="meta">Connect iÚčetní to the AI you already use. You then handle invoices, expenses and overviews in a conversation, on your computer or phone, without opening the iÚčetní app. The connection is free in every plan and you pay us nothing for the AI.</p>
-<div class="works-with"><span class="ww-label">Works with</span><span class="ww-item">{{ill:logo-claude}}Claude</span><span class="ww-item">{{ill:logo-openai}}ChatGPT</span></div>
+<span class="eyebrow">No accounting software · AI free from us</span>
+<h1>Just talk. The AI handles your invoices.</h1>
+<p class="meta">Tell Claude or ChatGPT what you need. Over MCP, the AI issues the invoice, emails it to your customer, keeps an eye on payment, sends records to your accountant and at year end prepares the figures for your tax return. Nothing to learn, nothing to retype, nothing to click. Connecting is free in every plan.</p>
+<div class="works-with"><span class="ww-label">Works with</span><span class="ww-item">{{ill:logo-claude}}Claude</span><span class="ww-item">{{ill:logo-openai}}ChatGPT</span><span class="ww-item">✉️ namailu.cz</span></div>
 
 <nav class="toc" aria-label="Contents">
-<a href="#why">Why</a><a href="#start">Getting started</a><a href="#examples">What you type</a><a href="#cost">Cost</a><a href="#control">Control</a><a href="#app">When the app helps</a>
+<a href="#demo">Example</a><a href="#what">What the AI does</a><a href="#start">Getting started</a><a href="#examples">What you type</a><a href="#cost">Cost</a><a href="#control">Control</a><a href="#app">The app</a>
 </nav>
 
-<h2 id="why">Why work in Claude or ChatGPT</h2>
+<h2 id="demo">A whole invoice in one conversation</h2>
+<div class="chat" style="margin:0 0 20px" aria-label="Example conversation">
+<div class="msg me">Invoice Kavárna U Mostu CZK 8,500 for the spring campaign, due in 14 days, and send it to them.</div>
+<div class="msg bot">Here's a draft for Kavárna U Mostu: Ad copy – spring campaign, CZK 8,500, due 1 Dec. Shall I issue it and send it to jana@kavarnaumostu.cz?</div>
+<div class="draft"><div><small>Draft · AI</small><b>Kavárna U Mostu · CZK 8,500.00</b></div><span class="btn btn-primary">Yes</span></div>
+<div class="msg me">Yes.</div>
+<div class="msg bot">Done. Invoice 20260057 is issued and sent from fakturace@namailu.cz with the PDF and QR payment. I'll let you know when it's paid or overdue.</div>
+</div>
+<p>iÚčetní issues the invoice over MCP; the email goes out from a mailbox at <a href="https://namailu.cz" rel="noopener">namailu.cz</a>, which the AI also has connected over MCP. You just give the instruction and confirm.</p>
+
+<h2 id="what">What the AI does</h2>
 <ul>
-<li><strong>One window for everything.</strong> You already write offers, emails and texts in Claude or ChatGPT. Issue the invoice in the same conversation without switching apps.</li>
-<li><strong>Just say what you need.</strong> “Invoice the Nováks for 6 hours of consulting like last time.” The AI finds the customer, price list and earlier invoices on its own.</li>
-<li><strong>Works wherever Claude or ChatGPT does.</strong> On the web, in the Mac and Windows apps and on your phone, including Android or someone else's computer.</li>
-<li><strong>The AI costs you nothing with us.</strong> The conversation runs in your Claude or ChatGPT subscription. You don't need AI credit or Pro for it.</li>
+<li><strong>Invoices.</strong> Issues invoices, advance invoices and credit notes. Looks customers up in the ARES registry by company ID and takes items from your price list or a previous invoice.</li>
+<li><strong>Email.</strong> Sends the invoice with its PDF to the customer from your namailu.cz mailbox. It can also read an order that arrives there and invoice it.</li>
+<li><strong>Payments.</strong> Tells you who hasn't paid and who is overdue, records payments and can send a polite reminder.</li>
+<li><strong>Expenses.</strong> Send a photo of a receipt into the conversation and the AI records the expense with amount, VAT and supplier.</li>
+<li><strong>Cash receipts.</strong> Issues a receipt for a cash or card sale and totals the day's takings.</li>
+<li><strong>Records for your accountant.</strong> Emails your accountant PDFs of issued invoices and an income and expense overview for the month, quarter or year.</li>
+<li><strong>Tax return figures.</strong> Prepares your book of income and expenses, compares actual expenses with the 80, 60, 40 or 30 % flat rate and calculates the partial tax base under Section 7. You or your accountant then file the return.</li>
 </ul>
 
 <h2 id="start">Getting started</h2>
 <ol class="steps">
 <li><strong>Create your iÚčetní account and company.</strong> You do this once in the app for iPhone, iPad or Mac: enter your company ID, bank account and invoice numbering. After that you don't need to open the app.</li>
-<li><strong>Add the connector.</strong> In Claude, open <strong>Settings → Connectors → Add custom connector</strong>; in ChatGPT, add a custom MCP connector (app). Use this URL:
-<div class="code" style="margin:10px 0 0"><code>https://mcp.iucetni.com/mcp/</code><button class="copy-btn" type="button" data-copy="https://mcp.iucetni.com/mcp/" data-done="Copied">Copy</button></div></li>
-<li><strong>Sign in and approve access.</strong> The iÚčetní sign-in page opens. Sign in with your account and choose which companies the AI can access.</li>
+<li><strong>Connect iÚčetní to Claude or ChatGPT.</strong> In Claude, open <strong>Settings → Connectors → Add custom connector</strong>; in ChatGPT, add a custom MCP connector (app). Use this URL:
+<div class="code" style="margin:10px 0 0"><code>https://mcp.iucetni.com/mcp/</code><button class="copy-btn" type="button" data-copy="https://mcp.iucetni.com/mcp/" data-done="Copied">Copy</button></div>
+Then sign in with your iÚčetní account and choose which companies the AI can access.</li>
+<li><strong>Connect email.</strong> Create a mailbox for your AI at <a href="https://namailu.cz" rel="noopener">namailu.cz</a> and connect it the same way. The AI sends invoices to customers and records to your accountant from it.</li>
 <li><strong>Start typing.</strong> For example, “Who hasn't paid me yet?” Step-by-step instructions for each app are on the <a href="/en/mcp/">MCP server</a> page.</li>
 </ol>
 
@@ -33,23 +47,23 @@ key: bez-aplikace
 <table>
 <thead><tr><th>You type</th><th>The AI</th></tr></thead>
 <tbody>
-<tr><td>“Invoice company ID 27082440 for a website, CZK 18,000, due in 14 days.”</td><td>Looks the company up in ARES, adds the customer and prepares a draft invoice.</td></tr>
+<tr><td>“Invoice company ID 27082440 CZK 18,000 for a website and send it to them.”</td><td>Looks the company up in ARES, prepares the invoice and, once you confirm, issues and emails it.</td></tr>
 <tr><td>“Same invoice as last month for Kavárna U Mostu, just for November.”</td><td>Finds the original invoice, copies the items and changes the period.</td></tr>
-<tr><td>“Here's a photo of a receipt from Bauhaus, add it to expenses.”</td><td>Claude or ChatGPT reads the receipt and records an expense with the amount, VAT and supplier.</td></tr>
-<tr><td>“Who hasn't paid yet and how much is overdue?”</td><td>Lists unpaid invoices sorted by due date.</td></tr>
-<tr><td>“Invoice 2026-0042 was paid today.”</td><td>Records the payment once you confirm.</td></tr>
-<tr><td>“How much did I earn this year and what were my expenses?”</td><td>Totals income and expenses for the year and prepares an overview for your tax return.</td></tr>
-<tr><td>“Send me the PDF of the Novák invoice.”</td><td>Prepares the PDF of the issued invoice, optionally with ISDOC, for sending by email.</td></tr>
+<tr><td>“Did an order come in from the Nováks? If so, invoice it.”</td><td>Reads the email in your namailu.cz mailbox and prepares an invoice from it.</td></tr>
+<tr><td>“Who hasn't paid yet? Send the overdue ones a polite reminder.”</td><td>Lists unpaid invoices and, once you approve, sends the reminders.</td></tr>
+<tr><td>“Here's a photo of a receipt from Bauhaus, add it to expenses.”</td><td>Reads the receipt and records an expense with the amount, VAT and supplier.</td></tr>
+<tr><td>“Send my accountant the invoices and expenses for October.”</td><td>Prepares the invoice PDFs and an expense overview and emails them to your accountant.</td></tr>
+<tr><td>“Prepare my tax return figures for 2026.”</td><td>Builds the book of income and expenses, compares expenses with the flat rate and calculates the partial tax base.</td></tr>
 </tbody>
 </table>
-<p>If your Claude or agent also has a mailbox connected, for example at <a href="https://namailu.cz" rel="noopener">namailu.cz</a>, it can read an order from an email, prepare the invoice and send it to the customer. See the example in <a href="/en/#use-cases">use cases</a>.</p>
 
 <h2 id="cost">What it costs</h2>
 <div class="box">
-<p><strong>Connecting over MCP is free in every plan, including Free.</strong> You pay for the AI in Claude or ChatGPT through your own Anthropic or OpenAI subscription. Working with your data over MCP uses none of your AI allowance, so you don't need AI credit or the AI allowance in Pro.</p>
+<p><strong>Connecting iÚčetní over MCP is free in every plan, including Free.</strong> You pay for the AI in Claude or ChatGPT through your own Anthropic or OpenAI subscription. Working with your data over MCP uses none of your AI allowance, so you don't need AI credit or Pro for it.</p>
 </div>
 <ul>
-<li>A connected AI app doesn't count as a device. The Free plan is enough: one device with the app, plus Claude or ChatGPT.</li>
+<li>A connected AI app doesn't count as a device, so the Free plan is enough.</li>
+<li>Mailbox prices are on <a href="https://namailu.cz" rel="noopener">namailu.cz</a>.</li>
 <li>Pro is worth it once you want the app on more devices, to invite a colleague or accountant, or to use the AI assistant inside the app. See <a href="/en/#pricing">pricing</a>.</li>
 <li>Whether custom connectors are available depends on your Claude or ChatGPT plan.</li>
 </ul>
@@ -60,9 +74,10 @@ key: bez-aplikace
 <li><strong>You confirm the important steps.</strong> The AI records a payment only after you confirm. It cannot change or unlock locked documents, and cancelling a payment is left to you.</li>
 <li><strong>Revoke access any time.</strong> In the app under Settings → AI keys you see every connection and when it was last used. You can limit access to selected companies.</li>
 <li><strong>Where data goes.</strong> We store your data on servers in the EU. The conversation takes place with the provider of the app you connect, Anthropic (Claude) or OpenAI (ChatGPT), and only what the AI requests in the conversation is passed to it. See the <a href="/en/privacy/">Privacy Policy</a>.</li>
+<li><strong>Not tax advice.</strong> Overviews are supporting material. You or your accountant are responsible for the tax return.</li>
 </ul>
 
 <h2 id="app">When the app helps</h2>
-<p>Without the app you can handle everyday invoicing, expenses and overviews. The iÚčetní app is useful for creating your account and company, adjusting invoice design and numbering, quickly photographing receipts, printing, exporting for your accountant (POHODA, Money, ABRA) and emailing invoices straight from iÚčetní. Both work with the same data, so whatever the AI prepares in a conversation shows up in the app right away.</p>
+<p>You need the app once to create your account and company. After that it helps when you want to adjust invoice design and numbering, quickly photograph receipts, print, or export data for accounting software (POHODA, Money, ABRA). The app and the AI work with the same data, so whatever the AI prepares in a conversation shows up in the app right away.</p>
 
 <p>We're happy to help you connect at <a href="mailto:support@iucetni.com">support@iucetni.com</a>.</p>
