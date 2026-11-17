@@ -11,7 +11,7 @@ Invoicing in a conversation with AI
 
 # Just talk. The AI handles your invoices.
 
-Tell Claude, ChatGPT or another AI what you need and, over MCP, it issues the invoice, emails it, sends records to your accountant and prepares your tax return figures. Nothing to learn, built for Czech legislation and free with your data in the cloud. And when you want it, there's an app for iPhone, iPad, Mac, Android, Windows and Linux.
+Tell Claude, ChatGPT or another AI what you need and, over MCP, it issues the invoice, emails it, sends records to your accountant and prepares your tax return figures. Nothing to learn, built for Czech legislation and free with your data in the cloud. And when you want it, there's an app for iPhone, iPad, Mac, Android, Windows and Linux, in Czech and English.
 
 Test access
 How it works
@@ -332,7 +332,7 @@ FAQ
 
 Who is iÚčetní for?
 
-Sole traders and small businesses in the Czech Republic that issue invoices and keep tax records. It works for VAT payers, non-payers and identified persons. The app itself is in Czech; this English site mainly serves partners and developers connecting over MCP.
+Sole traders and small businesses in the Czech Republic that issue invoices and keep tax records. It works for VAT payers, non-payers and identified persons. The app is available in Czech and English.
 
 How much does it cost?
 
@@ -356,7 +356,7 @@ AI is counted per item: each saved invoice uses one invoice and each created or 
 
 Which devices are supported?
 
-iPhone and iPad (iOS / iPadOS 26), Mac (macOS 26 or later), Android, Windows and Linux. You can request test access here. You can also invoice purely in a conversation with AI over MCP.
+iPhone and iPad (iOS / iPadOS 26), Mac (macOS 26 or later), Android, Windows and Linux. The app is available in Czech and English. You can request test access here. You can also invoice purely in a conversation with AI over MCP.
 
 Can I move over from Pohoda, Fakturoid or iDoklad?
 
@@ -875,7 +875,7 @@ Fakturace v rozhovoru s AI
 
 # Stačí si popovídat. Faktury vyřídí AI.
 
-Napíšete Claude, ChatGPT nebo jiné AI, co potřebujete, a ta přes MCP vystaví fakturu, odešle ji e-mailem, pošle podklady účetní a připraví podklady pro daňové přiznání. Nic se neučíte, vše podle české legislativy a zdarma s daty v cloudu. A když chcete, máte k tomu aplikaci pro iPhone, iPad, Mac, Android, Windows i Linux.
+Napíšete Claude, ChatGPT nebo jiné AI, co potřebujete, a ta přes MCP vystaví fakturu, odešle ji e-mailem, pošle podklady účetní a připraví podklady pro daňové přiznání. Nic se neučíte, vše podle české legislativy a zdarma s daty v cloudu. A když chcete, máte k tomu aplikaci pro iPhone, iPad, Mac, Android, Windows i Linux, česky i anglicky.
 
 Testovací přístup
 Jak to funguje
@@ -1212,7 +1212,7 @@ Na serverech v Evropské unii. Ve verzi Pro můžete data ukládat i přímo ve 
 
 Na jakých zařízeních aplikace běží?
 
-Na iPhonu a iPadu (iOS / iPadOS 26), na Macu (macOS 26 nebo novější), na Androidu, Windows a Linuxu. O testovací přístup si můžete napsat zde. Fakturovat můžete i jen v rozhovoru s AI přes MCP.
+Na iPhonu a iPadu (iOS / iPadOS 26), na Macu (macOS 26 nebo novější), na Androidu, Windows a Linuxu. Aplikace je v češtině i angličtině. O testovací přístup si můžete napsat zde. Fakturovat můžete i jen v rozhovoru s AI přes MCP.
 
 Můžu přejít z Pohody, Fakturoidu nebo iDokladu?
 
