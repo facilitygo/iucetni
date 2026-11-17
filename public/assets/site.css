@@ -454,3 +454,17 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
 .pack small{color:var(--muted);font-size:.82rem}
 @media (max-width:720px){.pack-grid{grid-template-columns:1fr}}
 .steps li{min-width:0}.steps .code{flex-wrap:wrap}.steps .code code{overflow-wrap:anywhere;min-width:0}
+.plat-links{align-items:center}.plat-links .pl-label{font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.plat-links a{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--text);font-weight:600;font-size:.9rem;text-decoration:none;transition:border-color .2s,transform .2s}
+.plat-links a:hover{border-color:var(--plum);transform:translateY(-1px)}.plat-links a svg{width:17px;height:17px;flex:none;color:var(--text)}
+.beta-form fieldset{border:0;margin:0 0 14px;padding:0}.beta-form legend{font-weight:700;font-size:.92rem;margin:0 0 8px}
+.plat-pick{display:flex;flex-wrap:wrap;gap:8px}.plat-pick label{cursor:pointer}.plat-pick input{position:absolute;opacity:0;pointer-events:none}
+.plat-pick span{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--card);font-weight:600;font-size:.92rem}
+.plat-pick span svg{width:18px;height:18px;flex:none}.plat-pick input:checked+span{border-color:var(--plum);background:color-mix(in srgb,var(--plum) 10%,var(--card))}
+.plat-pick input:focus-visible+span{outline:2px solid var(--plum);outline-offset:2px}
+.beta-form .fld{display:block;font-weight:600;font-size:.92rem;margin:0 0 14px}.beta-form .fld small{font-weight:400;color:var(--muted)}
+.beta-form input[type=email],.beta-form input[type=text],.beta-form textarea{display:block;width:100%;box-sizing:border-box;margin-top:6px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font:inherit;font-weight:400}
+.beta-form input:focus,.beta-form textarea:focus{outline:2px solid var(--plum);outline-offset:0;border-color:transparent}
+.beta-form .chk{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--muted);margin:4px 0 16px}.beta-form .chk input{margin-top:3px;flex:none}
+.beta-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-err{color:#c2332a;font-weight:600;font-size:.9rem}

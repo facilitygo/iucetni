@@ -6,7 +6,7 @@ key: mcp
 <span class="eyebrow">MCP server · free</span>
 <h1>iÚčetní inside your Claude or ChatGPT</h1>
 <p class="meta">The Model Context Protocol (MCP) connects your invoices, customers and expenses with the AI you already use. The connection is free in every iÚčetní plan.</p>
-<div class="works-with"><span class="ww-label">Works with</span><span class="ww-item">{{ill:logo-claude}}Claude</span><span class="ww-item">{{ill:logo-openai}}ChatGPT</span></div>
+<div class="works-with"><span class="ww-label">Works with</span><span class="ww-item">{{ill:logo-claude}}Claude</span><span class="ww-item">{{ill:logo-openai}}ChatGPT</span><span class="ww-item">{{ill:logo-gemini}}Gemini</span><span class="ww-item">{{ill:logo-grok}}Grok</span><span class="ww-item">{{ill:logo-meta}}Muse</span><span class="ww-item">{{ill:logo-mistral}}Mistral</span></div>
 
 <div class="box">
 <p><strong>MCP server URL</strong></p>
@@ -31,6 +31,7 @@ key: mcp
 <p>In ChatGPT settings, add a custom MCP connector (app) with the URL <code>https://mcp.iucetni.com/mcp/</code>. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.</p>
 
 <h2 id="agents">Other clients and AI agents</h2>
+<p>You can connect iÚčetní to any AI app or model that supports MCP, such as Google Gemini, Grok, Meta Muse or Mistral. The steps are the same: add a custom connector with the server URL and sign in.</p>
 <p>The server supports the Streamable HTTP transport. OAuth-capable clients (Claude Code, Cursor and others) sign in on their own:</p>
 <div class="code"><code>claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp/</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp/" data-done="Copied">Copy</button></div>
 <p>For your own agents and automations without a sign-in window, issue an <strong>AI key</strong> in the app (Settings → AI keys → Issue key). You can limit it to selected companies and set an expiry. The key is shown only once and is sent as a header:</p>

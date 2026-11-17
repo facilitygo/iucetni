@@ -20,13 +20,14 @@ ROUTES = {  # klíč: (cesta cs, cesta en)
     "podpora": ("/podpora/", "/en/support/"),
     "mcp": ("/mcp/", "/en/mcp/"),
     "bez-aplikace": ("/bez-aplikace/", "/en/without-the-app/"),
+    "testovaci-pristup": ("/testovaci-pristup/", "/en/test-access/"),
 }
 
 L = {
     "cs": {
         "home_nav": [("#funkce", "Funkce"), ("#apple", "Pro Apple"), ("#pribehy", "Příběhy"), ("#ai", "AI asistent"), ("#cenik", "Ceník"), ("/bez-aplikace/", "Fakturace s AI")],
         "doc_nav": [("/#funkce", "Funkce"), ("/#pribehy", "Příběhy"), ("/#cenik", "Ceník"), ("/bez-aplikace/", "Fakturace s AI"), ("/mcp/", "MCP server"), ("/podpora/", "Podpora")],
-        "cta": "Brzy v App Store", "cta_home": "#stahnout", "cta_doc": "/#stahnout",
+        "cta": "Testovací přístup", "cta_home": "/testovaci-pristup/", "cta_doc": "/testovaci-pristup/",
         "switch": ("EN", "English version"), "home": "iÚčetní – úvod", "menu": "Menu",
         "suffix": " – iÚčetní", "locale": "cs_CZ",
         "footer": """<footer>
@@ -55,7 +56,7 @@ L = {
     "en": {
         "home_nav": [("#features", "Features"), ("#apple", "Made for Apple"), ("#use-cases", "Use cases"), ("#ai", "AI assistant"), ("#pricing", "Pricing"), ("/en/without-the-app/", "Invoicing with AI")],
         "doc_nav": [("/en/#features", "Features"), ("/en/#use-cases", "Use cases"), ("/en/#pricing", "Pricing"), ("/en/without-the-app/", "Invoicing with AI"), ("/en/mcp/", "MCP server"), ("/en/support/", "Support")],
-        "cta": "Coming to the App Store", "cta_home": "#download", "cta_doc": "/en/#download",
+        "cta": "Test access", "cta_home": "/en/test-access/", "cta_doc": "/en/test-access/",
         "switch": ("CZ", "Česká verze"), "home": "iÚčetní – home", "menu": "Menu",
         "suffix": " – iÚčetní", "locale": "en_US",
         "footer": """<footer>
@@ -191,10 +192,11 @@ ROBOTS = "# iucetni.com – vyhledávače i AI crawleři jsou vítáni / search 
 
 LLMS = f"""# iÚčetní
 
-> iÚčetní lets Czech sole traders and small businesses do their invoicing by talking to AI: connected over MCP to Claude or ChatGPT (and to an email mailbox such as namailu.cz), the AI issues and emails invoices, chases payments, sends records to the accountant and prepares tax return figures, with no accounting software to learn. It is also a native invoicing and tax-records app for iPhone, iPad and Mac. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro (CZK 99/month or CZK 749/year, 7-day free trial) adds unlimited devices, up to 5 more people per company (edit or read-only roles; no Apple Family Sharing), on-device storage and an in-app AI assistant with the Claude Haiku model included (10 invoices and 20 receipts every 30 days, counted per saved invoice or receipt; AI credit (Small, Medium, Large), also available in the Free plan, lasts until used up: CZK 49 10 invoices + 20 receipts, CZK 299 80 invoices + 150 receipts, CZK 999 300 invoices + 600 receipts with Haiku or about a tenth of that with Sonnet; or the user's own Claude/OpenAI key). The app shows AI usage and a personal estimate of remaining invoices. AI over MCP runs in the user's own Claude/ChatGPT subscription and is free on the iÚčetní side (no allowance or credit used), so users can work day to day only in Claude or ChatGPT without opening the app; a limited free trial AI is available in the Free plan. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
+> iÚčetní lets Czech sole traders and small businesses do their invoicing by talking to AI: connected over MCP to Claude, ChatGPT, Gemini, Grok, Muse, Mistral or another MCP-capable AI (and to an email mailbox such as namailu.cz), the AI issues and emails invoices, chases payments, sends records to the accountant and prepares tax return figures, with nothing to learn. It is also an invoicing and tax-records app for iPhone, iPad, Mac, Android, Windows and Linux. It issues invoices with QR payments and ISDOC e-invoices, reads receipts from photos and PDFs, exports to POHODA, Money S3 and ABRA Flexi, and provides an MCP server so Claude, ChatGPT and other AI agents can work with invoices, customers and expenses. Free for one user on one device with data in the EU cloud; iÚčetní Pro (CZK 99/month or CZK 749/year, 7-day free trial) adds unlimited devices, up to 5 more people per company (edit or read-only roles; no Apple Family Sharing), on-device storage and an in-app AI assistant with the Claude Haiku model included (10 invoices and 20 receipts every 30 days, counted per saved invoice or receipt; AI credit (Small, Medium, Large), also available in the Free plan, lasts until used up: CZK 49 10 invoices + 20 receipts, CZK 299 80 invoices + 150 receipts, CZK 999 300 invoices + 600 receipts with Haiku or about a tenth of that with Sonnet; or the user's own Claude/OpenAI key). The app shows AI usage and a personal estimate of remaining invoices. AI over MCP runs in the user's own Claude/ChatGPT subscription and is free on the iÚčetní side (no allowance or credit used), so users can work day to day only in Claude or ChatGPT without opening the app; a limited free trial AI is available in the Free plan. Operated by NEMOSERVIS Praha s.r.o., Czech Republic.
 
 Key facts:
-- Platforms: iOS 26, iPadOS 26, macOS 26 – one App Store app (coming soon). The app UI is in Czech.
+- Platforms: iPhone and iPad (iOS/iPadOS 26), Mac (macOS 26), Android, Windows and Linux; test access on request at {SITE}/en/test-access/. The app UI is in Czech.
+- MCP works with Claude, ChatGPT, Google Gemini, Grok, Meta Muse, Mistral and any other AI app or model that supports MCP.
 - MCP server: `https://mcp.iucetni.com/mcp/` (Streamable HTTP). Auth: OAuth 2.1 (Authorization Code + PKCE S256, dynamic client registration, scope `mcp`) or a Bearer AI key issued in the app. Free in every plan.
 - MCP tools include list_invoices, get_invoice, get_invoice_pdf, create_draft, update_invoice, issue_invoice, mark_invoice_paid, list_customers, create_customer, lookup_ares, list_catalog, create_catalog_item, list_expenses, create_expense, update_expense, read_receipt, list_companies, list_bank_accounts.
 - Data is stored on servers in the EU. No ads, no third-party tracking.
@@ -203,8 +205,8 @@ Key facts:
 
 ## Docs
 
-- [Invoicing in a conversation with AI – no accounting software needed (EN)]({SITE}/en/without-the-app/): use iÚčetní only from Claude/ChatGPT over MCP; free in every plan, AI runs in the user's own subscription and uses no iÚčetní AI allowance or credit; the AI issues invoices, emails them via a namailu.cz mailbox connected over MCP, chases payments, records expenses and cash receipts, sends records to the accountant and prepares tax return figures (book of income and expenses, flat-rate comparison, partial tax base); the app is needed once to set up the account and company
-- [Fakturace v rozhovoru s AI bez účetního programu (CS)]({SITE}/bez-aplikace/)
+- [Invoicing in a conversation with AI (EN)]({SITE}/en/without-the-app/): use iÚčetní only from Claude/ChatGPT over MCP; free in every plan, AI runs in the user's own subscription and uses no iÚčetní AI allowance or credit; the AI issues invoices, emails them via a namailu.cz mailbox connected over MCP, chases payments, records expenses and cash receipts, sends records to the accountant and prepares tax return figures (book of income and expenses, flat-rate comparison, partial tax base); the app is needed once to set up the account and company
+- [Fakturace v rozhovoru s AI (CS)]({SITE}/bez-aplikace/)
 - [MCP server – how to connect (EN)]({SITE}/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
 - [MCP server – návod (CS)]({SITE}/mcp/)
 - [Product overview (EN)]({SITE}/en/): features, use cases, pricing, FAQ

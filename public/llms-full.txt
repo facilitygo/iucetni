@@ -11,18 +11,14 @@ Invoicing in a conversation with AI
 
 # Just talk. The AI handles your invoices.
 
-Tell Claude or ChatGPT what you need and, over MCP, the AI issues the invoice, emails it, sends records to your accountant and prepares your tax return figures. No new software to learn, built for Czech legislation and free with your data in the cloud. And when you want it, there's a native app for iPhone, iPad and Mac.
+Tell Claude, ChatGPT or another AI what you need and, over MCP, it issues the invoice, emails it, sends records to your accountant and prepares your tax return figures. Nothing to learn, built for Czech legislation and free with your data in the cloud. And when you want it, there's an app for iPhone, iPad, Mac, Android, Windows and Linux.
 
-Coming soon to the App Store
-
+Test access
 How it works
 
-iPhone
-iPad
-Mac
-· one app for all your devices
+Apps for iPhone & iPad Mac Android Windows Linux
 
-Connects to Claude ChatGPT no software needed →
+Connects to Claude ChatGPT Gemini Grok Muse Mistral and other AI via MCP →
 
 In-app AI assistant Claude Haiku included in Pro
 
@@ -358,7 +354,7 @@ AI is counted per item: each saved invoice uses one invoice and each created or 
 
 Which devices are supported?
 
-iPhone and iPad with iOS / iPadOS 26 and Mac with macOS 26 or later. It is a single App Store app for all of them.
+iPhone and iPad (iOS / iPadOS 26), Mac (macOS 26 or later), Android, Windows and Linux. You can request test access here. You can also invoice purely in a conversation with AI over MCP.
 
 Can I move over from Pohoda, Fakturoid or iDoklad?
 
@@ -368,12 +364,13 @@ How do I delete my account?
 
 In the app under Settings → Account. Export your data first, because accounting documents must be archived. See Support for details.
 
-## iÚčetní is coming to the App Store
+## Try iÚčetní
 
-Invoicing and tax records for iPhone, iPad and Mac in a single app. Free with your data in the cloud.
+Invoicing and tax records in a conversation with AI and in the app. Free with your data in the cloud. Choose your devices and we'll send you an invitation to test.
 
-Coming soon to the App Store
+iPhone & iPad Mac Android Windows Linux
 
+Test access
 support@iucetni.com
 
 ---
@@ -476,6 +473,8 @@ Communication is encrypted, credentials are kept in the Keychain and the app can
 ## 10. Website and cookies
 
 This website uses no cookies and no analytics or advertising tools. It only stores your light or dark theme choice in your browser. The website runs on Cloudflare infrastructure, which processes visitors' IP addresses for security and delivery.
+
+Test access: if you fill in the form on the Test access page, we process your email, chosen devices and optionally your name, note and the country derived from your IP address. Based on your consent, we use them only to send you an invitation and information about testing. We keep them until testing ends, at most 2 years. You can withdraw consent at any time at support@iucetni.com and we will delete the data.
 
 ## 11. Children
 
@@ -662,7 +661,7 @@ MCP server · free
 
 The Model Context Protocol (MCP) connects your invoices, customers and expenses with the AI you already use. The connection is free in every iÚčetní plan.
 
-Works with Claude ChatGPT
+Works with Claude ChatGPT Gemini Grok Muse Mistral
 
 MCP server URL
 
@@ -682,6 +681,8 @@ Want to work with iÚčetní only in Claude or ChatGPT, without opening the app?
 In ChatGPT settings, add a custom MCP connector (app) with the URL https://mcp.iucetni.com/mcp/. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.
 
 ## Other clients and AI agents
+
+You can connect iÚčetní to any AI app or model that supports MCP, such as Google Gemini, Grok, Meta Muse or Mistral. The steps are the same: add a custom connector with the server URL and sign in.
 
 The server supports the Streamable HTTP transport. OAuth-capable clients (Claude Code, Cursor and others) sign in on their own:
 
@@ -740,13 +741,13 @@ Operator: NEMOSERVIS Praha s.r.o., Czech Republic. Privacy Policy · Terms of Us
 
 URL: https://iucetni.com/en/without-the-app/
 
-No accounting software · AI free from us
+Invoicing with AI · free to connect
 
 # Just talk. The AI handles your invoices.
 
-Tell Claude or ChatGPT what you need. Over MCP, the AI issues the invoice, emails it to your customer, keeps an eye on payment, sends records to your accountant and at year end prepares the figures for your tax return. Nothing to learn, nothing to retype, nothing to click. Connecting is free in every plan.
+Tell Claude or ChatGPT what you need. Over MCP, the AI issues the invoice, emails it to your customer, keeps an eye on payment, sends records to your accountant and at year end prepares the figures for your tax return. Nothing to learn, nothing to retype, nothing to click. Connecting is free in every plan. Besides Claude and ChatGPT, it works with Gemini, Grok, Muse, Mistral and other AI apps and models that support MCP.
 
-Works with Claude ChatGPT ✉️ namailu.cz
+Works with Claude ChatGPT Gemini Grok Muse Mistral
 
 ## A whole invoice in one conversation
 
@@ -827,24 +828,53 @@ We're happy to help you connect at support@iucetni.com.
 
 ---
 
+URL: https://iucetni.com/en/test-access/
+
+Test access
+
+# Be among the first to try iÚčetní
+
+Choose the devices you want to use iÚčetní on and leave us your email. We'll send you an invitation by email: through Apple TestFlight for iPhone, iPad and Mac, and as a download link for other devices.
+
+Thank you, we have your request. We'll email you an invitation to test. To add anything, write to support@iucetni.com.
+
+Devices
+
+iPhone & iPad
+Mac
+Android
+Windows
+Linux
+
+Email
+Name or company (optional)
+What do you expect from iÚčetní? (optional)
+
+I agree that NEMOSERVIS Praha s.r.o. may contact me about testing iÚčetní. Details in the Privacy Policy.
+
+## How testing works
+
+- iPhone, iPad and Mac: the invitation comes through Apple TestFlight. Install the TestFlight app and accept the invitation.
+- Android, Windows and Linux: we'll send you a download link and short installation instructions.
+- You can invoice without installing anything. Use Claude or ChatGPT, see Invoicing with AI.
+- Any feedback during testing helps: support@iucetni.com.
+
+---
+
 URL: https://iucetni.com/
 
 Fakturace v rozhovoru s AI
 
 # Stačí si popovídat. Faktury vyřídí AI.
 
-Napíšete Claude nebo ChatGPT, co potřebujete, a AI přes MCP vystaví fakturu, odešle ji e-mailem, pošle podklady účetní a připraví podklady pro daňové přiznání. Bez učení dalšího programu, podle české legislativy a zdarma s daty v cloudu. A když chcete, máte k tomu nativní aplikaci pro iPhone, iPad a Mac.
+Napíšete Claude, ChatGPT nebo jiné AI, co potřebujete, a ta přes MCP vystaví fakturu, odešle ji e-mailem, pošle podklady účetní a připraví podklady pro daňové přiznání. Nic se neučíte, vše podle české legislativy a zdarma s daty v cloudu. A když chcete, máte k tomu aplikaci pro iPhone, iPad, Mac, Android, Windows i Linux.
 
-Již brzy v App Store
-
+Testovací přístup
 Jak to funguje
 
-iPhone
-iPad
-Mac
-· jedna aplikace pro všechna zařízení
+Aplikace pro iPhone a iPad Mac Android Windows Linux
 
-Připojíte do Claude ChatGPT bez programu →
+Připojíte do Claude ChatGPT Gemini Grok Muse Mistral a další AI přes MCP →
 
 AI asistent v aplikaci Claude Haiku v ceně Pro
 
@@ -1172,7 +1202,7 @@ Na serverech v Evropské unii. Ve verzi Pro můžete data ukládat i přímo ve 
 
 Na jakých zařízeních aplikace běží?
 
-Na iPhonu a iPadu se systémem iOS / iPadOS 26 a na Macu se systémem macOS 26 nebo novějším. V App Store je to jedna aplikace pro všechna tato zařízení.
+Na iPhonu a iPadu (iOS / iPadOS 26), na Macu (macOS 26 nebo novější), na Androidu, Windows a Linuxu. O testovací přístup si můžete napsat zde. Fakturovat můžete i jen v rozhovoru s AI přes MCP.
 
 Můžu přejít z Pohody, Fakturoidu nebo iDokladu?
 
@@ -1202,12 +1232,13 @@ Jak smažu účet?
 
 V aplikaci v Nastavení → Účet. Před smazáním si data vyexportujte, protože účetní doklady je potřeba archivovat. Postup najdete na stránce Podpora.
 
-## iÚčetní bude brzy v App Store
+## Vyzkoušejte iÚčetní
 
-Fakturace a daňová evidence pro iPhone, iPad a Mac v jedné aplikaci. S daty v cloudu zdarma.
+Fakturace a daňová evidence v rozhovoru s AI i v aplikaci. S daty v cloudu zdarma. Vyberte zařízení a pošleme vám pozvánku k testování.
 
-Již brzy v App Store
+iPhone a iPad Mac Android Windows Linux
 
+Testovací přístup
 support@iucetni.com
 
 ---
@@ -1310,6 +1341,8 @@ Komunikace je šifrovaná, přístupové údaje jsou v Klíčence a aplikaci mů
 ## 10. Web iucetni.com a cookies
 
 Web nepoužívá cookies ani analytické a reklamní nástroje. Ve vašem prohlížeči si ukládá jen volbu světlého nebo tmavého vzhledu. Web běží na infrastruktuře Cloudflare, která kvůli bezpečnosti a doručení stránky zpracovává IP adresy návštěvníků.
+
+Testovací přístup: pokud vyplníte formulář na stránce Testovací přístup, zpracováváme e-mail, vybraná zařízení a případně jméno, poznámku a zemi odvozenou z IP adresy. Na základě vašeho souhlasu je používáme jen k tomu, abychom vám poslali pozvánku a informace k testování. Uchováváme je do konce testování, nejdéle 2 roky. Souhlas můžete kdykoli odvolat na support@iucetni.com a údaje smažeme.
 
 ## 11. Děti
 
@@ -1508,7 +1541,7 @@ MCP server · zdarma
 
 Model Context Protocol (MCP) propojí vaše faktury, odběratele a výdaje s AI, kterou už používáte. Připojení je zdarma ve všech verzích iÚčetní.
 
-Funguje s Claude ChatGPT
+Funguje s Claude ChatGPT Gemini Grok Muse Mistral
 
 Adresa MCP serveru
 
@@ -1528,6 +1561,8 @@ Chcete vědět, jak s iÚčetní pracovat jen v Claude nebo ChatGPT bez otevír�
 V nastavení ChatGPT přidejte vlastní konektor (aplikaci) typu MCP s adresou https://mcp.iucetni.com/mcp/. Přihlášení a potvrzení přístupu proběhne stejně jako u Claude. Dostupnost vlastních konektorů závisí na vašem tarifu ChatGPT.
 
 ## Další klienti a AI agenti
+
+iÚčetní připojíte do každé AI aplikace nebo modelu s podporou MCP, třeba Google Gemini, Grok, Meta Muse nebo Mistral. Postup je stejný: přidáte vlastní konektor s adresou serveru a přihlásíte se.
 
 Server podporuje transport Streamable HTTP. Klienti s podporou OAuth (Claude Code, Cursor a další) se přihlásí sami:
 
@@ -1582,13 +1617,13 @@ S připojením vám rádi pomůžeme na support@iucetni.com.
 
 URL: https://iucetni.com/bez-aplikace/
 
-Bez účetního programu · AI od nás zdarma
+Fakturace s AI · připojení zdarma
 
 # Stačí si popovídat. Faktury vyřídí AI.
 
-Napíšete Claude nebo ChatGPT, co potřebujete. AI přes MCP vystaví fakturu, odešle ji odběrateli e-mailem, pohlídá úhradu, pošle podklady účetní a na konci roku připraví podklady pro daňové přiznání. Program se neučíte, nic nepřepisujete a nikde neklikáte. Připojení je zdarma ve všech verzích.
+Napíšete Claude nebo ChatGPT, co potřebujete. AI přes MCP vystaví fakturu, odešle ji odběrateli e-mailem, pohlídá úhradu, pošle podklady účetní a na konci roku připraví podklady pro daňové přiznání. Program se neučíte, nic nepřepisujete a nikde neklikáte. Připojení je zdarma ve všech verzích. Kromě Claude a ChatGPT funguje i s Gemini, Grokem, Muse, Mistralem a dalšími AI aplikacemi a modely s podporou MCP.
 
-Funguje s Claude ChatGPT ✉️ namailu.cz
+Funguje s Claude ChatGPT Gemini Grok Muse Mistral
 
 ## Celá faktura v jednom rozhovoru
 
@@ -1666,3 +1701,36 @@ Připojení iÚčetní přes MCP je zdarma ve všech verzích, i ve verzi Zdarma
 Aplikaci potřebujete jednou na založení účtu a firmy. Pak se hodí, když chcete upravit vzhled faktury a číselné řady, rychle fotit účtenky, tisknout nebo exportovat data pro účetní program (POHODA, Money, ABRA). Aplikace i AI pracují se stejnými daty, takže co AI připraví v rozhovoru, hned vidíte i v aplikaci.
 
 S připojením vám rádi pomůžeme na support@iucetni.com.
+
+---
+
+URL: https://iucetni.com/testovaci-pristup/
+
+Testovací přístup
+
+# Vyzkoušejte iÚčetní mezi prvními
+
+Vyberte zařízení, na kterých chcete iÚčetní používat, a nechte nám e-mail. Pozvánku k testování vám pošleme e-mailem. Na iPhonu, iPadu a Macu přes Apple TestFlight, na ostatních zařízeních jako odkaz ke stažení.
+
+Děkujeme, žádost máme. Pozvánku k testování vám pošleme e-mailem. Pokud chcete něco doplnit, napište na support@iucetni.com.
+
+Zařízení
+
+iPhone a iPad
+Mac
+Android
+Windows
+Linux
+
+E-mail
+Jméno nebo firma (nepovinné)
+Co od iÚčetní čekáte? (nepovinné)
+
+Souhlasím, aby mě NEMOSERVIS Praha s.r.o. kontaktovala ohledně testování iÚčetní. Podrobnosti v zásadách ochrany soukromí.
+
+## Jak testování probíhá
+
+- iPhone, iPad a Mac: pozvánka přijde přes Apple TestFlight. Stačí nainstalovat aplikaci TestFlight a pozvánku potvrdit.
+- Android, Windows a Linux: pošleme vám odkaz ke stažení a krátký návod k instalaci.
+- Fakturovat můžete i bez instalace. Přes Claude nebo ChatGPT, viz Fakturace s AI.
+- Během testování nám pomůže každá zpětná vazba na support@iucetni.com.

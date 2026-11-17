@@ -1,16 +1,22 @@
 {
-  // Statický web iucetni.com – Cloudflare Workers (static assets)
+  // Web iucetni.com – Cloudflare Workers: statické soubory z public/ + formulář testovacího přístupu (src/worker.js)
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "iucetni",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-01",
   "observability": {
     "enabled": false
   },
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": ["/api/*"]
   },
+  "kv_namespaces": [
+    { "binding": "BETA", "id": "50755d520bfe4a66af33e13bcd8f04d6" }
+  ],
   "routes": [
     { "pattern": "iucetni.com", "custom_domain": true },
     { "pattern": "www.iucetni.com", "custom_domain": true }

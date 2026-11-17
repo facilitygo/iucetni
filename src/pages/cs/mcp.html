@@ -6,7 +6,7 @@ key: mcp
 <span class="eyebrow">MCP server · zdarma</span>
 <h1>iÚčetní ve vašem Claude nebo ChatGPT</h1>
 <p class="meta">Model Context Protocol (MCP) propojí vaše faktury, odběratele a výdaje s AI, kterou už používáte. Připojení je zdarma ve všech verzích iÚčetní.</p>
-<div class="works-with"><span class="ww-label">Funguje s</span><span class="ww-item">{{ill:logo-claude}}Claude</span><span class="ww-item">{{ill:logo-openai}}ChatGPT</span></div>
+<div class="works-with"><span class="ww-label">Funguje s</span><span class="ww-item">{{ill:logo-claude}}Claude</span><span class="ww-item">{{ill:logo-openai}}ChatGPT</span><span class="ww-item">{{ill:logo-gemini}}Gemini</span><span class="ww-item">{{ill:logo-grok}}Grok</span><span class="ww-item">{{ill:logo-meta}}Muse</span><span class="ww-item">{{ill:logo-mistral}}Mistral</span></div>
 
 <div class="box">
 <p><strong>Adresa MCP serveru</strong></p>
@@ -31,6 +31,7 @@ key: mcp
 <p>V nastavení ChatGPT přidejte vlastní konektor (aplikaci) typu MCP s adresou <code>https://mcp.iucetni.com/mcp/</code>. Přihlášení a potvrzení přístupu proběhne stejně jako u Claude. Dostupnost vlastních konektorů závisí na vašem tarifu ChatGPT.</p>
 
 <h2 id="agenti">Další klienti a AI agenti</h2>
+<p>iÚčetní připojíte do každé AI aplikace nebo modelu s podporou MCP, třeba Google Gemini, Grok, Meta Muse nebo Mistral. Postup je stejný: přidáte vlastní konektor s adresou serveru a přihlásíte se.</p>
 <p>Server podporuje transport Streamable HTTP. Klienti s podporou OAuth (Claude Code, Cursor a další) se přihlásí sami:</p>
 <div class="code"><code>claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp/</code><button class="copy-btn" type="button" data-copy="claude mcp add --transport http iucetni https://mcp.iucetni.com/mcp/" data-done="Zkopírováno">Kopírovat</button></div>
 <p>Pro vlastní agenty a automatizace bez přihlašovacího okna vydejte v aplikaci <strong>klíč pro AI</strong> (Nastavení → Klíče pro AI → Vydat klíč). Můžete ho omezit na vybrané firmy a nastavit mu platnost. Klíč se zobrazí jen jednou a posílá se v hlavičce:</p>

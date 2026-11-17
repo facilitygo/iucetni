@@ -1,0 +1,60 @@
+title: Test access
+description: Sign up to test iÚčetní for iPhone, iPad, Mac, Android, Windows or Linux. We'll email you an invitation.
+kind: doc
+key: testovaci-pristup
+---
+<span class="eyebrow">Test access</span>
+<h1>Be among the first to try iÚčetní</h1>
+<p class="meta">Choose the devices you want to use iÚčetní on and leave us your email. We'll send you an invitation by email: through Apple TestFlight for iPhone, iPad and Mac, and as a download link for other devices.</p>
+
+<div class="box" id="formular">
+<p class="form-ok" hidden><strong>Thank you, we have your request.</strong> We'll email you an invitation to test. To add anything, write to <a href="mailto:support@iucetni.com">support@iucetni.com</a>.</p>
+<form class="beta-form" method="post" action="/api/testovaci-pristup">
+<input type="hidden" name="lang" value="en">
+<fieldset>
+<legend>Devices</legend>
+<div class="plat-pick">
+<label><input type="checkbox" name="platform" value="ios"><span>{{ill:logo-apple}}iPhone &amp; iPad</span></label>
+<label><input type="checkbox" name="platform" value="mac"><span>{{ill:logo-apple}}Mac</span></label>
+<label><input type="checkbox" name="platform" value="android"><span>{{ill:logo-android}}Android</span></label>
+<label><input type="checkbox" name="platform" value="windows"><span>{{ill:logo-windows}}Windows</span></label>
+<label><input type="checkbox" name="platform" value="linux"><span>{{ill:logo-linux}}Linux</span></label>
+</div>
+</fieldset>
+<label class="fld">Email<input type="email" name="email" required autocomplete="email" maxlength="200" placeholder="you@example.com"></label>
+<label class="fld">Name or company <small>(optional)</small><input type="text" name="name" autocomplete="name" maxlength="200"></label>
+<label class="fld">What do you expect from iÚčetní? <small>(optional)</small><textarea name="note" rows="3" maxlength="2000" placeholder="For example: I invoice 10 times a month and want to do it in Claude."></textarea></label>
+<label class="hp" aria-hidden="true">Website<input type="text" name="web" tabindex="-1" autocomplete="off"></label>
+<label class="chk"><input type="checkbox" name="consent" value="1" required><span>I agree that NEMOSERVIS Praha s.r.o. may contact me about testing iÚčetní. Details in the <a href="/en/privacy/#web">Privacy Policy</a>.</span></label>
+<p class="form-err" hidden></p>
+<button class="btn btn-primary" type="submit">Sign me up</button>
+</form>
+</div>
+
+<h2>How testing works</h2>
+<ul>
+<li><strong>iPhone, iPad and Mac:</strong> the invitation comes through Apple TestFlight. Install the TestFlight app and accept the invitation.</li>
+<li><strong>Android, Windows and Linux:</strong> we'll send you a download link and short installation instructions.</li>
+<li><strong>You can invoice without installing anything.</strong> Use Claude or ChatGPT, see <a href="/en/without-the-app/">Invoicing with AI</a>.</li>
+<li>Any feedback during testing helps: <a href="mailto:support@iucetni.com">support@iucetni.com</a>.</li>
+</ul>
+
+<script>
+(function(){
+  var f=document.querySelector('.beta-form'),ok=document.querySelector('.form-ok'),err=document.querySelector('.form-err');
+  var M={email:'Please check your email address.',platform:'Choose at least one device.',consent:'Please confirm your consent.',x:'Sending failed. Try again or write to support@iucetni.com.'};
+  var q=new URLSearchParams(location.search),p=q.get('platforma');
+  if(p){var b=f.querySelector('input[name=platform][value="'+p+'"]');if(b)b.checked=true}
+  function done(){f.hidden=true;ok.hidden=false}
+  function fail(c){err.textContent=M[c]||M.x;err.hidden=false}
+  if(q.get('odeslano'))done(); else if(q.get('chyba'))fail(q.get('chyba'));
+  f.addEventListener('submit',function(e){
+    e.preventDefault();err.hidden=true;
+    if(!f.querySelector('input[name=platform]:checked'))return fail('platform');
+    var btn=f.querySelector('button');btn.disabled=true;
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}})
+      .then(function(r){return r.json()}).then(function(j){j.ok?done():fail(j.code)})
+      .catch(function(){fail('x')}).then(function(){btn.disabled=false});
+  });
+})();
+</script>
