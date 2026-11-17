@@ -16,11 +16,13 @@ Tell Claude, ChatGPT or another AI what you need and, over MCP, it issues the in
 Test access
 How it works
 
-Apps for iPhone & iPad Mac Android Windows Linux
+Apps
 
-Connects to Claude ChatGPT Gemini Grok Muse Mistral and other AI via MCP →
+iPhone & iPad Mac Android Windows Linux
 
-In-app AI assistant Claude Haiku included in Pro
+Connect to AI and more via MCP →
+
+Claude ChatGPT Gemini Grok Muse Mistral
 
 - ISDOC 6.0.2
 - QR payments
@@ -368,7 +370,13 @@ In the app under Settings → Account. Export your data first, because accountin
 
 Invoicing and tax records in a conversation with AI and in the app. Free with your data in the cloud. Choose your devices and we'll send you an invitation to test.
 
+Apps
+
 iPhone & iPad Mac Android Windows Linux
+
+Connect to AI and more via MCP →
+
+Claude ChatGPT Gemini Grok Muse Mistral
 
 Test access
 support@iucetni.com
@@ -872,11 +880,13 @@ Napíšete Claude, ChatGPT nebo jiné AI, co potřebujete, a ta přes MCP vystav
 Testovací přístup
 Jak to funguje
 
-Aplikace pro iPhone a iPad Mac Android Windows Linux
+Aplikace
 
-Připojíte do Claude ChatGPT Gemini Grok Muse Mistral a další AI přes MCP →
+iPhone a iPad Mac Android Windows Linux
 
-AI asistent v aplikaci Claude Haiku v ceně Pro
+Připojíte do AI a další přes MCP →
+
+Claude ChatGPT Gemini Grok Muse Mistral
 
 - ISDOC 6.0.2
 - QR Platba
@@ -1236,7 +1246,13 @@ V aplikaci v Nastavení → Účet. Před smazáním si data vyexportujte, proto
 
 Fakturace a daňová evidence v rozhovoru s AI i v aplikaci. S daty v cloudu zdarma. Vyberte zařízení a pošleme vám pozvánku k testování.
 
+Aplikace
+
 iPhone a iPad Mac Android Windows Linux
+
+Připojíte do AI a další přes MCP →
+
+Claude ChatGPT Gemini Grok Muse Mistral
 
 Testovací přístup
 support@iucetni.com

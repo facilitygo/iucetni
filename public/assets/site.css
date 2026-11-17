@@ -468,3 +468,16 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
 .beta-form .chk{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--muted);margin:4px 0 16px}.beta-form .chk input{margin-top:3px;flex:none}
 .beta-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .form-err{color:#c2332a;font-weight:600;font-size:.9rem}
+.eco{display:grid;gap:18px;margin-top:30px;max-width:540px}
+.eco-center{margin:8px auto 26px;text-align:left}
+.eco-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 8px}
+.eco-label{font-size:.74rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.eco-more{font-size:.84rem;font-weight:600;text-decoration:none;color:var(--plum);white-space:nowrap}
+.eco-more:hover{text-decoration:underline}
+.eco-grid{display:grid;gap:8px}.eco-5{grid-template-columns:repeat(5,1fr)}.eco-6{grid-template-columns:repeat(6,1fr)}
+.eco-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-width:0;padding:12px 4px 10px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--text);text-decoration:none;font-size:.76rem;font-weight:600;line-height:1.2;text-align:center}
+.eco-tile svg{width:24px;height:24px;flex:none}
+.eco-tile>span{display:block;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+a.eco-tile{transition:border-color .2s,transform .2s,box-shadow .2s}
+a.eco-tile:hover{border-color:var(--plum);transform:translateY(-2px);box-shadow:var(--shadow)}
+@media (max-width:520px){.eco-6{grid-template-columns:repeat(3,1fr)}.eco-tile{font-size:.72rem;padding:10px 2px 9px}.eco-tile svg{width:22px;height:22px}}
