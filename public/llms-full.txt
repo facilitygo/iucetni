@@ -881,7 +881,7 @@ Connect Claude ChatGPT Grok Gemini Muse Mistral
 
 ## What it costs
 
-CZK 0 from us. Connecting over MCP is free in every plan and working with your data over MCP uses nothing up. You pay for the AI in Claude, ChatGPT or Grok through your own Anthropic, OpenAI or xAI subscription.
+CZK 0 from us. The Free plan has no limit on the number of invoices. Connecting over MCP is free in every plan and working with your data over MCP uses nothing up. You pay for the AI in Claude, ChatGPT or Grok through your own Anthropic, OpenAI or xAI subscription.
 
 - The app runs on one device of your choice. Claude, ChatGPT or Grok doesn't count, so you can use them in a browser on your computer, for example.
 - Whether custom connectors (MCP) are available depends on your plan with the AI provider.
@@ -1851,7 +1851,7 @@ Připojíte Claude ChatGPT Grok Gemini Muse Mistral
 
 ## Kolik to stojí
 
-Od nás 0 Kč. Připojení přes MCP je zdarma ve všech verzích a práce s daty přes MCP nic neodečítá. AI v Claude, ChatGPT nebo Groku platíte v rámci svého předplatného u Anthropic, OpenAI nebo xAI.
+Od nás 0 Kč. Verze Zdarma nemá limit počtu faktur. Připojení přes MCP je zdarma ve všech verzích a práce s daty přes MCP nic neodečítá. AI v Claude, ChatGPT nebo Groku platíte v rámci svého předplatného u Anthropic, OpenAI nebo xAI.
 
 - Aplikace běží na jednom zařízení podle vašeho výběru. Claude, ChatGPT nebo Grok se do toho nepočítá, můžete je používat třeba na počítači v prohlížeči.
 - Dostupnost vlastních konektorů (MCP) závisí na vašem tarifu u poskytovatele AI.
