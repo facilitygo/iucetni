@@ -142,9 +142,24 @@ Receipts and supplier invoices
 No more retyping expenses. Take a photo of a receipt or drop in a supplier's PDF invoice and the app reads it for you.
 
 - Photo, scan or PDF. The scanner crops and straightens the document; multi-page documents are saved as one PDF.
-- Automatic fill-in. Supplier, company ID, document number, date, amount and VAT. PDFs from accounting software are read straight from their text layer, which is even more accurate.
+- Automatic fill-in. Supplier, company ID, VAT ID and country, document type and number, date, amount and VAT. PDFs from accounting software are read straight from their text layer, which is even more accurate.
+- Line items and VAT rates. The AI lists the document's items and splits it by VAT rate. For each item you set whether it is tax-deductible.
+- Catches mistakes. Warns you about an expense that's already recorded and about a suspicious amount. If reading fails, it tries again with a more accurate model.
 - The image stays with the expense. The original document is always one tap away.
 - ISDOC straight into expenses. Import a supplier's e-invoice with all its details.
+
+New · Cash register
+
+## Selling for cash or by card? A receipt in a few taps.
+
+At a market stall, a café or a workshop, issue a cash receipt by tapping items from your price list. In the evening you know your takings.
+
+- Receipts from your price list. For each price list item, choose whether it's offered at the register, on invoices or both. A receipt in progress can be parked.
+- Returns. Refund a whole receipt or selected items. The app issues a corrective document and makes sure no more is returned than was sold.
+- Turn a receipt into an invoice. If the customer wants a company invoice, convert the receipt afterwards.
+- CZK, EUR and USD. Cash is rounded according to the currency and payment method.
+- Own numbering and register name. Receipts have their own number series and list. Open, print or email today's receipts.
+- Through AI too. Claude or ChatGPT can issue a receipt and total your takings over MCP.
 
 Working with your accountant
 
@@ -154,6 +169,7 @@ Export issued invoices for Czech accounting software, and move over from other i
 
 - Export issued invoices for POHODA, Money S3 and ABRA Flexi. Files validate against the vendors' official XSD schemas.
 - Import from POHODA XML. Bring over documents from Pohoda, Fakturoid or iDoklad, which all export this format.
+- Export expenses to accounting software. Each document shows whether it has already been exported, so nothing is sent twice.
 - ISDOC for customers and for importing received invoices into expenses.
 - Income and expense ledger and reports in PDF and CSV.
 
@@ -220,7 +236,7 @@ Tax records
 
 ## Income and expense ledger without spreadsheets
 
-Record expenses with attachments; income is calculated from paid invoices. The app compares your actual expenses with the Czech flat-rate expense allowances and shows which works out better.
+Record expenses with attachments; income is calculated from paid invoices. The app compares your actual expenses with the Czech flat-rate expense allowances and shows which works out better. For each company you choose actual expenses, flat-rate expenses or the flat-rate tax.
 
 The overview is supporting material, not a tax return.
 
@@ -955,6 +971,64 @@ We're happy to help at support@iucetni.com.
 
 ---
 
+URL: https://iucetni.com/en/whats-new/
+
+What's new
+
+# What's new in iÚčetní
+
+An overview of what's new in the app and in connecting to AI. You can try the app through test access.
+
+## November 2026
+
+### Cash register and receipts
+
+- Issue a cash receipt by tapping items from your price list. A receipt in progress can be parked and finished later.
+- For each price list item, choose whether it's offered at the register, on invoices or both.
+- Returns: refund a whole receipt or selected items with a corrective document. The app makes sure no more is returned than was sold.
+- Convert a receipt into an invoice afterwards, for example when the customer wants a company invoice.
+- The register handles CZK, EUR and USD and rounds cash according to the currency and payment method.
+- Receipts have their own list and number series, and each register can have its own name.
+- Claude or ChatGPT can issue and list receipts over MCP too.
+
+### Reading documents with AI
+
+- From a photo of a receipt or invoice, the AI lists the line items and splits the document by VAT rate.
+- It now also reads the supplier's VAT ID and country, the document type and the VAT breakdown, and matches the document against delivery notes.
+- It warns you about an expense that's already recorded (a possible duplicate) and about a suspicious amount.
+- If reading fails, it tries again with a more accurate model.
+
+### Expenses and tax records
+
+- Expenses have line items, and you set tax deductibility for each.
+- Expenses with VAT details: document type, supplier VAT ID, date of taxable supply, reverse charge and a VAT summary with checked totals.
+- Move an expense to another company.
+- For each company, choose actual expenses, flat-rate expenses or the flat-rate tax.
+
+### Working with your accountant
+
+- Export expenses to accounting software. Each document shows whether it has been exported, so nothing is sent twice.
+- Import documents from POHODA XML and ISDOC.
+- More precise ISDOC and PDF: line VAT matches the VAT summary, advance payments and their deduction, credit notes linked to the original document.
+- A document without items can no longer be issued by mistake.
+
+### AI assistant in the app
+
+- Select documents in a list and the assistant uses them as context for your question, such as “send a reminder for these invoices”.
+
+### English
+
+- The app is available in Czech and English and follows your device's language. Documents and PDFs stay in Czech as Czech law requires.
+
+### Invoicing with AI over MCP
+
+- Besides Claude and ChatGPT, you can now connect iÚčetní to Grok and Mistral.
+- Connecting over MCP is free in every plan and doesn't count as a device. See Invoicing with AI and The free app, with AI on top.
+
+Got an idea or feedback? Write to support@iucetni.com.
+
+---
+
 URL: https://iucetni.com/
 
 Fakturace v rozhovoru s AI
@@ -1092,9 +1166,24 @@ Jedna aplikace v App Store pro iPhone, iPad i Mac. Ve verzi Pro máte na všech 
 Výdaje nemusíte přepisovat. Účtenku vyfotíte, nebo vložíte PDF faktury od dodavatele, a aplikace z ní načte údaje.
 
 - Fotka, sken nebo PDF. Skener dokument ořízne a narovná. Vícestránkový doklad uloží jako jedno PDF.
-- Automatické vyplnění. Dodavatel, IČO, číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.
+- Automatické vyplnění. Dodavatel, IČO, DIČ a země, druh a číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.
+- Položky a sazby DPH. AI rozepíše položky dokladu a rozdělí ho podle sazeb DPH. U každé položky nastavíte, jestli je daňově uznatelná.
+- Hlídá chyby. Upozorní na výdaj, který už v evidenci je, a na podezřelou částku. Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.
 - Snímek zůstane u výdaje. Originál dokladu máte vždy po ruce. Stačí ho otevřít přímo u výdaje.
 - ISDOC rovnou do výdajů. Elektronickou fakturu od dodavatele načtete i se všemi údaji.
+
+Novinka · Pokladna
+
+## Prodej za hotovost nebo kartou. Paragon na pár klepnutí.
+
+Na stánku, v kavárně nebo v dílně vystavíte paragon klepnutím na položky ceníku. Večer víte, kolik jste utržili.
+
+- Paragon z ceníku. U každé položky ceníku určíte, jestli se nabízí v pokladně, na fakturách, nebo v obojím. Rozpracovaný paragon jde odložit.
+- Vrácení zboží. Vrátíte celý paragon nebo jen vybrané položky. Aplikace vystaví opravný doklad a pohlídá, aby se nevrátilo víc, než se prodalo.
+- Z paragonu faktura. Když zákazník chce fakturu na firmu, paragon na ni dodatečně překlopíte.
+- Koruny, eura i dolary. Hotovost se zaokrouhlí podle měny a způsobu úhrady.
+- Vlastní řada a označení pokladny. Paragony mají vlastní číselnou řadu a seznam. Dnešní paragony otevřete, vytisknete nebo pošlete e-mailem.
+- I přes AI. Claude nebo ChatGPT umí paragon vystavit a sečíst tržby přes MCP.
 
 Spolupráce s účetní
 
@@ -1104,6 +1193,7 @@ Vydané faktury vyexportujete do formátu účetního programu a přechod z jin�
 
 - Export vydaných faktur pro POHODU, Money S3 a ABRA Flexi. Soubory odpovídají oficiálním schématům (XSD) výrobců.
 - Import z POHODA XML. Převezmete doklady z Pohody, Fakturoidu i iDokladu, protože všechny tento formát exportují.
+- Export výdajů do účetních programů. U každého dokladu vidíte, jestli už byl exportovaný, takže se nic nepošle dvakrát.
 - ISDOC pro odběratele i pro načtení přijatých faktur do výdajů.
 - Kniha příjmů a výdajů a sestavy v PDF a CSV.
 
@@ -1170,7 +1260,7 @@ Daňová evidence
 
 ## Kniha příjmů a výdajů bez tabulek
 
-Výdaje zapíšete i s přílohou, příjmy aplikace spočítá z uhrazených faktur. Pak porovná skutečné výdaje s paušálem a ukáže, co se vám vyplatí víc.
+Výdaje zapíšete i s přílohou, příjmy aplikace spočítá z uhrazených faktur. Pak porovná skutečné výdaje s paušálem a ukáže, co se vám vyplatí víc. Pro firmu zvolíte, jestli uplatňujete skutečné výdaje, výdajový paušál, nebo paušální daň.
 
 Přehled slouží jako podklad, nejde o daňové přiznání.
 
@@ -1922,3 +2012,61 @@ Verze Zdarma je pro jednoho uživatele na jednom zařízení. Pro se vyplatí, a
 - Kam jdou data. Ukládáme je na serverech v EU. Poskytovateli AI, kterou připojíte, se předává jen to, co si AI v rozhovoru vyžádá. Více v zásadách ochrany soukromí.
 
 S čímkoli vám rádi pomůžeme na support@iucetni.com.
+
+---
+
+URL: https://iucetni.com/novinky/
+
+Novinky
+
+# Co je nového v iÚčetní
+
+Přehled novinek v aplikaci a v připojení k AI. Aplikaci si můžete vyzkoušet přes testovací přístup.
+
+## Listopad 2026
+
+### Pokladna a paragony
+
+- Paragon vystavíte klepnutím na položky ceníku. Rozpracovaný paragon jde odložit a dokončit později.
+- U položky ceníku určíte, jestli se nabízí v pokladně, na fakturách, nebo v obojím.
+- Vrácení zboží z paragonu: celý paragon nebo jen vybrané položky, s opravným dokladem. Aplikace pohlídá, aby se nevrátilo víc, než se prodalo.
+- Paragon jde dodatečně překlopit na fakturu, třeba když zákazník chce doklad na firmu.
+- Pokladna umí koruny, eura i dolary a hotovost zaokrouhlí podle měny a způsobu úhrady.
+- Paragony mají vlastní seznam a číselnou řadu a každá pokladna může mít své označení.
+- Přes MCP umí paragon vystavit a vypsat i Claude nebo ChatGPT.
+
+### Čtení dokladů s AI
+
+- Z fotky účtenky nebo faktury AI rozepíše položky a rozdělí doklad podle sazeb DPH.
+- Nově načte i DIČ a zemi dodavatele, druh dokladu a rozpis DPH a porovná doklad s dodacími listy.
+- Upozorní na výdaj, který už v evidenci je (možný duplikát), a na podezřelou částku.
+- Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.
+
+### Výdaje a daňová evidence
+
+- Výdaj má položky a u každé nastavíte daňovou uznatelnost.
+- Výdaje s DPH údaji: druh dokladu, DIČ dodavatele, datum zdanitelného plnění, přenesená daňová povinnost a rekapitulace DPH s kontrolou součtů.
+- Výdaj jde přesunout do jiné firmy.
+- Pro firmu zvolíte, jestli uplatňujete skutečné výdaje, výdajový paušál, nebo paušální daň.
+
+### Spolupráce s účetní
+
+- Export výdajů do účetních programů. U dokladu vidíte, jestli už byl exportovaný, takže se nic nepošle dvakrát.
+- Import dokladů z POHODA XML a ISDOC.
+- Přesnější ISDOC a PDF: DPH na řádcích sedí na rekapitulaci, zálohy a jejich odpočet, dobropis s odkazem na původní doklad.
+- Doklad bez položek už nejde omylem vystavit.
+
+### AI asistent v aplikaci
+
+- V seznamu označíte doklady a asistent s nimi pracuje jako s kontextem otázky, třeba „k těmhle fakturám pošli připomínku“.
+
+### Angličtina
+
+- Aplikace je v češtině i angličtině a jazyk se řídí nastavením zařízení. Doklady a PDF zůstávají česky, jak vyžaduje česká legislativa.
+
+### Fakturace s AI přes MCP
+
+- iÚčetní připojíte kromě Claude a ChatGPT nově i do Groku a Mistralu.
+- Připojení přes MCP je zdarma ve všech verzích a nepočítá se jako zařízení. Více na stránkách Fakturace s AI a Aplikace zdarma a k ní AI.
+
+Máte nápad nebo připomínku? Napište na support@iucetni.com.

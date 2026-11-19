@@ -246,7 +246,9 @@ key: index
       <p class="lead">Výdaje nemusíte přepisovat. Účtenku vyfotíte, nebo vložíte PDF faktury od dodavatele, a aplikace z ní načte údaje.</p>
       <ul class="ticks">
         <li><b>Fotka, sken nebo PDF.</b> <small>Skener dokument ořízne a narovná. Vícestránkový doklad uloží jako jedno PDF.</small></li>
-        <li><b>Automatické vyplnění.</b> <small>Dodavatel, IČO, číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.</small></li>
+        <li><b>Automatické vyplnění.</b> <small>Dodavatel, IČO, DIČ a země, druh a číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.</small></li>
+        <li><b>Položky a sazby DPH.</b> <small>AI rozepíše položky dokladu a rozdělí ho podle sazeb DPH. U každé položky nastavíte, jestli je daňově uznatelná.</small></li>
+        <li><b>Hlídá chyby.</b> <small>Upozorní na výdaj, který už v evidenci je, a na podezřelou částku. Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.</small></li>
         <li><b>Snímek zůstane u výdaje.</b> <small>Originál dokladu máte vždy po ruce. Stačí ho otevřít přímo u výdaje.</small></li>
         <li><b>ISDOC rovnou do výdajů.</b> <small>Elektronickou fakturu od dodavatele načtete i se všemi údaji.</small></li>
       </ul>
@@ -257,9 +259,31 @@ key: index
   </div>
 </section>
 
+<!-- ============ POKLADNA ============ -->
+<section id="pokladna" style="padding-top:0">
+  <div class="wrap split rev">
+    <div class="reveal">
+      <span class="eyebrow">Novinka · Pokladna</span>
+      <h2>Prodej za hotovost nebo kartou. <span class="grad">Paragon na pár klepnutí.</span></h2>
+      <p class="lead">Na stánku, v kavárně nebo v dílně vystavíte paragon klepnutím na položky ceníku. Večer víte, kolik jste utržili.</p>
+      <ul class="ticks">
+        <li><b>Paragon z ceníku.</b> <small>U každé položky ceníku určíte, jestli se nabízí v pokladně, na fakturách, nebo v obojím. Rozpracovaný paragon jde odložit.</small></li>
+        <li><b>Vrácení zboží.</b> <small>Vrátíte celý paragon nebo jen vybrané položky. Aplikace vystaví opravný doklad a pohlídá, aby se nevrátilo víc, než se prodalo.</small></li>
+        <li><b>Z paragonu faktura.</b> <small>Když zákazník chce fakturu na firmu, paragon na ni dodatečně překlopíte.</small></li>
+        <li><b>Koruny, eura i dolary.</b> <small>Hotovost se zaokrouhlí podle měny a způsobu úhrady.</small></li>
+        <li><b>Vlastní řada a označení pokladny.</b> <small>Paragony mají vlastní číselnou řadu a seznam. Dnešní paragony otevřete, vytisknete nebo pošlete e-mailem.</small></li>
+        <li><b>I přes AI.</b> <small>Claude nebo ChatGPT umí paragon vystavit a sečíst tržby přes MCP.</small></li>
+      </ul>
+    </div>
+    <div class="ill-wrap reveal" aria-hidden="true">
+      {{ill:pokladna}}
+    </div>
+  </div>
+</section>
+
 <!-- ============ EXPORT ============ -->
 <section id="export" style="padding-top:0">
-  <div class="wrap split rev">
+  <div class="wrap split">
     <div class="reveal">
       <span class="eyebrow">Spolupráce s účetní</span>
       <h2>Vaše účetní dostane data <span class="grad">v programu, který používá</span></h2>
@@ -267,6 +291,7 @@ key: index
       <ul class="ticks">
         <li><b>Export vydaných faktur</b> pro POHODU, Money S3 a ABRA Flexi. <small>Soubory odpovídají oficiálním schématům (XSD) výrobců.</small></li>
         <li><b>Import z POHODA XML.</b> <small>Převezmete doklady z Pohody, Fakturoidu i iDokladu, protože všechny tento formát exportují.</small></li>
+        <li><b>Export výdajů</b> do účetních programů. <small>U každého dokladu vidíte, jestli už byl exportovaný, takže se nic nepošle dvakrát.</small></li>
         <li><b>ISDOC</b> pro odběratele i pro načtení přijatých faktur do výdajů.</li>
         <li><b>Kniha příjmů a výdajů a sestavy</b> v PDF a CSV.</li>
       </ul>
@@ -363,7 +388,7 @@ key: index
       <div>
         <span class="eyebrow">Daňová evidence</span>
         <h2>Kniha příjmů a výdajů bez tabulek</h2>
-        <p>Výdaje zapíšete i s přílohou, příjmy aplikace spočítá z uhrazených faktur. Pak porovná skutečné výdaje s paušálem a ukáže, co se vám vyplatí víc.</p>
+        <p>Výdaje zapíšete i s přílohou, příjmy aplikace spočítá z uhrazených faktur. Pak porovná skutečné výdaje s paušálem a ukáže, co se vám vyplatí víc. Pro firmu zvolíte, jestli uplatňujete skutečné výdaje, výdajový paušál, nebo paušální daň.</p>
         <p class="note">Přehled slouží jako podklad, nejde o daňové přiznání.</p>
       </div>
       <table>

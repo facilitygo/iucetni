@@ -22,6 +22,7 @@ ROUTES = {  # klíč: (cesta cs, cesta en)
     "bez-aplikace": ("/bez-aplikace/", "/en/without-the-app/"),
     "testovaci-pristup": ("/testovaci-pristup/", "/en/test-access/"),
     "zdarma-s-ai": ("/zdarma-s-ai/", "/en/free-with-ai/"),
+    "novinky": ("/novinky/", "/en/whats-new/"),
 }
 
 L = {
@@ -44,7 +45,7 @@ L = {
       </div>
       <div>
         <h4>Informace</h4>
-        <ul><li><a href="/podpora/">Podpora</a></li><li><a href="/podminky/">Podmínky použití</a></li><li><a href="/soukromi/">Ochrana soukromí</a></li><li><a href="mailto:support@iucetni.com">support@iucetni.com</a></li></ul>
+        <ul><li><a href="/novinky/">Novinky</a></li><li><a href="/podpora/">Podpora</a></li><li><a href="/podminky/">Podmínky použití</a></li><li><a href="/soukromi/">Ochrana soukromí</a></li><li><a href="mailto:support@iucetni.com">support@iucetni.com</a></li></ul>
       </div>
     </div>
     <div class="foot-bottom">
@@ -73,7 +74,7 @@ L = {
       </div>
       <div>
         <h4>Information</h4>
-        <ul><li><a href="/en/support/">Support</a></li><li><a href="/en/terms/">Terms of Use</a></li><li><a href="/en/privacy/">Privacy Policy</a></li><li><a href="mailto:support@iucetni.com">support@iucetni.com</a></li></ul>
+        <ul><li><a href="/en/whats-new/">What's new</a></li><li><a href="/en/support/">Support</a></li><li><a href="/en/terms/">Terms of Use</a></li><li><a href="/en/privacy/">Privacy Policy</a></li><li><a href="mailto:support@iucetni.com">support@iucetni.com</a></li></ul>
       </div>
     </div>
     <div class="foot-bottom">
@@ -210,6 +211,8 @@ Key facts:
 - [Fakturace v rozhovoru s AI (CS)]({SITE}/bez-aplikace/)
 - [Free app with AI (EN)]({SITE}/en/free-with-ai/): the Free plan (one device: iPhone, iPad, Mac, Android, Windows or Linux; no limit on the number of invoices) combined with Claude, ChatGPT or Grok connected over MCP at no charge; the connected AI doesn't count as a device; app and AI share the same data
 - [Aplikace zdarma s AI (CS)]({SITE}/zdarma-s-ai/)
+- [What's new (EN)]({SITE}/en/whats-new/): cash register and receipts (returns, receipt-to-invoice, CZK/EUR/USD), AI document reading with line items and VAT rates, duplicate warnings, expenses with VAT details and tax deductibility, flat-rate tax option, expense export, POHODA XML/ISDOC import, English UI, Grok and Mistral over MCP
+- [Novinky (CS)]({SITE}/novinky/)
 - [MCP server – how to connect (EN)]({SITE}/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
 - [MCP server – návod (CS)]({SITE}/mcp/)
 - [Product overview (EN)]({SITE}/en/): features, use cases, pricing, FAQ
