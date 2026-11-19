@@ -251,8 +251,8 @@ For one user on one device of your choice. Data safely in the cloud on EU server
 - Customers from ARES and a price list
 - Receipts from photos and expenses
 - Tax records, overviews and reports
-- MCP server: connect iÚčetní to Claude or ChatGPT (doesn't count as a device)
-- 1 device: iPhone, iPad or Mac
+- MCP server: connect iÚčetní to Claude or ChatGPT (doesn't count as a device). How to use it
+- 1 device: iPhone, iPad, Mac, Android, Windows or Linux
 - Trial AI assistant provided by us, with a limited number of requests
 - AI credit available without Pro too
 
@@ -815,7 +815,7 @@ You typeThe AI
 
 Connecting iÚčetní over MCP is free in every plan, including Free. You pay for the AI in Claude or ChatGPT through your own Anthropic or OpenAI subscription. Working with your data over MCP uses none of your AI allowance, so you don't need AI credit or Pro for it.
 
-- A connected AI app doesn't count as a device, so the Free plan is enough.
+- A connected AI app doesn't count as a device, so the Free plan is enough. See The free app, with AI on top.
 - Mailbox prices are on namailu.cz.
 - Pro is worth it once you want the app on more devices, to invite a colleague or accountant, or to use the AI assistant inside the app. See pricing.
 - Whether custom connectors are available depends on your Claude or ChatGPT plan.
@@ -866,6 +866,92 @@ I agree that NEMOSERVIS Praha s.r.o. may contact me about testing iÚčetní. De
 - Android, Windows and Linux: we'll send you a download link and short installation instructions.
 - You can invoice without installing anything. Use Claude or ChatGPT, see Invoicing with AI.
 - Any feedback during testing helps: support@iucetni.com.
+
+---
+
+URL: https://iucetni.com/en/free-with-ai/
+
+Free plan · MCP for free
+
+# The app is free. So is the AI that writes your invoices.
+
+The Free plan gives you invoicing and tax records on one device: iPhone, iPad, Mac, Android, Windows or Linux. On top of that you connect Claude, ChatGPT or Grok over MCP, also for free. A connected AI doesn't count as another device. Use the app for an overview and to photograph receipts; handle invoices, payments and records for your accountant in a conversation with the AI. Both work with the same data.
+
+Connect Claude ChatGPT Grok Gemini Muse Mistral
+
+## What it costs
+
+CZK 0 from us. Connecting over MCP is free in every plan and working with your data over MCP uses nothing up. You pay for the AI in Claude, ChatGPT or Grok through your own Anthropic, OpenAI or xAI subscription.
+
+- The app runs on one device of your choice. Claude, ChatGPT or Grok doesn't count, so you can use them in a browser on your computer, for example.
+- Whether custom connectors (MCP) are available depends on your plan with the AI provider.
+- If you want the AI to email invoices, connect a mailbox at namailu.cz as well. Prices are listed there.
+
+## What you do in the app and what in the conversation
+
+In the appIn Claude, ChatGPT or Grok
+
+| Set up your company, bank account and numbering, and adjust the invoice design. | “Invoice company ID 27082440 CZK 18,000 for a website.”
+
+| Photograph a receipt right at the till. | “How much have I spent on materials this year?”
+
+| See an overview of invoices, payments and expenses. | “Who hasn't paid yet? Send the overdue ones a reminder.”
+
+| Issue an invoice on the spot at a customer's, with a QR payment. | “Same invoice as last month, just for November.”
+
+| Print a document or export data for POHODA, Money or ABRA. | “Prepare my tax return figures for 2026.”
+
+Whatever the AI prepares in a conversation shows up in the app right away, and vice versa. Nothing to retype or import.
+
+## What it looks like in practice
+
+In the morning you photograph a receipt at your supplier in the app on your phone. In the afternoon you open ChatGPT or Grok on your computer and type:
+
+Invoice Kavárna U Mostu CZK 8,500 for the spring campaign, due in 14 days. And how much did materials cost me this month?
+
+The draft for Kavárna U Mostu is ready: Ad copy – spring campaign, CZK 8,500, due 1 Dec. Materials in November: CZK 3,240 across 4 documents, including today's receipt from Bauhaus. Shall I issue the invoice?
+
+Draft · AI Kavárna U Mostu · CZK 8,500.00
+Yes
+
+Yes.
+
+Done, invoice 20260057 is issued. You'll find it in the app too.
+
+None of this costs you anything with iÚčetní.
+
+## Getting started
+
+- Install the app on one device. iPhone, iPad, Mac, Android, Windows or Linux. Request access on the Test access page.
+- Create your account and company. Enter your company ID, bank account and invoice numbering. Company details are filled in from ARES.
+- Connect iÚčetní to your AI. In Claude, ChatGPT or Grok, add a custom connector (MCP) with this URL:
+
+https://mcp.iucetni.com/mcp/
+
+Sign in with your iÚčetní account and choose which companies the AI can access. Step-by-step instructions are on the MCP server page.
+- Work the way that suits you. Quick things in the app, writing and overviews in the conversation. To do everything in the conversation, see Invoicing with AI.
+
+## What's in the Free plan
+
+- Invoices, advance invoices and corrective documents with QR payment and ISDOC in the PDF.
+- Customers from ARES and a price list.
+- Receipts from photos and expenses.
+- Tax records, overviews and reports.
+- MCP server for Claude, ChatGPT, Grok and other AIs, with no limit, not counted as a device.
+- Data stored safely in the cloud on servers in the EU.
+- A trial AI assistant inside the app with a limited number of requests. You can buy AI credit even without Pro.
+
+## When Pro helps
+
+The Free plan is for one user on one device. Pro is worth it once you want the app on several devices with the same data, to invite a colleague or your accountant, to have the AI assistant included in the app, or to keep data locally on your device too. It costs CZK 99 a month or CZK 749 a year. See pricing.
+
+## You stay in control
+
+- The AI prepares drafts. Invoices from the AI are marked “Draft · AI” and get a number only when issued. The AI records a payment only after you confirm and cannot change locked documents.
+- Revoke access any time in the app under Settings → AI keys.
+- Where data goes. We store it on servers in the EU. Only what the AI requests in the conversation is passed to the AI provider you connect. See the Privacy Policy.
+
+We're happy to help at support@iucetni.com.
 
 ---
 
@@ -1115,8 +1201,8 @@ Pro jednoho uživatele na jednom zařízení podle vašeho výběru. Data bezpe�
 - Odběratelé z ARES a ceník
 - Účtenky z fotek a výdaje
 - Daňová evidence, přehledy a sestavy
-- MCP server: připojte iÚčetní do Claude nebo ChatGPT (nepočítá se jako zařízení)
-- 1 zařízení: iPhone, iPad, nebo Mac
+- MCP server: připojte iÚčetní do Claude nebo ChatGPT (nepočítá se jako zařízení). Jak to využít
+- 1 zařízení: iPhone, iPad, Mac, Android, Windows nebo Linux
 - Zkušební AI asistent od nás, s omezeným počtem dotazů
 - AI kredit si můžete dokoupit i bez Pro
 
@@ -1699,7 +1785,7 @@ NapíšeteAI udělá
 
 Připojení iÚčetní přes MCP je zdarma ve všech verzích, i ve verzi Zdarma. AI v Claude nebo ChatGPT platíte v rámci svého předplatného u Anthropic nebo OpenAI. Práce s daty přes MCP z objemu AI nic neodečítá, takže AI kredit ani Pro k tomu nepotřebujete.
 
-- Připojená AI aplikace se nepočítá jako zařízení. Verze Zdarma tak stačí.
+- Připojená AI aplikace se nepočítá jako zařízení. Verze Zdarma tak stačí, viz Aplikace zdarma a k ní AI.
 - Ceny schránky na namailu.cz najdete na namailu.cz.
 - Pro se hodí, až budete chtít aplikaci na více zařízeních, přizvat kolegu nebo účetní, nebo používat AI asistenta přímo v aplikaci. Podrobnosti jsou v ceníku.
 - Dostupnost vlastních konektorů závisí na vašem tarifu Claude nebo ChatGPT.
@@ -1750,3 +1836,89 @@ Souhlasím, aby mě NEMOSERVIS Praha s.r.o. kontaktovala ohledně testování i�
 - Android, Windows a Linux: pošleme vám odkaz ke stažení a krátký návod k instalaci.
 - Fakturovat můžete i bez instalace. Přes Claude nebo ChatGPT, viz Fakturace s AI.
 - Během testování nám pomůže každá zpětná vazba na support@iucetni.com.
+
+---
+
+URL: https://iucetni.com/zdarma-s-ai/
+
+Verze Zdarma · MCP zdarma
+
+# Aplikace zdarma. A k ní AI, která za vás píše faktury.
+
+Verze Zdarma vám dá fakturaci a daňovou evidenci na jednom zařízení: iPhonu, iPadu, Macu, Androidu, Windows nebo Linuxu. K tomu si připojíte Claude, ChatGPT nebo Grok přes MCP, také zdarma. Připojená AI se nepočítá jako další zařízení. V aplikaci máte přehled a fotíte účtenky, v rozhovoru s AI vyřídíte faktury, úhrady a podklady pro účetní. Obojí pracuje se stejnými daty.
+
+Připojíte Claude ChatGPT Grok Gemini Muse Mistral
+
+## Kolik to stojí
+
+Od nás 0 Kč. Připojení přes MCP je zdarma ve všech verzích a práce s daty přes MCP nic neodečítá. AI v Claude, ChatGPT nebo Groku platíte v rámci svého předplatného u Anthropic, OpenAI nebo xAI.
+
+- Aplikace běží na jednom zařízení podle vašeho výběru. Claude, ChatGPT nebo Grok se do toho nepočítá, můžete je používat třeba na počítači v prohlížeči.
+- Dostupnost vlastních konektorů (MCP) závisí na vašem tarifu u poskytovatele AI.
+- Chcete-li, aby AI posílala faktury e-mailem, připojte k ní i schránku na namailu.cz. Ceny najdete tam.
+
+## Co uděláte v aplikaci a co v rozhovoru s AI
+
+V aplikaciV Claude, ChatGPT nebo Groku
+
+| Založíte firmu, bankovní účet a číselnou řadu, nastavíte vzhled faktury. | „Vyfakturuj firmě s IČO 27082440 tvorbu webu za 18 000 Kč.“
+
+| Vyfotíte účtenku hned u pokladny. | „Kolik jsem letos utratil za materiál?“
+
+| Vidíte přehled faktur, úhrad a výdajů. | „Kdo mi ještě nezaplatil? Těm po splatnosti pošli připomínku.“
+
+| Vystavíte fakturu na místě u zákazníka, s QR Platbou. | „Udělej stejnou fakturu jako minulý měsíc, jen s listopadem.“
+
+| Vytisknete doklad nebo exportujete data pro POHODA, Money či ABRA. | „Připrav mi podklady pro daňové přiznání za rok 2026.“
+
+Co AI připraví v rozhovoru, hned vidíte v aplikaci, a naopak. Nic se nepřepisuje ani neimportuje.
+
+## Jak to vypadá v praxi
+
+Ráno u dodavatele vyfotíte účtenku v aplikaci na telefonu. Odpoledne na počítači otevřete ChatGPT nebo Grok a napíšete:
+
+Vyfakturuj Kavárně U Mostu jarní kampaň za 8 500 Kč, splatnost 14 dní. A kolik mě tento měsíc stál materiál?
+
+Koncept pro Kavárnu U Mostu je připravený: Reklamní text – jarní kampaň, 8 500 Kč, splatnost 1. 12. Výdaje za materiál v listopadu: 3 240 Kč ve 4 dokladech, včetně dnešní účtenky z Bauhausu. Mám fakturu vystavit?
+
+Koncept · AI Kavárna U Mostu · 8 500,00 Kč
+Ano
+
+Ano.
+
+Hotovo, faktura 20260057 je vystavená. Najdete ji i v aplikaci.
+
+Za nic z toho neplatíte iÚčetní ani korunu.
+
+## Jak začít
+
+- Nainstalujte aplikaci na jedno zařízení. iPhone, iPad, Mac, Android, Windows nebo Linux. O přístup si napište na stránce Testovací přístup.
+- Založte si účet a firmu. Zadáte IČO, bankovní účet a číselnou řadu faktur. Údaje o firmě se načtou z ARES.
+- Připojte iÚčetní do AI. V Claude, ChatGPT nebo Groku přidejte vlastní konektor (MCP) s adresou:
+
+https://mcp.iucetni.com/mcp/
+
+Přihlásíte se svým účtem iÚčetní a vyberete firmy, ke kterým má AI přístup. Podrobný postup je na stránce MCP server.
+- Pracujte, jak se vám to hodí. Rychlé věci v aplikaci, psaní a přehledy v rozhovoru. Jak vyřídit vše jen v rozhovoru, ukazuje stránka Fakturace s AI.
+
+## Co je ve verzi Zdarma
+
+- Faktury, zálohové faktury a opravné doklady s QR Platbou a ISDOC v PDF.
+- Odběratelé z ARES a ceník položek.
+- Účtenky z fotek a výdaje.
+- Daňová evidence, přehledy a sestavy.
+- MCP server pro Claude, ChatGPT, Grok a další AI, bez limitu a nepočítá se jako zařízení.
+- Data bezpečně v cloudu na serverech v EU.
+- Zkušební AI asistent přímo v aplikaci s omezeným počtem dotazů. AI kredit si můžete dokoupit i bez Pro.
+
+## Kdy se hodí Pro
+
+Verze Zdarma je pro jednoho uživatele na jednom zařízení. Pro se vyplatí, až budete chtít aplikaci na více zařízeních se stejnými daty, přizvat kolegu nebo účetní, mít AI asistenta v ceně přímo v aplikaci nebo data i lokálně v zařízení. Stojí 99 Kč měsíčně nebo 749 Kč ročně. Podrobnosti jsou v ceníku.
+
+## Máte to pod kontrolou
+
+- AI připravuje koncepty. Faktura od AI je označená „Koncept · AI“ a číslo dostane až po vystavení. Úhradu AI zapíše jen po vašem potvrzení a zamčené doklady nezmění.
+- Přístup zrušíte kdykoli v aplikaci v Nastavení → Klíče pro AI.
+- Kam jdou data. Ukládáme je na serverech v EU. Poskytovateli AI, kterou připojíte, se předává jen to, co si AI v rozhovoru vyžádá. Více v zásadách ochrany soukromí.
+
+S čímkoli vám rádi pomůžeme na support@iucetni.com.

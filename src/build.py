@@ -21,6 +21,7 @@ ROUTES = {  # klíč: (cesta cs, cesta en)
     "mcp": ("/mcp/", "/en/mcp/"),
     "bez-aplikace": ("/bez-aplikace/", "/en/without-the-app/"),
     "testovaci-pristup": ("/testovaci-pristup/", "/en/test-access/"),
+    "zdarma-s-ai": ("/zdarma-s-ai/", "/en/free-with-ai/"),
 }
 
 L = {
@@ -39,7 +40,7 @@ L = {
       </div>
       <div>
         <h4>Aplikace</h4>
-        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/bez-aplikace/">Fakturace s AI</a></li><li><a href="/mcp/">MCP server</a></li></ul>
+        <ul><li><a href="/#funkce">Funkce</a></li><li><a href="/#pribehy">Příběhy</a></li><li><a href="/#cenik">Ceník</a></li><li><a href="/bez-aplikace/">Fakturace s AI</a></li><li><a href="/zdarma-s-ai/">Zdarma s AI</a></li><li><a href="/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Informace</h4>
@@ -68,7 +69,7 @@ L = {
       </div>
       <div>
         <h4>Product</h4>
-        <ul><li><a href="/en/#features">Features</a></li><li><a href="/en/#use-cases">Use cases</a></li><li><a href="/en/#pricing">Pricing</a></li><li><a href="/en/without-the-app/">Invoicing with AI</a></li><li><a href="/en/mcp/">MCP server</a></li></ul>
+        <ul><li><a href="/en/#features">Features</a></li><li><a href="/en/#use-cases">Use cases</a></li><li><a href="/en/#pricing">Pricing</a></li><li><a href="/en/without-the-app/">Invoicing with AI</a></li><li><a href="/en/free-with-ai/">Free with AI</a></li><li><a href="/en/mcp/">MCP server</a></li></ul>
       </div>
       <div>
         <h4>Information</h4>
@@ -207,6 +208,8 @@ Key facts:
 
 - [Invoicing in a conversation with AI (EN)]({SITE}/en/without-the-app/): use iÚčetní only from Claude/ChatGPT over MCP; free in every plan, AI runs in the user's own subscription and uses no iÚčetní AI allowance or credit; the AI issues invoices, emails them via a namailu.cz mailbox connected over MCP, chases payments, records expenses and cash receipts, sends records to the accountant and prepares tax return figures (book of income and expenses, flat-rate comparison, partial tax base); the app is needed once to set up the account and company
 - [Fakturace v rozhovoru s AI (CS)]({SITE}/bez-aplikace/)
+- [Free app with AI (EN)]({SITE}/en/free-with-ai/): the Free plan (one device: iPhone, iPad, Mac, Android, Windows or Linux) combined with Claude, ChatGPT or Grok connected over MCP at no charge; the connected AI doesn't count as a device; app and AI share the same data
+- [Aplikace zdarma s AI (CS)]({SITE}/zdarma-s-ai/)
 - [MCP server – how to connect (EN)]({SITE}/en/mcp/): Claude, ChatGPT, Claude Code, own agents; OAuth details; tools; security
 - [MCP server – návod (CS)]({SITE}/mcp/)
 - [Product overview (EN)]({SITE}/en/): features, use cases, pricing, FAQ
