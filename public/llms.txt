@@ -5,7 +5,7 @@
 Key facts:
 - Platforms: iPhone and iPad (iOS/iPadOS 26), Mac (macOS 26), Android, Windows and Linux; test access on request at https://iucetni.com/en/test-access/. The app is available in Czech and English.
 - MCP works with Claude, ChatGPT, Google Gemini, Grok, Meta Muse, Mistral and any other AI app or model that supports MCP.
-- MCP server: `https://mcp.iucetni.com/mcp/` (Streamable HTTP). Auth: OAuth 2.1 (Authorization Code + PKCE S256, dynamic client registration, scope `mcp`) or a Bearer AI key issued in the app. Free in every plan.
+- MCP server: `https://mcp.iucetni.com/mcp/` (Streamable HTTP). Auth: OAuth 2.1 (Authorization Code + PKCE S256, dynamic client registration, scope `mcp`) or a Bearer AI key issued in the app. Free in every plan. In the AI client, both read and write tools must be allowed (not blocked) in the connector's tool permissions, otherwise the AI can read but cannot create or issue invoices.
 - MCP tools include list_invoices, get_invoice, get_invoice_pdf, create_draft, update_invoice, issue_invoice, mark_invoice_paid, list_customers, create_customer, lookup_ares, list_catalog, create_catalog_item, list_expenses, create_expense, update_expense, read_receipt, list_companies, list_bank_accounts.
 - Data is stored on servers in the EU. No ads, no third-party tracking.
 - Czech specifics: ARES company registry lookup, Czech National Bank exchange rates, VAT 21/12/0 %, reverse charge, flat-rate expenses (80/60/40/30 %).

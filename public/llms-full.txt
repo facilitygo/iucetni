@@ -653,6 +653,10 @@ The OAuth sign-in in Claude or ChatGPT fails
 
 Check that the URL is exactly https://mcp.iucetni.com/mcp/ and that you sign in with the email and password of your iÚčetní account. If it still fails, email us the time of the attempt and the name of the client.
 
+The AI describes the invoice but doesn't issue it
+
+The iÚčetní write tools aren't allowed in your AI app. In Claude, open Settings → Connectors → iÚčetní and in the tool permissions set both read and write to Always allow or Needs approval. In ChatGPT, check the connected app's settings and confirm the action when ChatGPT asks. See the MCP server page.
+
 Lost device – what about access?
 
 Email us from the address linked to your account and we will revoke the lost device's access key. Data on the device is protected by the iOS lock and, if enabled, by Face ID in the app.
@@ -698,11 +702,19 @@ Want to work with iÚčetní only in Claude or ChatGPT, without opening the app?
 - In Claude (web, desktop or mobile) open Settings → Connectors and choose Add custom connector.
 - Enter iÚčetní as the name and https://mcp.iucetni.com/mcp/ as the URL.
 - Click Connect. The iÚčetní sign-in page opens. Sign in with your account email and password.
-- Approve access. That's it: in a new chat, try “Who hasn't paid me yet?”
+- Approve access.
+- In the iÚčetní connector details, check the tool permissions: set both the read tools and the write tools to Always allow or Needs approval, not Blocked. That's it: in a new chat, try “Who hasn't paid me yet?”
 
 ## Connect in ChatGPT
 
 In ChatGPT settings, add a custom MCP connector (app) with the URL https://mcp.iucetni.com/mcp/. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.
+
+Allow both read and write. For the AI to not just look up invoices but also issue them, both kinds of iÚčetní tools must be allowed in Claude, ChatGPT or your other AI app:
+
+- Read: invoice list, unpaid invoices, customers, expenses, tax overviews, document PDF.
+- Write: invoice draft and issuing, edits, recording a payment, new customer, expense, cash receipt.
+
+If the write tools are blocked or turned off, the AI will only describe the invoice, not create it. In Claude, set this under Settings → Connectors → iÚčetní in the tool permissions; in ChatGPT, in the connected app's settings and by confirming the action when ChatGPT asks. To stay in control of writes, choose Needs approval: the AI will ask before every write.
 
 ## Other clients and AI agents
 
@@ -805,7 +817,7 @@ iÚčetní issues the invoice over MCP; the email goes out from a mailbox at nam
 
 https://mcp.iucetni.com/mcp/
 
-Then sign in with your iÚčetní account and choose which companies the AI can access.
+Then sign in with your iÚčetní account and choose which companies the AI can access. Finally, in the connector's permissions allow both the read and the write tools, otherwise the AI can't issue invoices ( how).
 - Connect email. Create a mailbox for your AI at namailu.cz and connect it the same way. The AI sends invoices to customers and records to your accountant from it.
 - Start typing. For example, “Who hasn't paid me yet?” Step-by-step instructions for each app are on the MCP server page.
 
@@ -944,7 +956,7 @@ None of this costs you anything with iÚčetní.
 
 https://mcp.iucetni.com/mcp/
 
-Sign in with your iÚčetní account and choose which companies the AI can access. Step-by-step instructions are on the MCP server page.
+Sign in with your iÚčetní account and choose which companies the AI can access. Then, in the connector's permissions, allow both the read and the write tools, otherwise the AI can't issue invoices. Step-by-step instructions are on the MCP server page.
 - Work the way that suits you. Quick things in the app, writing and overviews in the conversation. To do everything in the conversation, see Invoicing with AI.
 
 ## What's in the Free plan
@@ -1689,6 +1701,10 @@ Přihlášení OAuth v Claude nebo ChatGPT nefunguje
 
 Zkontrolujte, že adresa je přesně https://mcp.iucetni.com/mcp/ a že se přihlašujete e-mailem a heslem účtu iÚčetní. Pokud to stále nejde, napište nám čas pokusu a název klienta.
 
+AI fakturu jen popíše, ale nevystaví
+
+V aplikaci AI nejsou povolené nástroje iÚčetní pro zápis. V Claude otevřete Nastavení → Konektory → iÚčetní a u oprávnění nástrojů nastavte čtení i zápis na Vždy povolit nebo Vyžaduje schválení. V ChatGPT zkontrolujte nastavení připojené aplikace a akci potvrďte, když se ChatGPT zeptá. Více na stránce MCP server.
+
 Ztracené zařízení – co s přístupem?
 
 Napište nám z e-mailu, který máte u účtu, a přístupový klíč ztraceného zařízení zrušíme. Data v zařízení chrání zámek iOS a případně i Face ID v aplikaci.
@@ -1746,11 +1762,19 @@ Chcete vědět, jak s iÚčetní pracovat jen v Claude nebo ChatGPT bez otevír�
 - V Claude (web, desktop nebo mobil) otevřete Nastavení → Konektory a zvolte Přidat vlastní konektor.
 - Jako název zadejte iÚčetní a jako adresu https://mcp.iucetni.com/mcp/.
 - Klikněte na Připojit. Otevře se přihlašovací stránka iÚčetní, kde se přihlásíte e-mailem a heslem svého účtu.
-- Potvrďte přístup. Hotovo: v novém rozhovoru můžete napsat třeba „Kdo mi ještě nezaplatil?“.
+- Potvrďte přístup.
+- V detailu konektoru iÚčetní zkontrolujte oprávnění nástrojů: nástroje pro čtení i nástroje pro zápis nastavte na Vždy povolit nebo Vyžaduje schválení, ne na Blokováno. Hotovo: v novém rozhovoru můžete napsat třeba „Kdo mi ještě nezaplatil?“.
 
 ## Připojení v ChatGPT
 
 V nastavení ChatGPT přidejte vlastní konektor (aplikaci) typu MCP s adresou https://mcp.iucetni.com/mcp/. Přihlášení a potvrzení přístupu proběhne stejně jako u Claude. Dostupnost vlastních konektorů závisí na vašem tarifu ChatGPT.
+
+Povolte čtení i zápis. Aby AI mohla faktury nejen vyhledat, ale i vystavit, musí mít v aplikaci Claude, ChatGPT nebo jiné AI povolené oba druhy nástrojů iÚčetní:
+
+- Čtení: seznam faktur, neuhrazené faktury, odběratelé, výdaje, přehledy pro daně, PDF dokladu.
+- Zápis: koncept a vystavení faktury, úprava, zapsání úhrady, nový odběratel, výdaj, paragon.
+
+Když jsou nástroje pro zápis zablokované nebo vypnuté, AI fakturu jen popíše, ale nevytvoří. V Claude to nastavíte v Nastavení → Konektory → iÚčetní u oprávnění nástrojů, v ChatGPT v nastavení připojené aplikace a potvrzením akce, když se ChatGPT zeptá. Pokud chcete mít nad zápisem kontrolu, zvolte Vyžaduje schválení: AI se před každým zápisem zeptá.
 
 ## Další klienti a AI agenti
 
@@ -1849,7 +1873,7 @@ Fakturu vystaví iÚčetní přes MCP, e-mail odešle schránka na namailu.cz, k
 
 https://mcp.iucetni.com/mcp/
 
-Pak se přihlásíte svým účtem iÚčetní a vyberete firmy, ke kterým má AI přístup.
+Pak se přihlásíte svým účtem iÚčetní a vyberete firmy, ke kterým má AI přístup. Nakonec v oprávněních konektoru povolte nástroje pro čtení i pro zápis, jinak AI faktury nevystaví ( jak na to).
 - Připojte e-mail. Na namailu.cz si založte schránku pro AI a připojte ji stejně jako iÚčetní. Z ní pak AI posílá faktury odběratelům a podklady účetní.
 - Pište. Třeba „Kdo mi ještě nezaplatil?“ Podrobný návod pro jednotlivé aplikace najdete na stránce MCP server.
 
@@ -1988,7 +2012,7 @@ Za nic z toho neplatíte iÚčetní ani korunu.
 
 https://mcp.iucetni.com/mcp/
 
-Přihlásíte se svým účtem iÚčetní a vyberete firmy, ke kterým má AI přístup. Podrobný postup je na stránce MCP server.
+Přihlásíte se svým účtem iÚčetní a vyberete firmy, ke kterým má AI přístup. V oprávněních konektoru pak povolte nástroje pro čtení i pro zápis, jinak AI faktury nevystaví. Podrobný postup je na stránce MCP server.
 - Pracujte, jak se vám to hodí. Rychlé věci v aplikaci, psaní a přehledy v rozhovoru. Jak vyřídit vše jen v rozhovoru, ukazuje stránka Fakturace s AI.
 
 ## Co je ve verzi Zdarma

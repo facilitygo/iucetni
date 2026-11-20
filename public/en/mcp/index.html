@@ -64,11 +64,21 @@
 <li>In Claude (web, desktop or mobile) open <strong>Settings → Connectors</strong> and choose <strong>Add custom connector</strong>.</li>
 <li>Enter <em>iÚčetní</em> as the name and <code>https://mcp.iucetni.com/mcp/</code> as the URL.</li>
 <li>Click <strong>Connect</strong>. The iÚčetní sign-in page opens. Sign in with your account email and password.</li>
-<li>Approve access. That's it: in a new chat, try “Who hasn't paid me yet?”</li>
+<li>Approve access.</li>
+<li>In the iÚčetní connector details, check the <strong>tool permissions</strong>: set both the <strong>read</strong> tools and the <strong>write</strong> tools to <em>Always allow</em> or <em>Needs approval</em>, not <em>Blocked</em>. That's it: in a new chat, try “Who hasn't paid me yet?”</li>
 </ol>
 
 <h2 id="chatgpt">Connect in ChatGPT</h2>
 <p>In ChatGPT settings, add a custom MCP connector (app) with the URL <code>https://mcp.iucetni.com/mcp/</code>. Sign-in and approval work the same way as in Claude. Availability of custom connectors depends on your ChatGPT plan.</p>
+
+<div class="box" id="permissions">
+<p><strong>Allow both read and write.</strong> For the AI to not just look up invoices but also issue them, both kinds of iÚčetní tools must be allowed in Claude, ChatGPT or your other AI app:</p>
+<ul>
+<li><strong>Read</strong>: invoice list, unpaid invoices, customers, expenses, tax overviews, document PDF.</li>
+<li><strong>Write</strong>: invoice draft and issuing, edits, recording a payment, new customer, expense, cash receipt.</li>
+</ul>
+<p>If the write tools are blocked or turned off, the AI will only describe the invoice, not create it. In Claude, set this under <strong>Settings → Connectors → iÚčetní</strong> in the tool permissions; in ChatGPT, in the connected app's settings and by confirming the action when ChatGPT asks. To stay in control of writes, choose <em>Needs approval</em>: the AI will ask before every write.</p>
+</div>
 
 <h2 id="agents">Other clients and AI agents</h2>
 <p>You can connect iÚčetní to any AI app or model that supports MCP, such as Google Gemini, Grok, Meta Muse or Mistral. The steps are the same: add a custom connector with the server URL and sign in.</p>

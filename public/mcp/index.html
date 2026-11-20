@@ -64,11 +64,21 @@
 <li>V Claude (web, desktop nebo mobil) otevřete <strong>Nastavení → Konektory</strong> a zvolte <strong>Přidat vlastní konektor</strong>.</li>
 <li>Jako název zadejte <em>iÚčetní</em> a jako adresu <code>https://mcp.iucetni.com/mcp/</code>.</li>
 <li>Klikněte na <strong>Připojit</strong>. Otevře se přihlašovací stránka iÚčetní, kde se přihlásíte e-mailem a heslem svého účtu.</li>
-<li>Potvrďte přístup. Hotovo: v novém rozhovoru můžete napsat třeba „Kdo mi ještě nezaplatil?“.</li>
+<li>Potvrďte přístup.</li>
+<li>V detailu konektoru iÚčetní zkontrolujte <strong>oprávnění nástrojů</strong>: nástroje pro <strong>čtení</strong> i nástroje pro <strong>zápis</strong> nastavte na <em>Vždy povolit</em> nebo <em>Vyžaduje schválení</em>, ne na <em>Blokováno</em>. Hotovo: v novém rozhovoru můžete napsat třeba „Kdo mi ještě nezaplatil?“.</li>
 </ol>
 
 <h2 id="chatgpt">Připojení v ChatGPT</h2>
 <p>V nastavení ChatGPT přidejte vlastní konektor (aplikaci) typu MCP s adresou <code>https://mcp.iucetni.com/mcp/</code>. Přihlášení a potvrzení přístupu proběhne stejně jako u Claude. Dostupnost vlastních konektorů závisí na vašem tarifu ChatGPT.</p>
+
+<div class="box" id="opravneni">
+<p><strong>Povolte čtení i zápis.</strong> Aby AI mohla faktury nejen vyhledat, ale i vystavit, musí mít v aplikaci Claude, ChatGPT nebo jiné AI povolené oba druhy nástrojů iÚčetní:</p>
+<ul>
+<li><strong>Čtení</strong>: seznam faktur, neuhrazené faktury, odběratelé, výdaje, přehledy pro daně, PDF dokladu.</li>
+<li><strong>Zápis</strong>: koncept a vystavení faktury, úprava, zapsání úhrady, nový odběratel, výdaj, paragon.</li>
+</ul>
+<p>Když jsou nástroje pro zápis zablokované nebo vypnuté, AI fakturu jen popíše, ale nevytvoří. V Claude to nastavíte v <strong>Nastavení → Konektory → iÚčetní</strong> u oprávnění nástrojů, v ChatGPT v nastavení připojené aplikace a potvrzením akce, když se ChatGPT zeptá. Pokud chcete mít nad zápisem kontrolu, zvolte <em>Vyžaduje schválení</em>: AI se před každým zápisem zeptá.</p>
+</div>
 
 <h2 id="agenti">Další klienti a AI agenti</h2>
 <p>iÚčetní připojíte do každé AI aplikace nebo modelu s podporou MCP, třeba Google Gemini, Grok, Meta Muse nebo Mistral. Postup je stejný: přidáte vlastní konektor s adresou serveru a přihlásíte se.</p>
