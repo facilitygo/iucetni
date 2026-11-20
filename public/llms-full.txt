@@ -651,7 +651,7 @@ In the app open Settings → AI keys. Claude and ChatGPT connections are labelle
 
 The OAuth sign-in in Claude or ChatGPT fails
 
-Check that the URL is exactly https://mcp.iucetni.com/mcp/ and that you sign in with the email and password of your iÚčetní account. If it still fails, email us the time of the attempt and the name of the client.
+Check that the URL is exactly https://mcp.iucetni.com/mcp/ and that you sign in with the email and password of your iÚčetní account. After five failed attempts we pause sign-in for a while to protect your account. The page shows “too many attempts”; wait a moment and try again. If it still fails, email us the time of the attempt and the name of the client.
 
 The AI describes the invoice but doesn't issue it
 
@@ -1699,7 +1699,7 @@ V aplikaci otevřete Nastavení → Klíče pro AI. Připojení z Claude a ChatG
 
 Přihlášení OAuth v Claude nebo ChatGPT nefunguje
 
-Zkontrolujte, že adresa je přesně https://mcp.iucetni.com/mcp/ a že se přihlašujete e-mailem a heslem účtu iÚčetní. Pokud to stále nejde, napište nám čas pokusu a název klienta.
+Zkontrolujte, že adresa je přesně https://mcp.iucetni.com/mcp/ a že se přihlašujete e-mailem a heslem účtu iÚčetní. Po pěti neúspěšných pokusech přihlášení na chvíli zablokujeme kvůli ochraně účtu. Stránka ukáže „příliš mnoho pokusů“, chvíli počkejte a zkuste to znovu. Pokud to stále nejde, napište nám čas pokusu a název klienta.
 
 AI fakturu jen popíše, ale nevystaví
 
