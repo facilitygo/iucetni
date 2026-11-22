@@ -144,7 +144,8 @@ No more retyping expenses. Take a photo of a receipt or drop in a supplier's PDF
 - Photo, scan or PDF. The scanner crops and straightens the document; multi-page documents are saved as one PDF.
 - Automatic fill-in. Supplier, company ID, VAT ID and country, document type and number, date, amount and VAT. PDFs from accounting software are read straight from their text layer, which is even more accurate.
 - Line items and VAT rates. The AI lists the document's items and splits it by VAT rate. For each item you set whether it is tax-deductible.
-- Catches mistakes. Warns you about an expense that's already recorded and about a suspicious amount. If reading fails, it tries again with a more accurate model.
+- Rebilling. Pass materials bought for a customer on in one step: the whole expense or selected items, with a markup, with or without VAT, straight into a new invoice.
+- Catches mistakes. Warns you about an expense that's already recorded and about a suspicious amount. If reading fails, read the document again with a more accurate model, even for an expense you have already saved.
 - The image stays with the expense. The original document is always one tap away.
 - ISDOC straight into expenses. Import a supplier's e-invoice with all its details.
 
@@ -326,9 +327,9 @@ Security and privacy
 
 Data is stored on servers in the EU. No ads, no third-party tracking. Your data is yours and you can export it at any time.
 
-### Face ID and Keychain
+### Face ID and two-step sign-in
 
-Credentials live in the Keychain. Lock the app with Face ID or Touch ID.
+Credentials live in the Keychain and you can lock the app with Face ID or Touch ID. Add a code from an authenticator app (TOTP) with backup codes to your password.
 
 ### Works offline
 
@@ -993,6 +994,37 @@ An overview of what's new in the app and in connecting to AI. You can try the ap
 
 ## November 2026
 
+### Rebilling expenses
+
+- Pass materials or services bought for a customer on straight from the expense: choose the customer and whether to bill the whole expense or selected items.
+- Set the price with or without VAT, from the purchase price with a markup (including rounding), or from your price list. You can save the item to the price list right away.
+- Invoice creates a new invoice or adds the items to a draft. Rebilled expenses are labelled in the list, so nothing is billed twice.
+
+### Two-step sign-in with an authenticator app
+
+- In Account, add a second step to your password: a code from an authenticator app (TOTP) such as Apple Passwords, Google Authenticator or 1Password. Set it up by scanning a QR code.
+- You get backup codes in case you lose your phone, and password reset works with the code too.
+- After several failed attempts, sign-in pauses for a while to protect your account.
+
+### Document list
+
+- Search by date (day, month or range) and by amount, such as “1,210 CZK”, or by an amount range.
+- Sort by customer short name, amount and payment date. The notes column can be widened to show the internal note.
+
+### Advances and final invoices
+
+- Deduct several advances from one final invoice, both taxed and untaxed. VAT is deducted per rate and, in a foreign currency, at each advance's exchange rate.
+- Everything carries over correctly to the PDF, ISDOC and POHODA export and import.
+
+### Language setting
+
+- In Settings, choose System, Čeština or English. Documents and PDFs stay in Czech.
+
+### AI assistant
+
+- Before writing anything, it shows a clear card with the details in plain language, names instead of codes and items as a list. Once you confirm, the card collapses.
+- Read a saved expense again with a more accurate model. You see the price first and the details are replaced only when you save. You can report a wrong reading.
+
 ### Cash register and receipts
 
 - Issue a cash receipt by tapping items from your price list. A receipt in progress can be parked and finished later.
@@ -1008,7 +1040,6 @@ An overview of what's new in the app and in connecting to AI. You can try the ap
 - From a photo of a receipt or invoice, the AI lists the line items and splits the document by VAT rate.
 - It now also reads the supplier's VAT ID and country, the document type and the VAT breakdown, and matches the document against delivery notes.
 - It warns you about an expense that's already recorded (a possible duplicate) and about a suspicious amount.
-- If reading fails, it tries again with a more accurate model.
 
 ### Expenses and tax records
 
@@ -1180,7 +1211,8 @@ Výdaje nemusíte přepisovat. Účtenku vyfotíte, nebo vložíte PDF faktury o
 - Fotka, sken nebo PDF. Skener dokument ořízne a narovná. Vícestránkový doklad uloží jako jedno PDF.
 - Automatické vyplnění. Dodavatel, IČO, DIČ a země, druh a číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.
 - Položky a sazby DPH. AI rozepíše položky dokladu a rozdělí ho podle sazeb DPH. U každé položky nastavíte, jestli je daňově uznatelná.
-- Hlídá chyby. Upozorní na výdaj, který už v evidenci je, a na podezřelou částku. Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.
+- Přefakturace. Materiál koupený pro zákazníka přeúčtujete jedním krokem: celý výdaj nebo jen vybrané položky, s přirážkou, cenou s DPH nebo bez a rovnou do nové faktury.
+- Hlídá chyby. Upozorní na výdaj, který už v evidenci je, a na podezřelou částku. Když čtení nevyjde, přečtete doklad znovu přesnějším modelem, i u už uloženého výdaje.
 - Snímek zůstane u výdaje. Originál dokladu máte vždy po ruce. Stačí ho otevřít přímo u výdaje.
 - ISDOC rovnou do výdajů. Elektronickou fakturu od dodavatele načtete i se všemi údaji.
 
@@ -1362,9 +1394,9 @@ Bezpečnost a soukromí
 
 Data jsou uložená na serverech v EU. Aplikace neobsahuje reklamy ani sledovací nástroje třetích stran. Data jsou vaše a kdykoli si je vyexportujete.
 
-### Face ID a Klíčenka
+### Face ID a ověření kódem
 
-Přístupové údaje jsou v Klíčence. Aplikaci můžete zamknout Face ID nebo Touch ID.
+Přístupové údaje jsou v Klíčence a aplikaci zamknete Face ID nebo Touch ID. K heslu si můžete zapnout ověření kódem z aplikace (TOTP) se záložními kódy.
 
 ### Funguje i offline
 
@@ -2049,6 +2081,37 @@ Přehled novinek v aplikaci a v připojení k AI. Aplikaci si můžete vyzkouše
 
 ## Listopad 2026
 
+### Přefakturace výdajů
+
+- Materiál nebo službu koupenou pro zákazníka přeúčtujete přímo z výdaje: vyberete odběratele a jestli fakturujete celý výdaj, nebo jen vybrané položky.
+- Cenu nastavíte s DPH nebo bez, z nákupní ceny s přirážkou (i se zaokrouhlením), nebo z ceníku. Položku můžete rovnou uložit do ceníku.
+- Tlačítkem Vyfakturovat vznikne nová faktura nebo se položky přidají do rozpracované. Přefakturovaný výdaj má v seznamu štítek, takže nic nevyfakturujete dvakrát.
+
+### Ověření kódem z aplikace
+
+- K heslu si v Účtu zapnete druhé ověření kódem z aplikace (TOTP), například Apple Hesla, Google Authenticator nebo 1Password. Nastavíte ho naskenováním QR kódu.
+- Dostanete záložní kódy pro případ ztráty telefonu a obnovit heslo jde i s kódem.
+- Po několika neúspěšných pokusech se přihlášení na chvíli pozastaví kvůli ochraně účtu.
+
+### Seznam dokladů
+
+- Hledání podle data (den, měsíc i rozsah) a podle částky, třeba „1 210 Kč“ nebo rozsah částek.
+- Řazení podle zkratky odběratele, částky a data úhrady. Sloupec poznámky jde rozšířit a ukáže i interní poznámku.
+
+### Zálohy a vyúčtování
+
+- K jednomu vyúčtování můžete odečíst více záloh, zdaněných i nezdaněných. DPH se odečte po sazbách a v cizí měně podle kurzu každé zálohy.
+- Vše se správně přenáší do PDF, ISDOC i exportu a importu POHODA.
+
+### Volba jazyka
+
+- V Nastavení zvolíte Podle systému, Čeština nebo English. Doklady a PDF zůstávají česky.
+
+### AI asistent
+
+- Před zápisem ukáže přehlednou kartu s údaji česky, jmény místo kódů a položkami jako seznamem. Po potvrzení se karta sbalí.
+- Uložený výdaj přečtete znovu přesnějším modelem. Cenu uvidíte předem a údaje se přepíšou až po uložení. Chybné čtení můžete nahlásit.
+
 ### Pokladna a paragony
 
 - Paragon vystavíte klepnutím na položky ceníku. Rozpracovaný paragon jde odložit a dokončit později.
@@ -2064,7 +2127,6 @@ Přehled novinek v aplikaci a v připojení k AI. Aplikaci si můžete vyzkouše
 - Z fotky účtenky nebo faktury AI rozepíše položky a rozdělí doklad podle sazeb DPH.
 - Nově načte i DIČ a zemi dodavatele, druh dokladu a rozpis DPH a porovná doklad s dodacími listy.
 - Upozorní na výdaj, který už v evidenci je (možný duplikát), a na podezřelou částku.
-- Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.
 
 ### Výdaje a daňová evidence
 

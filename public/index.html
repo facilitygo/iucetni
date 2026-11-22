@@ -363,7 +363,8 @@
         <li><b>Fotka, sken nebo PDF.</b> <small>Skener dokument ořízne a narovná. Vícestránkový doklad uloží jako jedno PDF.</small></li>
         <li><b>Automatické vyplnění.</b> <small>Dodavatel, IČO, DIČ a země, druh a číslo dokladu, datum, částka i DPH. U PDF z účetních programů se údaje čtou přímo z textu, takže jsou přesnější.</small></li>
         <li><b>Položky a sazby DPH.</b> <small>AI rozepíše položky dokladu a rozdělí ho podle sazeb DPH. U každé položky nastavíte, jestli je daňově uznatelná.</small></li>
-        <li><b>Hlídá chyby.</b> <small>Upozorní na výdaj, který už v evidenci je, a na podezřelou částku. Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.</small></li>
+        <li><b>Přefakturace.</b> <small>Materiál koupený pro zákazníka přeúčtujete jedním krokem: celý výdaj nebo jen vybrané položky, s přirážkou, cenou s DPH nebo bez a rovnou do nové faktury.</small></li>
+        <li><b>Hlídá chyby.</b> <small>Upozorní na výdaj, který už v evidenci je, a na podezřelou částku. Když čtení nevyjde, přečtete doklad znovu přesnějším modelem, i u už uloženého výdaje.</small></li>
         <li><b>Snímek zůstane u výdaje.</b> <small>Originál dokladu máte vždy po ruce. Stačí ho otevřít přímo u výdaje.</small></li>
         <li><b>ISDOC rovnou do výdajů.</b> <small>Elektronickou fakturu od dodavatele načtete i se všemi údaji.</small></li>
       </ul>
@@ -689,7 +690,7 @@
       <p class="lead">Data jsou uložená na serverech v EU. Aplikace neobsahuje reklamy ani sledovací nástroje třetích stran. Data jsou vaše a kdykoli si je vyexportujete.</p>
     </div>
     <div class="sec-grid">
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Face ID a Klíčenka</h3><p>Přístupové údaje jsou v Klíčence. Aplikaci můžete zamknout Face ID nebo Touch ID.</p></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Face ID a ověření kódem</h3><p>Přístupové údaje jsou v Klíčence a aplikaci zamknete Face ID nebo Touch ID. K heslu si můžete zapnout ověření kódem z aplikace (TOTP) se záložními kódy.</p></div>
       <div class="card reveal"><div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><path d="M3 3l18 18"/></svg></div><h3>Funguje i offline</h3><p>Data uvidíte i bez signálu a změny se odešlou, jakmile budete online. Vlastní číselná řada zařízení zajistí, že se čísla dokladů nepotkají.</p></div>
       <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></svg></div><h3>Bez přepisování</h3><p>Otevřený doklad je zamčený pro ostatní zařízení. Souběžné změny se sloučí po jednotlivých polích.</p></div>
       <div class="card reveal"><div class="ico o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Zamčené doklady</h3><p>Vystavený doklad zamknete proti úpravám. Opravu pak uděláte opravným dokladem, jak to vyžaduje zákon.</p></div>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Novinky – iÚčetní</title>
-<meta name="description" content="Co je nového v iÚčetní: pokladna a paragony, čtení dokladů s položkami a sazbami DPH, výdaje s daňovou uznatelností, paušální daň, export výdajů, angličtina a připojení dalších AI přes MCP.">
+<meta name="description" content="Co je nového v iÚčetní: přefakturace výdajů, ověření kódem z aplikace, hledání dokladů podle data a částky, více záloh u vyúčtování, volba jazyka, pokladna a paragony, čtení dokladů s položkami a sazbami DPH, výdaje s daňovou uznatelností, paušální daň, export výdajů, angličtina a připojení dalších AI přes MCP.">
 <meta name="theme-color" content="#6e0a63" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#140d18" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://iucetni.com/novinky/">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="cs_CZ">
 <meta property="og:site_name" content="iÚčetní">
 <meta property="og:title" content="Novinky – iÚčetní">
-<meta property="og:description" content="Co je nového v iÚčetní: pokladna a paragony, čtení dokladů s položkami a sazbami DPH, výdaje s daňovou uznatelností, paušální daň, export výdajů, angličtina a připojení dalších AI přes MCP.">
+<meta property="og:description" content="Co je nového v iÚčetní: přefakturace výdajů, ověření kódem z aplikace, hledání dokladů podle data a částky, více záloh u vyúčtování, volba jazyka, pokladna a paragony, čtení dokladů s položkami a sazbami DPH, výdaje s daňovou uznatelností, paušální daň, export výdajů, angličtina a připojení dalších AI přes MCP.">
 <meta property="og:url" content="https://iucetni.com/novinky/">
 <meta property="og:image" content="https://iucetni.com/img/icon-512.png">
 <script>try{var t=localStorage.getItem('theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
@@ -49,6 +49,43 @@
 
 <h2 id="listopad-2026">Listopad 2026</h2>
 
+<h3>Přefakturace výdajů</h3>
+<ul>
+<li>Materiál nebo službu koupenou pro zákazníka přeúčtujete přímo z výdaje: vyberete odběratele a jestli fakturujete celý výdaj, nebo jen vybrané položky.</li>
+<li>Cenu nastavíte s DPH nebo bez, z nákupní ceny s přirážkou (i se zaokrouhlením), nebo z ceníku. Položku můžete rovnou uložit do ceníku.</li>
+<li>Tlačítkem Vyfakturovat vznikne nová faktura nebo se položky přidají do rozpracované. Přefakturovaný výdaj má v seznamu štítek, takže nic nevyfakturujete dvakrát.</li>
+</ul>
+
+<h3>Ověření kódem z aplikace</h3>
+<ul>
+<li>K heslu si v Účtu zapnete druhé ověření kódem z aplikace (TOTP), například Apple Hesla, Google Authenticator nebo 1Password. Nastavíte ho naskenováním QR kódu.</li>
+<li>Dostanete záložní kódy pro případ ztráty telefonu a obnovit heslo jde i s kódem.</li>
+<li>Po několika neúspěšných pokusech se přihlášení na chvíli pozastaví kvůli ochraně účtu.</li>
+</ul>
+
+<h3>Seznam dokladů</h3>
+<ul>
+<li>Hledání podle data (den, měsíc i rozsah) a podle částky, třeba „1 210 Kč“ nebo rozsah částek.</li>
+<li>Řazení podle zkratky odběratele, částky a data úhrady. Sloupec poznámky jde rozšířit a ukáže i interní poznámku.</li>
+</ul>
+
+<h3>Zálohy a vyúčtování</h3>
+<ul>
+<li>K jednomu vyúčtování můžete odečíst více záloh, zdaněných i nezdaněných. DPH se odečte po sazbách a v cizí měně podle kurzu každé zálohy.</li>
+<li>Vše se správně přenáší do PDF, ISDOC i exportu a importu POHODA.</li>
+</ul>
+
+<h3>Volba jazyka</h3>
+<ul>
+<li>V Nastavení zvolíte Podle systému, Čeština nebo English. Doklady a PDF zůstávají česky.</li>
+</ul>
+
+<h3>AI asistent</h3>
+<ul>
+<li>Před zápisem ukáže přehlednou kartu s údaji česky, jmény místo kódů a položkami jako seznamem. Po potvrzení se karta sbalí.</li>
+<li>Uložený výdaj přečtete znovu přesnějším modelem. Cenu uvidíte předem a údaje se přepíšou až po uložení. Chybné čtení můžete nahlásit.</li>
+</ul>
+
 <h3>Pokladna a paragony</h3>
 <ul>
 <li>Paragon vystavíte klepnutím na položky ceníku. Rozpracovaný paragon jde odložit a dokončit později.</li>
@@ -65,7 +102,6 @@
 <li>Z fotky účtenky nebo faktury AI rozepíše položky a rozdělí doklad podle sazeb DPH.</li>
 <li>Nově načte i DIČ a zemi dodavatele, druh dokladu a rozpis DPH a porovná doklad s dodacími listy.</li>
 <li>Upozorní na výdaj, který už v evidenci je (možný duplikát), a na podezřelou částku.</li>
-<li>Když čtení nevyjde, zkusí doklad přečíst znovu přesnějším modelem.</li>
 </ul>
 
 <h3>Výdaje a daňová evidence</h3>
