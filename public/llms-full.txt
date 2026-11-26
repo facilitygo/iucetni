@@ -159,7 +159,7 @@ At a market stall, a café or a workshop, issue a cash receipt by tapping items 
 - Returns. Refund a whole receipt or selected items. The app issues a corrective document and makes sure no more is returned than was sold.
 - Turn a receipt into an invoice. If the customer wants a company invoice, convert the receipt afterwards.
 - CZK, EUR and USD. Cash is rounded according to the currency and payment method.
-- Own numbering and register name. Receipts have their own number series and list. Open, print or email receipts, older ones too. Print a daily close-out at the end of the day.
+- Own numbering and register name. Receipts have their own number series and list. Open, print or email receipts, older ones too. On iPhone and iPad, print a daily close-out at the end of the day.
 - Through AI too. Claude or ChatGPT can issue a receipt and total your takings over MCP.
 
 Working with your accountant
@@ -1012,7 +1012,7 @@ An overview of what's new in the app and in connecting to AI. You can try the ap
 
 ### Cash register: close-out and history
 
-- A daily close-out to print or save as PDF, and a history of older receipts.
+- A history of older receipts. On iPhone and iPad, also a daily close-out to print or save as PDF.
 - Decimal quantities, a custom amount without a description and quick amounts for cash received.
 
 ### Rebilling expenses
@@ -1247,7 +1247,7 @@ Na stánku, v kavárně nebo v dílně vystavíte paragon klepnutím na položky
 - Vrácení zboží. Vrátíte celý paragon nebo jen vybrané položky. Aplikace vystaví opravný doklad a pohlídá, aby se nevrátilo víc, než se prodalo.
 - Z paragonu faktura. Když zákazník chce fakturu na firmu, paragon na ni dodatečně překlopíte.
 - Koruny, eura i dolary. Hotovost se zaokrouhlí podle měny a způsobu úhrady.
-- Vlastní řada a označení pokladny. Paragony mají vlastní číselnou řadu a seznam. Paragony otevřete, vytisknete nebo pošlete e-mailem, i ty starší. Na konci dne vytisknete uzávěrku.
+- Vlastní řada a označení pokladny. Paragony mají vlastní číselnou řadu a seznam. Paragony otevřete, vytisknete nebo pošlete e-mailem, i ty starší. Na iPhonu a iPadu na konci dne vytisknete uzávěrku.
 - I přes AI. Claude nebo ChatGPT umí paragon vystavit a sečíst tržby přes MCP.
 
 Spolupráce s účetní
@@ -2120,7 +2120,7 @@ Přehled novinek v aplikaci a v připojení k AI. Aplikaci si můžete vyzkouše
 
 ### Pokladna: uzávěrka a historie
 
-- Uzávěrka dne k tisku nebo v PDF a historie starších paragonů.
+- Historie starších paragonů. Na iPhonu a iPadu navíc uzávěrka dne k tisku nebo v PDF.
 - Desetinné množství, vlastní částka bez popisu a rychlé částky u přijaté hotovosti.
 
 ### Přefakturace výdajů
