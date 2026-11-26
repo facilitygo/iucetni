@@ -49,7 +49,7 @@ key: index
       <p class="lead">Issue a document, send it and always know who owes you. The app takes care of the legal requirements of Czech invoices.</p>
     </div>
     <div class="grid">
-      <article class="card reveal"><div class="ico">{{ill:i-908282}}</div><h3>Invoices, advances, credit notes</h3><p>Invoices, advance invoices and corrective tax documents. A live PDF preview while you type and numbering by pattern, e.g. 20260001.</p></article>
+      <article class="card reveal"><div class="ico">{{ill:i-908282}}</div><h3>Invoices, advances, credit notes</h3><p>Invoices, advance invoices, final invoices for advances and corrective tax documents, with a live PDF preview while you type. A new document starts as a draft and the app checks nothing is missing before you issue it. Issued documents are cancelled, never deleted.</p></article>
       <article class="card reveal"><div class="ico o">{{ill:i-0a842f}}</div><h3>QR payments and ISDOC</h3><p>Every invoice carries a QR payment code. The ISDOC 6.0.2 e-invoice is embedded right in the PDF, so your customer's accounting software can import it.</p></article>
       <article class="card reveal"><div class="ico">{{ill:i-5ba53c}}</div><h3>Customers from ARES</h3><p>Enter a company ID and the app fills in the name, VAT ID and address from the Czech business registry. Set custom due dates, short names and internal notes.</p></article>
       <article class="card reveal"><div class="ico o">{{ill:i-5d43c1}}</div><h3>Price list</h3><p>Saved items with internal codes go into an invoice with one tap. Items for the selected customer are shown first.</p></article>
@@ -247,7 +247,7 @@ key: index
         <li><b>Returns.</b> <small>Refund a whole receipt or selected items. The app issues a corrective document and makes sure no more is returned than was sold.</small></li>
         <li><b>Turn a receipt into an invoice.</b> <small>If the customer wants a company invoice, convert the receipt afterwards.</small></li>
         <li><b>CZK, EUR and USD.</b> <small>Cash is rounded according to the currency and payment method.</small></li>
-        <li><b>Own numbering and register name.</b> <small>Receipts have their own number series and list. Open, print or email today's receipts.</small></li>
+        <li><b>Own numbering and register name.</b> <small>Receipts have their own number series and list. Open, print or email receipts, older ones too. Print a daily close-out at the end of the day.</small></li>
         <li><b>Through AI too.</b> <small>Claude or ChatGPT can issue a receipt and total your takings over MCP.</small></li>
       </ul>
     </div>
@@ -272,7 +272,7 @@ key: index
         <li><b>Income and expense ledger and reports</b> in PDF and CSV.</li>
       </ul>
       <div class="formats"><span>POHODA XML</span><span>Money S3 XML</span><span>ABRA Flexi XML</span><span>ISDOC 6.0.2</span><span>PDF</span><span>CSV</span></div>
-      <p style="margin-top:14px;color:var(--muted);font-size:.88rem">Export and import for accounting software is currently available in the Mac app.</p>
+      <p style="margin-top:14px;color:var(--muted);font-size:.88rem">Export and import for accounting software is available in the apps for Mac, iPhone and iPad.</p>
     </div>
     <div class="ill-wrap reveal" aria-hidden="true">
       {{ill:export}}
@@ -289,7 +289,7 @@ key: index
       <p class="lead">On every device iÚčetní works the way that device should. With Pro your data syncs across all your devices, so you can start an invoice on your phone and finish it on your Mac.</p>
     </div>
     <div class="dev-grid">
-      <div class="dev reveal">{{ill:i-e59e8e}}<h3>iPhone</h3><p class="sub">Invoice and get paid anywhere</p><ul><li>Swipe to mark as paid or to email</li><li>Large QR code for payment on the spot</li><li>Receipts from photos into expenses</li><li>Siri, Shortcuts and quick actions</li><li>Face ID lock</li></ul></div>
+      <div class="dev reveal">{{ill:i-e59e8e}}<h3>iPhone</h3><p class="sub">Invoice and get paid anywhere</p><ul><li>Swipe to mark as paid or to email</li><li>Large QR code for payment on the spot</li><li>Receipts from photos into expenses</li><li>Cash register with receipts and daily close-out</li><li>Export and import for your accountant</li><li>Siri, Shortcuts and quick actions</li><li>Face ID lock</li></ul></div>
       <div class="dev reveal">{{ill:i-ef5b55}}<h3>iPad</h3><p class="sub">Form and preview side by side</p><ul><li>PDF preview right next to the form</li><li>Document table with column sorting</li><li>Sidebar just like on the Mac</li><li>Bulk actions for many documents</li><li>Charts and printable reports</li></ul></div>
       <div class="dev reveal">{{ill:i-156233}}<h3>Mac</h3><p class="sub">A complete office</p><ul><li>Each document in its own window</li><li>Keyboard shortcuts (⌘K price list, ⌘P print)</li><li>Export for POHODA, Money and ABRA Flexi</li><li>Apple Mail and Thunderbird</li><li>Custom columns in the document list</li></ul></div>
     </div>
@@ -415,8 +415,8 @@ key: index
       <p class="lead">Data is stored on servers in the EU. No ads, no third-party tracking. Your data is yours and you can export it at any time.</p>
     </div>
     <div class="sec-grid">
-      <div class="card reveal"><div class="ico">{{ill:i-39856b}}</div><h3>Face ID and two-step sign-in</h3><p>Credentials live in the Keychain and you can lock the app with Face ID or Touch ID. Add a code from an authenticator app (TOTP) with backup codes to your password.</p></div>
-      <div class="card reveal"><div class="ico o">{{ill:i-a1c354}}</div><h3>Works offline</h3><p>See your data without a signal; changes are sent once you're back online. A per-device number series prevents clashing invoice numbers.</p></div>
+      <div class="card reveal"><div class="ico">{{ill:i-39856b}}</div><h3>Face ID and two-step sign-in</h3><p>Credentials live in the Keychain and you can lock the app with Face ID or Touch ID. Add a second step to your password: a code by email or from an authenticator app (TOTP) with backup codes.</p></div>
+      <div class="card reveal"><div class="ico o">{{ill:i-a1c354}}</div><h3>Works without a signal</h3><p>See your data offline; changes are sent once you're back online. In the Free plan the cash register works offline, in Pro all documents do. A device code in the document number prevents clashing numbers.</p></div>
       <div class="card reveal"><div class="ico">{{ill:i-7e8b4a}}</div><h3>No overwrites</h3><p>An open document is locked for other devices. Concurrent changes are merged field by field.</p></div>
       <div class="card reveal"><div class="ico o">{{ill:i-ed376b}}</div><h3>Locked documents</h3><p>Lock an issued document against edits. Corrections are then made with a corrective document, as the law requires.</p></div>
     </div>

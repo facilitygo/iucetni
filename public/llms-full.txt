@@ -39,7 +39,7 @@ Issue a document, send it and always know who owes you. The app takes care of th
 
 ### Invoices, advances, credit notes
 
-Invoices, advance invoices and corrective tax documents. A live PDF preview while you type and numbering by pattern, e.g. 20260001.
+Invoices, advance invoices, final invoices for advances and corrective tax documents, with a live PDF preview while you type. A new document starts as a draft and the app checks nothing is missing before you issue it. Issued documents are cancelled, never deleted.
 
 ### QR payments and ISDOC
 
@@ -159,7 +159,7 @@ At a market stall, a café or a workshop, issue a cash receipt by tapping items 
 - Returns. Refund a whole receipt or selected items. The app issues a corrective document and makes sure no more is returned than was sold.
 - Turn a receipt into an invoice. If the customer wants a company invoice, convert the receipt afterwards.
 - CZK, EUR and USD. Cash is rounded according to the currency and payment method.
-- Own numbering and register name. Receipts have their own number series and list. Open, print or email today's receipts.
+- Own numbering and register name. Receipts have their own number series and list. Open, print or email receipts, older ones too. Print a daily close-out at the end of the day.
 - Through AI too. Claude or ChatGPT can issue a receipt and total your takings over MCP.
 
 Working with your accountant
@@ -176,7 +176,7 @@ Export issued invoices for Czech accounting software, and move over from other i
 
 POHODA XML Money S3 XML ABRA Flexi XML ISDOC 6.0.2 PDF CSV
 
-Export and import for accounting software is currently available in the Mac app.
+Export and import for accounting software is available in the apps for Mac, iPhone and iPad.
 
 Devices
 
@@ -191,6 +191,8 @@ Invoice and get paid anywhere
 - Swipe to mark as paid or to email
 - Large QR code for payment on the spot
 - Receipts from photos into expenses
+- Cash register with receipts and daily close-out
+- Export and import for your accountant
 - Siri, Shortcuts and quick actions
 - Face ID lock
 
@@ -329,11 +331,11 @@ Data is stored on servers in the EU. No ads, no third-party tracking. Your data 
 
 ### Face ID and two-step sign-in
 
-Credentials live in the Keychain and you can lock the app with Face ID or Touch ID. Add a code from an authenticator app (TOTP) with backup codes to your password.
+Credentials live in the Keychain and you can lock the app with Face ID or Touch ID. Add a second step to your password: a code by email or from an authenticator app (TOTP) with backup codes.
 
-### Works offline
+### Works without a signal
 
-See your data without a signal; changes are sent once you're back online. A per-device number series prevents clashing invoice numbers.
+See your data offline; changes are sent once you're back online. In the Free plan the cash register works offline, in Pro all documents do. A device code in the document number prevents clashing numbers.
 
 ### No overwrites
 
@@ -994,6 +996,25 @@ An overview of what's new in the app and in connecting to AI. You can try the ap
 
 ## November 2026
 
+### Working without a connection
+
+- Without a signal you still see your data, and changes are sent once you're back online.
+- In the Free plan you can issue cash receipts and returns offline; in Pro, all documents.
+- Each device can have its own code added to the end of the document number (e.g. 20260001-I02), so numbers from different devices never clash.
+- If someone changed the same document in the meantime, the app merges the changes. If it can't, it lets you decide.
+
+### Simpler issuing
+
+- A new document starts as a draft. Before issuing, the app checks the customer, items, amount and bank account and tells you what's missing.
+- Right after issuing it offers email, QR payment and the PDF.
+- Issued documents are cancelled, never deleted, as Czech law requires.
+- Clearer forms with labels next to fields, and faster lists and overviews even with thousands of documents.
+
+### Cash register: close-out and history
+
+- A daily close-out to print or save as PDF, and a history of older receipts.
+- Decimal quantities, a custom amount without a description and quick amounts for cash received.
+
 ### Rebilling expenses
 
 - Pass materials or services bought for a customer on straight from the expense: choose the customer and whether to bill the whole expense or selected items.
@@ -1106,7 +1127,7 @@ Vystavíte doklad, odešlete ho a víte, kdo vám dluží. Na legislativní nál
 
 ### Faktury, zálohy, dobropisy
 
-Faktury, zálohové faktury i opravné daňové doklady. Výsledné PDF vidíte už při psaní a čísla dokladů se řadí podle vzoru, třeba 20260001.
+Faktury, zálohové faktury, vyúčtování záloh i opravné daňové doklady. Výsledné PDF vidíte už při psaní. Nový doklad je nejdřív koncept a před vystavením aplikace zkontroluje, že na něm nic nechybí. Vystavený doklad se nemaže, ale stornuje.
 
 ### QR Platba a ISDOC
 
@@ -1226,7 +1247,7 @@ Na stánku, v kavárně nebo v dílně vystavíte paragon klepnutím na položky
 - Vrácení zboží. Vrátíte celý paragon nebo jen vybrané položky. Aplikace vystaví opravný doklad a pohlídá, aby se nevrátilo víc, než se prodalo.
 - Z paragonu faktura. Když zákazník chce fakturu na firmu, paragon na ni dodatečně překlopíte.
 - Koruny, eura i dolary. Hotovost se zaokrouhlí podle měny a způsobu úhrady.
-- Vlastní řada a označení pokladny. Paragony mají vlastní číselnou řadu a seznam. Dnešní paragony otevřete, vytisknete nebo pošlete e-mailem.
+- Vlastní řada a označení pokladny. Paragony mají vlastní číselnou řadu a seznam. Paragony otevřete, vytisknete nebo pošlete e-mailem, i ty starší. Na konci dne vytisknete uzávěrku.
 - I přes AI. Claude nebo ChatGPT umí paragon vystavit a sečíst tržby přes MCP.
 
 Spolupráce s účetní
@@ -1243,7 +1264,7 @@ Vydané faktury vyexportujete do formátu účetního programu a přechod z jin�
 
 POHODA XML Money S3 XML ABRA Flexi XML ISDOC 6.0.2 PDF CSV
 
-Export a import pro účetní programy je zatím dostupný v aplikaci pro Mac.
+Export a import pro účetní programy najdete v aplikaci pro Mac, iPhone i iPad.
 
 Zařízení
 
@@ -1258,6 +1279,8 @@ Faktura i úhrada odkudkoli
 - Potažením prstu označíte úhradu nebo pošlete e-mail
 - Velký QR kód pro platbu na místě
 - Účtenka z fotky do výdajů
+- Pokladna s paragony a uzávěrkou dne
+- Export a import pro účetní
 - Siri, Zkratky a rychlé akce
 - Zámek Face ID
 
@@ -1396,11 +1419,11 @@ Data jsou uložená na serverech v EU. Aplikace neobsahuje reklamy ani sledovac�
 
 ### Face ID a ověření kódem
 
-Přístupové údaje jsou v Klíčence a aplikaci zamknete Face ID nebo Touch ID. K heslu si můžete zapnout ověření kódem z aplikace (TOTP) se záložními kódy.
+Přístupové údaje jsou v Klíčence a aplikaci zamknete Face ID nebo Touch ID. K heslu si můžete zapnout druhé ověření kódem z e-mailu nebo z aplikace (TOTP) se záložními kódy.
 
-### Funguje i offline
+### Funguje i bez signálu
 
-Data uvidíte i bez signálu a změny se odešlou, jakmile budete online. Vlastní číselná řada zařízení zajistí, že se čísla dokladů nepotkají.
+Data uvidíte i offline a změny se odešlou, jakmile budete online. Ve verzi Zdarma funguje bez připojení pokladna, v Pro všechny doklady. Kód zařízení v čísle dokladu zajistí, že se čísla nepotkají.
 
 ### Bez přepisování
 
@@ -1452,7 +1475,7 @@ AI se počítá po kusech: každá uložená faktura odečte jednu fakturu a ka�
 
 Funguje aplikace bez internetu?
 
-Ano. Poslední data máte vždy po ruce a úpravy se odešlou, jakmile budete online. Nový doklad vytvořený offline je koncept, nebo dostane číslo z vlastní číselné řady zařízení.
+Ano. Poslední data máte vždy po ruce a úpravy se odešlou, jakmile budete online. Ve verzi Zdarma bez připojení vystavíte paragony a vrácení v pokladně, ve verzi Pro všechny doklady. Doklad vystavený bez připojení má na konci čísla kód zařízení, třeba 20260001-I02, takže se čísla z různých zařízení nepotkají. Když stejný doklad mezitím změnil někdo jiný, aplikace změny sloučí, a pokud to nejde, nechá rozhodnout vás.
 
 Jak funguje AI asistent a kam jdou data?
 
@@ -2080,6 +2103,25 @@ Novinky
 Přehled novinek v aplikaci a v připojení k AI. Aplikaci si můžete vyzkoušet přes testovací přístup.
 
 ## Listopad 2026
+
+### Práce bez připojení
+
+- Bez signálu vidíte svá data a změny se odešlou, jakmile budete online.
+- Ve verzi Zdarma vystavíte bez připojení paragony a vrácení v pokladně, ve verzi Pro všechny doklady.
+- Každé zařízení může mít svůj kód, který se přidá na konec čísla dokladu (třeba 20260001-I02). Čísla z různých zařízení se tak nepotkají.
+- Když stejný doklad mezitím změnil někdo jiný, aplikace změny sloučí. Pokud to nejde, nechá rozhodnutí na vás.
+
+### Jednodušší vystavování
+
+- Nový doklad je nejdřív koncept. Před vystavením aplikace zkontroluje odběratele, položky, částku a bankovní účet a upozorní, co chybí.
+- Po vystavení hned nabídne odeslání e-mailem, QR platbu a PDF.
+- Vystavený doklad se nemaže, ale stornuje, jak vyžaduje zákon.
+- Přehlednější formuláře s popisky u polí a rychlejší seznamy a přehledy i při tisících dokladů.
+
+### Pokladna: uzávěrka a historie
+
+- Uzávěrka dne k tisku nebo v PDF a historie starších paragonů.
+- Desetinné množství, vlastní částka bez popisu a rychlé částky u přijaté hotovosti.
 
 ### Přefakturace výdajů
 
