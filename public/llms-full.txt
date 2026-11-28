@@ -466,7 +466,7 @@ Processors for AI features:
 - iÚčetní's own model – backup document reading on our servers; data does not leave our infrastructure.
 - iÚčetní's own decision model – assessing unusually long conversations for compliance with the Terms of Use, on our servers; data does not leave our infrastructure.
 
-We share only the content needed for the feature: assistant conversation text and images of documents you ask us to read. Under their terms, providers do not use it to train models. Our server does not keep conversation content or the documents it reads. We store only the expense you save (including the attachment, if you add one) and a record of AI usage (token count, cost) to account for your allowance. If you do not want documents processed by AI, don't use document reading and enter the data manually. Every change proposed by AI is confirmed by you.
+We share only the content needed for the feature: assistant conversation text and images of documents you ask us to read. Under their terms, providers do not use it to train models. Our server does not keep conversation content or the documents it reads. We store only the expense you save (including the attachment, if you add one) and a record of AI usage (token count, cost) to account for your allowance. AI document reading is on by default, and a document is sent only when you add it to the app. If you do not want documents processed by AI, turn off “Read documents with AI” in Settings and enter the data manually. Every change proposed by AI is confirmed by you.
 
 Data on our servers stays in the EU. AI providers (Anthropic, OpenAI), however, are based in the USA. Data is transferred to them under the European Commission adequacy decision (EU-US Data Privacy Framework) or standard contractual clauses.
 
@@ -1567,7 +1567,7 @@ Zpracovatelé pro funkce AI:
 - Vlastní model iÚčetní – záložní čtení dokladů na našich serverech, data neopouštějí naši infrastrukturu.
 - Vlastní rozhodovací model iÚčetní – posouzení neobvykle dlouhých rozhovorů kvůli dodržování podmínek použití, na našich serverech, data neopouštějí naši infrastrukturu.
 
-Předáváme jen obsah potřebný pro funkci: text rozhovoru s asistentem a obrázky dokladů, které necháte přečíst. Poskytovatelé je podle svých podmínek nepoužívají k trénování modelů. Obsah rozhovorů ani čtené doklady si náš server neukládá. Uložíme jen výdaj, který sami uložíte (včetně přílohy, pokud ji přiložíte), a záznam o spotřebě AI (počet tokenů, cena) kvůli vyúčtování objemu. Pokud nechcete, aby se doklady zpracovávaly pomocí AI, funkci čtení dokladů nepoužívejte a údaje zadejte ručně.
+Předáváme jen obsah potřebný pro funkci: text rozhovoru s asistentem a obrázky dokladů, které necháte přečíst. Poskytovatelé je podle svých podmínek nepoužívají k trénování modelů. Obsah rozhovorů ani čtené doklady si náš server neukládá. Uložíme jen výdaj, který sami uložíte (včetně přílohy, pokud ji přiložíte), a záznam o spotřebě AI (počet tokenů, cena) kvůli vyúčtování objemu. Čtení dokladů pomocí AI je ve výchozím stavu zapnuté a doklad se odešle, až když ho do aplikace přidáte. Pokud nechcete, aby se doklady zpracovávaly pomocí AI, vypněte v Nastavení přepínač „Číst doklady pomocí AI“ a údaje zadávejte ručně.
 
 Každý zápis navržený AI potvrzujete vy. Data na našich serverech zůstávají v EU. Poskytovatelé AI (Anthropic, OpenAI) ale sídlí v USA a údaje se k nim předávají na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-US Data Privacy Framework), nebo standardních smluvních doložek.
 
